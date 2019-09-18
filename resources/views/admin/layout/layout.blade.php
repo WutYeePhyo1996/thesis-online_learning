@@ -323,6 +323,12 @@
                 <a class="nav-link" href="{{route('audio_lessons.index')}}">
                   <i class="nav-icon icon-drop"></i>Audio Lessons</a>
               </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="{{route('thesis.index')}}">
+                  <i class="nav-icon icon-drop"></i>Thesis</a>
+              </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="{{route('speakers.index')}}">
                   <i class="nav-icon icon-drop"></i>Speakers</a>
