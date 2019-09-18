@@ -1,1 +1,1 @@
-## Thesis for University of west technology
+## Thesis for University of West Yangon Technological University
