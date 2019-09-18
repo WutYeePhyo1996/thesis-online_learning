@@ -20,6 +20,8 @@ Auth::routes();
 Route::group(['prefix' => 'admin'], function () {
     Route::get('home','AdminController@index');
     Route::get('login','AdminController@login');
+    Route::resource('/audio_lessons','AudioLessonController');
+    Route::resource('/speakers','SpeakerController');
     Route::post('login','AdminController@postLogin')->name('adminLogin');
 });
 
