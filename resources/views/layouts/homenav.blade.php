@@ -1,5 +1,5 @@
 <!--================ Start Header Menu Area =================-->
-<header class="header_area white-header">
+<header class="header_area">
         <div class="main_menu">
           <div class="search_input" id="search_input_box">
             <div class="container">
@@ -9,8 +9,7 @@
                   type="text"
                   class="form-control"
                   id="search_input"
-                  name="keyword"
-                  placeholder="Search Here!!!"
+                  placeholder="Search Here"
                 />
                 <button type="submit" class="btn"></button>
                 <span
@@ -25,9 +24,9 @@
           <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
               <!-- Brand and toggle get grouped for better mobile display -->
-              <a class="navbar-brand" href="index.html">
-                <img class="logo-2" src="/img/logo2.png" alt="" />
-              </a>
+              <a class="navbar-brand logo_h" href={{url('/')}}
+                ><img src={{ asset('images/wytu.png') }} alt="" width="60px" height="75px"
+              /></a>
               <button
                 class="navbar-toggler"
                 type="button"
@@ -46,46 +45,67 @@
                 id="navbarSupportedContent"
               >
                 <ul class="nav navbar-nav menu_nav ml-auto">
-                  <li class="nav-item">
+                  <li class="nav-item active">
                     <a class="nav-link" href={{url('/')}}>Home</a>
                   </li>
-                  {{-- {{ $active == 'about'? 'active': '' }} --}}
                   <li class="nav-item">
                     <a class="nav-link" href={{url('/about')}}>About</a>
                   </li>
                   <li class="nav-item submenu dropdown">
-                      <a
-                        href="#"
-                        class="nav-link dropdown-toggle"
-                        data-toggle="dropdown"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Assignments</a
-                      >
-                      <ul class="dropdown-menu">
-                        <li class="nav-item">
-                          <a class="nav-link" href={{url('/about')}}>Assignment 1</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href={{url('/about')}}
-                            > Assignment 2</a
-                          >
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href={{url('/about')}}>Elements</a>
-                        </li>
-                      </ul>
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Assignments</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a class="nav-link" href={{url('/about')}}>Assignment 1</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href={{url('/about')}}
+                          > Assignment 2</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href={{url('/about')}}>Elements</a>
+                      </li>
+                    </ul>
+                  </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href={{url('/client_speakers')}}>Audio Lessons</a>
+                  </li>
                   <li class="nav-item">
-                      <a class="nav-link" href={{url('/about')}}>Lessons</a>
-                    </li>
-                    <li class="nav-item">
                       <a class="nav-link" href={{url('/about')}}>News & Events</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href={{url('/thesis')}}>Thesis Title</a>
-                    </li>
-                  <li class="nav-item ">
+                  {{-- <li class="nav-item submenu dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >News & Events</a
+                    > --}}
+                    <!-- <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a class="nav-link" href="blog.html"></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="single-blog.html"
+                          >News Details</a
+                        >
+                      </li>
+                    </ul> -->
+                  </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href={{url('/thesis')}}>Thesis Title</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href={{url('/contact')}}>Contact</a>
                   </li>
                   <li class="nav-item">
