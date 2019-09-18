@@ -7,5 +7,8 @@ use App\Http\Controllers\Controller;
 
 class ThesisController extends Controller
 {
-    //
+    public function index()
+    {
+        return 'index';
+    }
 }
