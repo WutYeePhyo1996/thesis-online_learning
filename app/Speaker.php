@@ -10,4 +10,8 @@ class Speaker extends Model
         'name',
         'position'
     ];
+
+    public function lessons(){
+        return $this->hasMany('App\AudioLesson');
+    }
 }

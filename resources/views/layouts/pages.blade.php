@@ -69,7 +69,8 @@
                 <li class="nav-item">
                   <a class="nav-link" href={{url('/')}}>Home</a>
                 </li>
-                <li class="nav-item {{ $active == 'about'? 'active': '' }}">
+                {{-- {{ $active == 'about'? 'active': '' }} --}}
+                <li class="nav-item">
                   <a class="nav-link" href={{url('/about')}}>About</a>
                 </li>
                 <li class="nav-item submenu dropdown">
@@ -104,7 +105,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href={{url('/about')}}>Thesis Title</a>
                   </li>
-                <li class="nav-item {{ $active == 'contact'? 'active': '' }} ">
+                <li class="nav-item ">
                   <a class="nav-link" href={{url('/contact')}}>Contact</a>
                 </li>
                 <li class="nav-item">
