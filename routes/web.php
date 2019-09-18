@@ -30,3 +30,9 @@ Route::group(['prefix' => 'admin'], function () {
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/about', function() {
+    return view('client.about');
+});
+Route::get('/', function() {
+    return view('client.home');
+});

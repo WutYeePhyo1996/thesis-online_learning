@@ -17,7 +17,7 @@
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
-    <title>Online Theisis</title>
+    <title>Online Thesis</title>
     <!-- Icons-->
     <link href="{{asset('admin/vendors/@coreui/icons/css/coreui-icons.min.css')}}" rel="stylesheet">
     <link href="{{asset('admin/vendors/flag-icon-css/css/flag-icon.min.css')}}" rel="stylesheet">
@@ -706,7 +706,7 @@
           <button class="sidebar-minimizer brand-minimizer" type="button"></button>
         </div>
         @yield('content')
-        
+
         <aside class="aside-menu">
           <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
@@ -993,7 +993,7 @@
           </div>
         </aside>
       </div>
-    
+
     <footer class="app-footer">
       <div>
         <a href="https://coreui.io/pro/">CoreUI Pro</a>
