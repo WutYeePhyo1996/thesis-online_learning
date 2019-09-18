@@ -43,4 +43,8 @@ Route::get('/contact', function() {
     return view('client.contact',compact('active'));
 });
 
+Route::get('/thesis', function() {
+    return 'thesis';
+});
+
 Route::resource('/client_speakers', 'client\SpeakerController');
