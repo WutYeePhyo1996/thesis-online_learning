@@ -18,12 +18,28 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::group(['prefix' => 'admin'], function () {
-    Route::get('home',function() {
-        return view('admin.home');
-    });
-    Route::get('login',function() {
-        return view('admin.login');
-    });
+    Route::get('home','AdminController@index');
+    Route::get('login','AdminController@login');
+    Route::resource('/audio_lessons','AudioLessonController');
+    Route::resource('/speakers','SpeakerController');
+    Route::post('login','AdminController@postLogin')->name('adminLogin');
 });
 
+
+
+// Route::get('protected', ['middleware' => ['auth', 'admin'], function() { return "this page requires that you be logged in and an Admin";
+//  }]);
+
+
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/about', function() {
+    $active = 'about';
+    return view('client.about',compact('active'));
+});
+Route::get('/', function() {
+    return view('client.home');
+});
+Route::get('/contact', function() {
+    $active = 'contact';
+    return view('client.contact',compact('active'));
+});
