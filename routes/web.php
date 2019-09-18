@@ -44,3 +44,5 @@ Route::get('/contact', function() {
     $active = 'contact';
     return view('client.contact',compact('active'));
 });
+
+Route::resource('/client_speakers', 'client\SpeakerController');

@@ -102,7 +102,7 @@
                   </ul>
                 </li>
                  <li class="nav-item">
-                  <a class="nav-link" href={{url('/about')}}>Audio Lessons</a>
+                  <a class="nav-link" href={{url('/client_speakers')}}>Audio Lessons</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href={{url('/about')}}>News & Events</a>
