@@ -17,8 +17,12 @@ class TeacherController extends Controller
      */
     public function index()
     {
+<<<<<<< HEAD
         $teachers = Teacher::all();
         return view ('admin.teacher.index', compact('teachers'));
+=======
+        return 'teacher';
+>>>>>>> 299caa43e8c1a0665887470df3f67c865ac044bb
     }
 
     /**

@@ -17,7 +17,7 @@ class RedirectIfNotAdmin
     {
         if(!auth()->user())
         {
-            return redirect('admin/login');
+            return redirect('secureadmin/login');
         }
         
 

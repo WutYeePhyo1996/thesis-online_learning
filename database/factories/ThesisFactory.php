@@ -12,6 +12,6 @@ $factory->define(Thesis::class, function (Faker $faker) {
         'academic_year' => '2009',
         'description' => $faker->paragraph(),
         'abstract' => $faker->paragraph(),
-        'file' => $faker->word(),
+        'file' => 'the-basics-of-ux-design.pdf',
     ];
 });

@@ -28,7 +28,7 @@
             <tr>
               <td>{{ $thesis->title }}</td>
               <td>{{ $thesis->author }}</td>
-              <td><a href="#">Download</a></td>
+              <td><a href="{{ $thesis->filePath() }}">{{ $thesis->file }}</a></td>
               <td>
                 <span class="badge badge-dark">{{ $thesis->academic_year }}</span>
               </td>

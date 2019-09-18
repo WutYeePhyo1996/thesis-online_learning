@@ -12,7 +12,11 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="icon" href={{ url('images/wytu.png') }} type="image/png" />
+<<<<<<< HEAD
     <title>Online Learning for IT Students</title>
+=======
+    <title>Online Thesis</title>
+>>>>>>> 299caa43e8c1a0665887470df3f67c865ac044bb
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/flaticon.css" />
@@ -25,6 +29,7 @@
 
 
   <body>
+<<<<<<< HEAD
     <!--================ Start Header Menu Area =================-->
     <header class="header_area">
       <div class="main_menu">
@@ -146,6 +151,9 @@
       </div>
     </header>
     <!--================ End Header Menu Area =================-->
+=======
+    @include('layouts.homenav')
+>>>>>>> 299caa43e8c1a0665887470df3f67c865ac044bb
 
     <!--================ Start Home Banner Area =================-->
     <section class="home_banner_area">

@@ -18,7 +18,7 @@ Auth::routes();
 Route::group(['prefix' => 'secureadmin'], function () {
     Route::get('home','AdminController@index');
     Route::get('login','AdminController@login');
-    Route::get('/','AdminController@login');
+    Route::get('/','AdminController@index');
     Route::resource('/audio_lessons','AudioLessonController');
     Route::resource('/speakers','SpeakerController');
     Route::resource('/thesis','ThesisController');
@@ -26,15 +26,12 @@ Route::group(['prefix' => 'secureadmin'], function () {
     Route::post('login','AdminController@postLogin')->name('adminLogin');
 });
 
-Route::get('admin', function() {
-    return 'work';
-});
 
-// Route::get('protected', ['middleware' => ['auth', 'admin'], function() { return "this page requires that you be logged in and an Admin";
-//  }]);
+
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/about', function() {
     $active = 'about';
     return view('client.about',compact('active'));
@@ -44,5 +41,8 @@ Route::get('/contact', function() {
     $active = 'contact';
     return view('client.contact',compact('active'));
 });
+
+Route::get('/thesis', 'client\ThesisController@index');
+Route::post('/thesis/search', 'client\ThesisController@search');
 
 Route::resource('/client_speakers', 'client\SpeakerController');
