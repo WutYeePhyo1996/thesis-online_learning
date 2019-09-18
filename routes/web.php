@@ -22,6 +22,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('login','AdminController@login');
     Route::resource('/audio_lessons','AudioLessonController');
     Route::resource('/speakers','SpeakerController');
+    Route::resource('/thesis','ThesisController');
     Route::post('login','AdminController@postLogin')->name('adminLogin');
 });
 
