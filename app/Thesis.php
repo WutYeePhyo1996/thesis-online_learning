@@ -15,4 +15,9 @@ class Thesis extends Model
         'abstract',
         'file',
     ];
+
+    public function filePath()
+    {
+        return "/storage/pdf/{$this->file}";
+    }
 }
