@@ -30,21 +30,19 @@
   <section class="about_area section_gap">
     <div class="container">
         <div class="row">
-    @foreach($speaker->lessons as $lesson)
+    @foreach($theses as $thesis)
        
         <div class="col-3 mr-3">
 
             <div class="card" >
                 <div class="card-body">
-                <h5 class="card-title">{{$lesson->speaker->name}}</h5>
-                <h5 class="card-title">File :{{$lesson->file}}</h5>
+                <h5 class="card-title">{{$thesis->title}}</h5>
+                <h5 class="card-title">File :{{$thesis->file}}</h5>
 
-                <p class="card-text">Position : {{$lesson->speaker->position}} </p>
-                <audio controls style="width: 12rem;">
-                        <source src="{{asset('/storage/audios/'. $lesson->file)}}" type="audio/mp3">
-                      </audio> 
+                <p class="card-text">Authors : {{$thesis->author}} </p>
+                <p class="card-text">downloads: <a href="{{ $thesis->filePath() }}">{{ $thesis->file }}</a> </p>
 
-                      <a href="{{asset('/storage/audios/'. $lesson->file)}}" download>Download</a>
+                      
                 </div>
             </div>
         </div>

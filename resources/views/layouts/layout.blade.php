@@ -121,7 +121,7 @@
                   </ul> -->
                 </li>
                  <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Thesis Title</a>
+                 <a class="nav-link" href="/thesis">Thesis Title</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact</a>

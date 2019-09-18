@@ -9,6 +9,7 @@ class ThesisController extends Controller
 {
     public function index()
     {
-        return 'index';
+        $theses = \App\Thesis::all();
+        return view('client.thesis.index',compact('theses'));
     }
 }
