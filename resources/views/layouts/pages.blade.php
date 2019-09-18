@@ -7,8 +7,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="icon" href="img/favicon.png" type="image/png" />
-    <title>About Us</title>
+  <link rel="icon" href="{{url('images/wytu.png')}}" type="image/png" />
+    <title>Online Learning</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}" />
     <link rel="stylesheet" href="{{asset('css/flaticon.css')}}" />
@@ -127,7 +127,7 @@
     <!--================ End Feature Area =================-->
 
     <!--================ Start Testimonial Area =================-->
-    <div class="testimonial_area section_gap">
+    {{-- <div class="testimonial_area section_gap">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-5">
@@ -138,9 +138,9 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> --}}
 
-        <div class="row">
+        {{-- <div class="row">
           <div class="testi_slider owl-carousel">
             <div class="testi_item">
               <div class="row">
@@ -401,7 +401,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> --}}
       </div>
     </div>
     <!--================ End Testimonial Area =================-->

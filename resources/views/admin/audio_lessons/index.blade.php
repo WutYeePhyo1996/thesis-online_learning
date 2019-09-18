@@ -3,6 +3,7 @@
 
 @section('content')
 <div class="container-fluid">
+        <a class="btn btn-success mb-2" href="{{route('audio_lessons.create')}}">Create New</a>
         <div class="animated fadeIn">
           <div class="card">
             <div class="card-header">
@@ -17,34 +18,36 @@
               <table class="table table-striped table-bordered datatable">
                 <thead>
                   <tr>
-                    <th>Username</th>
-                    <th>Date registered</th>
-                    <th>Role</th>
-                    <th>Status</th>
-                    <th>Actions</th>
+                    <th>Speaker</th>
+                    <th>Postion</th>
+                    <th>File</th>
+                    <th>Created_at</th>
+                    
                   </tr>
                 </thead>
                 <tbody>
-                
+                @foreach($lessons as $lesson)
                   <tr>
-                    <td>Bernhard Shelah</td>
-                    <td>2012/06/01</td>
-                    <td>Admin</td>
+                    <td>{{$lesson->speaker->name}}</td>
+                    <td>{{$lesson->speaker->position}}</td>
+                    <td>
+                    <a href="{{asset('/storage/audios/'. $lesson->file)}}">{{$lesson->file}}</a>
+                    </td>
+                    
+                    
                     <td>
                       <span class="badge badge-dark">Inactive</span>
                     </td>
                     <td>
-                      <a class="btn btn-success" href="#">
-                        <i class="fa fa-search-plus"></i>
-                      </a>
-                      <a class="btn btn-info" href="#">
-                        <i class="fa fa-edit"></i>
-                      </a>
-                      <a class="btn btn-danger" href="#">
-                        <i class="fa fa-trash-o"></i>
-                      </a>
+                            {!! Form::open(array('url' => route('audio_lessons.destroy', $lesson->id),'method' => 'DELETE', 'class'=> '')) !!}
+                            @csrf
+                            <a href="{{route('audio_lessons.edit', $lesson->id)}}" class="btn btn-info"><i class="fa fa-edit"></i></a>
+                                
+                                <button class="btn btn-danger" type="submit"><i class="fa fa-trash"></i></button>         
+                            {!! Form::close() !!}
                     </td>
                   </tr>
+                @endforeach
                   
                 
                 </tbody>

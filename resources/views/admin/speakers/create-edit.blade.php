@@ -4,12 +4,12 @@
 @section('content')
 <div class="row">
         <div class="col-md-10 offset-md-1">
-    @if(isset($lesson->id))
-    <form action="{{route('audio_lessons.update', $lesson->id)}}" method="post" enctype="multipart/form-data">
+    @if(isset($speaker->id))
+    <form action="{{route('speakers.update', $speaker->id)}}" method="post">
             @method('patch')
             @csrf
     @else
-    <form action="{{route('audio_lessons.store')}}" method="post" enctype="multipart/form-data">
+    <form action="{{route('speakers.store')}}" method="post">
         
             @csrf
     @endif
@@ -18,23 +18,16 @@
                         <div class="card-header">
                           <strong>Normal</strong> Form</div>
                         <div class="card-body">
-                            
                             <div class="form-group">
-                              <label for="">Speaker Name</label>
-                              <select name="speaker_id" id="" class="form-control">\
-                                @foreach($speakers as $speaker)
-                                  <option value="{{$speaker->id}}" @if($speaker->id == old('speaker_id', $lesson->speaker_id)) selected @endif>
-                                    {{$speaker->name}}
-                                  </option>
-                                
-                                @endforeach
-                              </select>
+                              <label for="nf-email">Name</label>
+                            <input class="form-control" id="" type="text" name="name" placeholder="Enter Spaker Name" autocomplete="email" value="{{old('name', $speaker->name)}}">
+                              <span class="help-block">Please enter Speaker Name</span>
                             </div>
-
                             <div class="form-group">
-                                <label for="nf-email">File</label>
-                                <input type="file" name="file" class="form-control">
-                              </div>
+                              <label for="nf-password">Position</label>
+                            <input class="form-control" id="" type="text" name="position" placeholder="speaker postion.." autocomplete="" value="{{old('position', $speaker->position)}}">
+                              <span class="help-block">Please enter speaker position</span>
+                            </div>
                         </div>
                         <div class="card-footer">
                           <button class="btn btn-sm btn-primary" type="submit">
