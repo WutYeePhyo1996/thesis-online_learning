@@ -39,9 +39,7 @@ Route::get('/about', function() {
     $active = 'about';
     return view('client.about',compact('active'));
 });
-Route::get('/', function() {
-    return view('client.home');
-});
+Route::resource('/', 'client\TeacherController');
 Route::get('/contact', function() {
     $active = 'contact';
     return view('client.contact',compact('active'));

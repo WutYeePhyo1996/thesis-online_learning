@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\client;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\Teacher;
-use App\Service\UploadService;
-use Storage;
 
 
 class TeacherController extends Controller
@@ -17,8 +16,8 @@ class TeacherController extends Controller
      */
     public function index()
     {
-        $teachers = Teacher::all();
-        return view ('admin.teacher.index', compact('teachers'));
+        $teacher = Teacher::all();
+        return view('client.home', compact('teacher'));
     }
 
     /**
@@ -28,9 +27,7 @@ class TeacherController extends Controller
      */
     public function create()
     {
-        $teacher = new Teacher;
-       
-        return view('admin.teacher.create-edit', compact('teacher'));
+        //
     }
 
     /**
@@ -40,15 +37,8 @@ class TeacherController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    { 
-        $path = "/public/teachers";
-        $file = $request->file;
-        $data = $request->all();
-        $data['file'] = $file->getClientOriginalName();
-        
-        Teacher::create($data);
-        UploadService::fileUpload($file, $path);
-        return redirect('secureadmin/teacher');
+    {
+        //
     }
 
     /**

@@ -12,7 +12,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="icon" href={{ url('images/wytu.png') }} type="image/png" />
-    <title>Edustage Education</title>
+    <title>Online Learning for IT Students</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/flaticon.css" />
@@ -129,7 +129,7 @@
                   </ul> -->
                 </li>
                  <li class="nav-item">
-                  <a class="nav-link" href={{url('/')}}>Thesis Title</a>
+                  <a class="nav-link" href={{url('/thesis')}}>Thesis Title</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href={{url('/contact')}}>Contact</a>
@@ -448,7 +448,7 @@
           </div>
         </div>
         <div class="row justify-content-center d-flex align-items-center">
-          {{-- <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+          <!-- <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
             <div class="thumb d-flex justify-content-sm-center">
               <img class="img-fluid" src={{ asset('images/hnin.jpeg') }} alt="" width="255px" height="216.2px" />
             </div>
@@ -467,16 +467,18 @@
                 <a href="#"><i class="ti-linkedin"></i></a>
                 <a href="#"><i class="ti-pinterest"></i></a>
               </div>
-            </div>
-          </div> --}}
+            </div> -->
 
-          <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+
+
+           <!-- <div class="col-lg-3 col-md-6 col-sm-12 single-trainer"> -->
+          <!-- @foreach($teacher as $teach)
             <div class="thumb d-flex justify-content-sm-center">
-              <img class="img-fluid" src={{ asset('images/kyi.jpeg') }} alt=""/>
+              <img class="img-fluid" src="{{asset('/storage/teachers/'. $teach->file)}}" alt=""/>
             </div>
             <div class="meta-text text-sm-center">
-              <h4>Daw Kyi Kyi Win</h4>
-              <p class="designation">Associate Professor</p>
+              <h4>{{($teach->name)}}</h4>
+              <p class="designation">{{($teach->position)}}</p>
               <div class="mb-4">
                 <p>
                   If you are looking at blank cassettes on the web, you may be
@@ -491,10 +493,11 @@
               </div>
             </div>
           </div>
+          @endforeach  -->
 
           <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
             <div class="thumb d-flex justify-content-sm-center">
-              <img class="img-fluid" src={{ asset('images/hnin.jpeg') }} alt="" />
+              <img class="img-fluid" src={{ asset('images/cho.jpeg') }} alt="" />
             </div>
             <div class="meta-text text-sm-center">
               <h4>Daw Hnin Yi Aye</h4>
@@ -624,7 +627,7 @@
                                 </div>
                               </div>
 
-          {{-- <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+           <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
             <div class="thumb d-flex justify-content-sm-center">
               <img class="img-fluid" src="img/trainer/t4.jpg" alt="" />
             </div>
@@ -644,8 +647,7 @@
                 <a href="#"><i class="ti-pinterest"></i></a>
               </div>
             </div>
-          </div> --}}
-
+          </div>
           <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
                 <div class="thumb d-flex justify-content-sm-center">
                   <img class="img-fluid" src={{ asset('images/khet.jpg') }} alt="" />
@@ -670,7 +672,7 @@
 
         </div>
 
-        {{-- <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+        <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
                 <div class="thumb d-flex justify-content-sm-center">
                   <img class="img-fluid" src={{ asset('images/khet.jpg') }} alt="" />
                 </div>
@@ -692,8 +694,8 @@
                 </div>
               </div>
 
-        </div> --}}
-
+        </div> 
+        </div> 
       </div>
     </section>
     <!--================ End Trainers Area =================-->
