@@ -22,6 +22,7 @@ Route::group(['prefix' => 'secureadmin'], function () {
     Route::resource('/audio_lessons','AudioLessonController');
     Route::resource('/speakers','SpeakerController');
     Route::resource('/thesis','ThesisController');
+    Route::resource('/teacher','TeacherController');
     Route::post('login','AdminController@postLogin')->name('adminLogin');
 });
 
