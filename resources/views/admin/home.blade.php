@@ -114,7 +114,7 @@
               <div class="card-body">
                 <div class="row">
                   <div class="col-sm-5">
-                    <h4 class="card-title mb-0">Wut Yee Phyo Idiot</h4>
+                    <h4 class="card-title mb-0">Wut Yee Phyo Big Idiot</h4>
                     <div class="small text-muted">November 2017</div>
                   </div>
                   <!-- /.col-->
