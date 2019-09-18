@@ -45,5 +45,6 @@ Route::get('/contact', function() {
 });
 
 Route::get('/thesis', 'client\ThesisController@index');
+Route::post('/thesis/search', 'client\ThesisController@search');
 
 Route::resource('/client_speakers', 'client\SpeakerController');
