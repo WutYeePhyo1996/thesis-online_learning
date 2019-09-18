@@ -39,7 +39,7 @@ class AdminController extends Controller
         if (Auth::attempt(['email' => $attributes['email'], 'password' => $attributes['password']])) {
             // Success
 
-            return redirect('/admin/home');
+            return redirect('/secureadmin/home');
         } else {
             // Go back on error (or do what you want)
             return redirect()->back();

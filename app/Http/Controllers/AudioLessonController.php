@@ -33,7 +33,7 @@ class AudioLessonController extends Controller
 
         AudioLesson::create($data);
         UploadService::fileUpload($file, $path);
-        return redirect('admin/audio_lessons');
+        return redirect('secureadmin/audio_lessons');
     }
 
     public function show($id)
@@ -58,7 +58,7 @@ class AudioLessonController extends Controller
 
         $data['file'] = UploadService::checkFileExist($request->file, $lesson['file'], $path);
         $lesson->update($data);
-        return redirect('admin/audio_lessons');
+        return redirect('secureadmin/audio_lessons');
 
     }
 

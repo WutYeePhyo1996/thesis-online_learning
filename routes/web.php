@@ -11,22 +11,23 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Auth::routes();
 
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'secureadmin'], function () {
     Route::get('home','AdminController@index');
     Route::get('login','AdminController@login');
+    Route::get('/','AdminController@login');
     Route::resource('/audio_lessons','AudioLessonController');
     Route::resource('/speakers','SpeakerController');
     Route::resource('/thesis','ThesisController');
     Route::post('login','AdminController@postLogin')->name('adminLogin');
 });
 
-
+Route::get('admin', function() {
+    return 'work';
+});
 
 // Route::get('protected', ['middleware' => ['auth', 'admin'], function() { return "this page requires that you be logged in and an Admin";
 //  }]);

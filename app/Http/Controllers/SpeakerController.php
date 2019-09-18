@@ -24,7 +24,7 @@ class SpeakerController extends Controller
     public function store(Request $request)
     {
         Speaker::create($request->all());
-        return redirect('admin/speakers');
+        return redirect('secureadmin/speakers');
     }
  
     public function show($id)
@@ -41,7 +41,7 @@ class SpeakerController extends Controller
     public function update(Request $request, $id)
     {
         Speaker::findOrFail($id)->update($request->all());
-        return redirect('admin/speakers'); 
+        return redirect('secureadmin/speakers'); 
     }
 
     public function destroy($id)
