@@ -324,6 +324,10 @@
                   <i class="nav-icon icon-drop"></i>Audio Lessons</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="{{route('speakers.index')}}">
+                  <i class="nav-icon icon-drop"></i>Speakers</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="colors.html">
                   <i class="nav-icon icon-drop"></i> Colors</a>
               </li>
@@ -713,9 +717,11 @@
         </div>
 
 
-        <main class="main">
 
-            @yield('content')
+        <main class="main">
+        @yield('content')
+        
+
         </main>
 
       </div>
