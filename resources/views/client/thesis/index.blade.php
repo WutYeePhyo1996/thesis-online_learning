@@ -32,7 +32,7 @@
         <div class="row">
     @foreach($theses as $thesis)
        
-        <div class="col-3 mr-3">
+        <div class="col-3 mb-2">
 
             <div class="card" >
                 <div class="card-body">
