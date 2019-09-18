@@ -11,7 +11,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="icon" href="public/storage/wytu.png" type="image/png" />
+    <link rel="icon" href={{ url('images/wytu.png') }} type="image/png" />
     <title>Edustage Education</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css" />
@@ -51,7 +51,7 @@
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <a class="navbar-brand logo_h" href={{url('/')}}
-              ><img src={{ asset('images/wytu.png') }} alt="" width="60px" height="80px"
+              ><img src={{ asset('images/wytu.png') }} alt="" width="60px" height="75px"
             /></a>
             <button
               class="navbar-toggler"
@@ -89,23 +89,23 @@
                   >
                   <ul class="dropdown-menu">
                     <li class="nav-item">
-                      <a class="nav-link" href={{url('/')}}>Assignment 1</a>
+                      <a class="nav-link" href={{url('/about')}}>Assignment 1</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href={{url('/')}}
+                      <a class="nav-link" href={{url('/about')}}
                         > Assignment 2</a
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href={{url('/')}}>Elements</a>
+                      <a class="nav-link" href={{url('/about')}}>Elements</a>
                     </li>
                   </ul>
                 </li>
                  <li class="nav-item">
-                  <a class="nav-link" href={{url('/')}}>Audio Lessons</a>
+                  <a class="nav-link" href={{url('/about')}}>Audio Lessons</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href={{url('/')}}>News & Events</a>
+                    <a class="nav-link" href={{url('/about')}}>News & Events</a>
                   </li>
                 {{-- <li class="nav-item submenu dropdown">
                   <a
@@ -129,10 +129,10 @@
                   </ul> -->
                 </li>
                  <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Thesis Title</a>
+                  <a class="nav-link" href={{url('/')}}>Thesis Title</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                  <a class="nav-link" href={{url('/contact')}}>Contact</a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link search" id="search">
@@ -230,7 +230,9 @@
     <!--================ End Feature Area =================-->
 
     <!--================ Start Popular Courses Area =================-->
-    <div class="popular_courses">
+
+
+    {{-- <div class="popular_courses">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-5">
@@ -348,11 +350,14 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
+
     <!--================ End Popular Courses Area =================-->
 
     <!--================ Start Registration Area =================-->
-    <div class="section_gap registration_area">
+
+
+    {{-- <div class="section_gap registration_area">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-7">
@@ -424,7 +429,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
+
+
     <!--================ End Registration Area =================-->
 
     <!--================ Start Trainers Area =================-->
@@ -433,7 +440,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-5">
             <div class="main_title">
-              <h2 class="mb-3">Our Expert Trainers</h2>
+              <h2 class="mb-3">Our Expert Lecturers</h2>
               <p>
                 Replenish man have thing gathering lights yielding shall you
               </p>
@@ -443,11 +450,11 @@
         <div class="row justify-content-center d-flex align-items-center">
           <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
             <div class="thumb d-flex justify-content-sm-center">
-              <img class="img-fluid" src="img/trainer/t1.jpg" alt="" />
+              <img class="img-fluid" src={{ asset('images/cho.jpg') }} alt="" />
             </div>
             <div class="meta-text text-sm-center">
-              <h4>Mated Nithan</h4>
-              <p class="designation">Sr. web designer</p>
+              <h4>Dr.Cho Cho Myint</h4>
+              <p class="designation">Head Of Department (IT)</p>
               <div class="mb-4">
                 <p>
                   If you are looking at blank cassettes on the web, you may be
@@ -534,7 +541,9 @@
     <!--================ End Trainers Area =================-->
 
     <!--================ Start Events Area =================-->
-    <div class="events_area">
+
+
+    {{-- <div class="events_area">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-5">
@@ -609,7 +618,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
+
+
     <!--================ End Events Area =================-->
 
     <!--================ Start Testimonial Area =================-->
