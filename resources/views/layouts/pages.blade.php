@@ -69,56 +69,43 @@
                 <li class="nav-item">
                   <a class="nav-link" href={{url('/')}}>Home</a>
                 </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="about-us.html">About</a>
+                <li class="nav-item {{ $active == 'about'? 'active': '' }}">
+                  <a class="nav-link" href={{url('/about')}}>About</a>
                 </li>
                 <li class="nav-item submenu dropdown">
-                  <a
-                    href="#"
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Pages</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a class="nav-link" href="courses.html">Courses</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="course-details.html"
-                        >Course Details</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="elements.html">Elements</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item submenu dropdown">
-                  <a
-                    href="#"
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Blog</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="single-blog.html"
-                        >Blog Details</a
-                      >
-                    </li>
-                  </ul>
-                </li>
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Assignments</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a class="nav-link" href={{url('/about')}}>Assignment 1</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href={{url('/about')}}
+                          > Assignment 2</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href={{url('/about')}}>Elements</a>
+                      </li>
+                    </ul>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href={{url('/about')}}>Lessons</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href={{url('/about')}}>News & Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href={{url('/about')}}>Thesis Title</a>
+                  </li>
+                <li class="nav-item {{ $active == 'contact'? 'active': '' }} ">
+                  <a class="nav-link" href={{url('/contact')}}>Contact</a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link search" id="search">
