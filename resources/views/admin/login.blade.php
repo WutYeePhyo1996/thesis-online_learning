@@ -12,6 +12,8 @@
             margin: 0 auto;
             width: 611px;
             margin-top: 149px;
+            background: #fff;
+            padding:10px 10px;
         }
         .debug{
             border: 1px solid red;
@@ -20,18 +22,26 @@
 </head>
 <body>
     <div id="app">
-        <form>
+    <form action="{{ route('adminLogin') }}" method="POST">
+            @csrf
             <div class="login-form">
+                <h1>Admin Login</h1>
+                <hr>
                 <div class="form-group row">
                     <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="staticEmail" placeholder="Email...">
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Email...">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
                     <div class="col-sm-10">
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password...">
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="float-right">
+                        <input type="submit" class="btn btn-success btn-lg btn-block" value="Send">
                     </div>
                 </div>
             </div>
