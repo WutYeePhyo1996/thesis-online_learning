@@ -13,15 +13,16 @@
         <div class="row justify-content-center">
           <div class="col-lg-6">
             <div class="banner_content text-center">
-              <h2>About Us</h2>
+              <h2>Lessons</h2>
               <div class="page_link">
                 <a href="index.html">Home</a>
-                <a href="about-us.html">About Us</a>
+                <a href="about-us.html">Lessons </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+   
     </div>
   </section>
   <!--================End Home Banner Area =================-->

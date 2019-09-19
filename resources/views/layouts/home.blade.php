@@ -4,6 +4,8 @@
 
    <style type="text/css">
      .nav-link{ color:#fff; }
+     .img-fluid1{ width:255px;
+      height:357px;}
    </style>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -12,11 +14,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="icon" href={{ url('images/wytu.png') }} type="image/png" />
-<<<<<<< HEAD
     <title>Online Learning for IT Students</title>
-=======
-    <title>Online Thesis</title>
->>>>>>> 299caa43e8c1a0665887470df3f67c865ac044bb
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/flaticon.css" />
@@ -29,131 +27,7 @@
 
 
   <body>
-<<<<<<< HEAD
-    <!--================ Start Header Menu Area =================-->
-    <header class="header_area">
-      <div class="main_menu">
-        <div class="search_input" id="search_input_box">
-          <div class="container">
-            <form class="d-flex justify-content-between" method="" action="">
-              <input
-                type="text"
-                class="form-control"
-                id="search_input"
-                placeholder="Search Here"
-              />
-              <button type="submit" class="btn"></button>
-              <span
-                class="ti-close"
-                id="close_search"
-                title="Close Search"
-              ></span>
-            </form>
-          </div>
-        </div>
-
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <a class="navbar-brand logo_h" href={{url('/')}}
-              ><img src={{ asset('images/wytu.png') }} alt="" width="60px" height="75px"
-            /></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="icon-bar"></span> <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div
-              class="collapse navbar-collapse offset"
-              id="navbarSupportedContent"
-            >
-              <ul class="nav navbar-nav menu_nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href={{url('/')}}>Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href={{url('/about')}}>About</a>
-                </li>
-                <li class="nav-item submenu dropdown">
-                  <a
-                    href="#"
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Assignments</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a class="nav-link" href={{url('/about')}}>Assignment 1</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href={{url('/about')}}
-                        > Assignment 2</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href={{url('/about')}}>Elements</a>
-                    </li>
-                  </ul>
-                </li>
-                 <li class="nav-item">
-                  <a class="nav-link" href={{url('/client_speakers')}}>Audio Lessons</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href={{url('/about')}}>News & Events</a>
-                  </li>
-                {{-- <li class="nav-item submenu dropdown">
-                  <a
-                    href="#"
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >News & Events</a
-                  > --}}
-                  <!-- <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a class="nav-link" href="blog.html"></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="single-blog.html"
-                        >News Details</a
-                      >
-                    </li>
-                  </ul> -->
-                </li>
-                 <li class="nav-item">
-                  <a class="nav-link" href={{url('/thesis')}}>Thesis Title</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href={{url('/contact')}}>Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link search" id="search">
-                    <i class="ti-search"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!--================ End Header Menu Area =================-->
-=======
     @include('layouts.homenav')
->>>>>>> 299caa43e8c1a0665887470df3f67c865ac044bb
 
     <!--================ Start Home Banner Area =================-->
     <section class="home_banner_area">
@@ -180,62 +54,7 @@
     </section>
     <!--================ End Home Banner Area =================-->
 
-    <!--================ Start Feature Area =================-->
-    <section class="feature_area section_gap_top">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-5">
-            <div class="main_title">
-              <h2 class="mb-3">Awesome Feature</h2>
-              <p>
-                Replenish man have thing gathering lights yielding shall you
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="single_feature">
-              <div class="icon"><span class="flaticon-student"></span></div>
-              <div class="desc">
-                <h4 class="mt-3 mb-2">Scholarship Facility</h4>
-                <p>
-                  One make creepeth, man bearing theira firmament won't great
-                  heaven
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="single_feature">
-              <div class="icon"><span class="flaticon-book"></span></div>
-              <div class="desc">
-                <h4 class="mt-3 mb-2">Sell Online Course</h4>
-                <p>
-                  One make creepeth, man bearing theira firmament won't great
-                  heaven
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="single_feature">
-              <div class="icon"><span class="flaticon-earth"></span></div>
-              <div class="desc">
-                <h4 class="mt-3 mb-2">Global Certification</h4>
-                <p>
-                  One make creepeth, man bearing theira firmament won't great
-                  heaven
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--================ End Feature Area =================-->
+    @yield('content')
 
     <!--================ Start Popular Courses Area =================-->
 
@@ -448,7 +267,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-5">
             <div class="main_title">
-              <h2 class="mb-3">Our Expert Lecturers</h2>
+              <h2 class="mb-3">Our Expert Teachers</h2>
               <p>
                 Replenish man have thing gathering lights yielding shall you
               </p>
@@ -505,11 +324,11 @@
 
           <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
             <div class="thumb d-flex justify-content-sm-center">
-              <img class="img-fluid" src={{ asset('images/cho.jpeg') }} alt="" />
+              <img class="img-fluid1" src={{ asset('images/cho.jpeg') }} alt="" / style="width:255px; height:357px; !important">
             </div>
             <div class="meta-text text-sm-center">
-              <h4>Daw Hnin Yi Aye</h4>
-              <p class="designation">Associate Professor</p>
+              <h4>Daw Cho Cho Myint</h4>
+              <p class="designation"> Professor and Head</p>
               <div class="mb-4">
                 <p>
                   If you are looking at blank cassettes on the web, you may be
@@ -527,10 +346,10 @@
 
           <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
                 <div class="thumb d-flex justify-content-sm-center">
-                  <img class="img-fluid" src={{ asset('images/hnin.jpeg') }} alt="" />
+                  <img class="img-fluid1" src={{ asset('images/kyi.jpeg') }} alt="" />
                 </div>
                 <div class="meta-text text-sm-center">
-                  <h4>Daw Hnin Yi Aye</h4>
+                  <h4>Daw Kyi Kyi Win</h4>
                   <p class="designation">Associate Professor</p>
                   <div class="mb-4">
                     <p>
@@ -549,11 +368,11 @@
 
               <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
                     <div class="thumb d-flex justify-content-sm-center">
-                      <img class="img-fluid" src={{ asset('images/hnin.jpeg') }} alt="" />
+                      <img class="img-fluid1" src={{ asset('images/hnin.jpeg') }} alt="" />
                     </div>
                     <div class="meta-text text-sm-center">
                       <h4>Daw Hnin Yi Aye</h4>
-                      <p class="designation">Associate Professor</p>
+                      <p class="designation">PhD Course @Associate Professor</p>
                       <div class="mb-4">
                         <p>
                           If you are looking at blank cassettes on the web, you may be
@@ -571,10 +390,10 @@
 
                   <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
                         <div class="thumb d-flex justify-content-sm-center">
-                          <img class="img-fluid" src={{ asset('images/hnin.jpeg') }} alt="" />
+                          <img class="img-fluid1" src={{ asset('images/khet.jpg') }} alt="" />
                         </div>
                         <div class="meta-text text-sm-center">
-                          <h4>Daw Hnin Yi Aye</h4>
+                          <h4>Dr. Khin Khat Khat Kyaw</h4>
                           <p class="designation">Associate Professor</p>
                           <div class="mb-4">
                             <p>
@@ -593,10 +412,10 @@
 
                       <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
                             <div class="thumb d-flex justify-content-sm-center">
-                              <img class="img-fluid" src={{ asset('images/hnin.jpeg') }} alt="" />
+                              <img class="img-fluid1" src={{ asset('images/may.jpg') }} alt="" />
                             </div>
                             <div class="meta-text text-sm-center">
-                              <h4>Daw Hnin Yi Aye</h4>
+                              <h4>Dr. May Cho Aye</h4>
                               <p class="designation">Associate Professor</p>
                               <div class="mb-4">
                                 <p>
@@ -615,10 +434,10 @@
 
                           <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
                                 <div class="thumb d-flex justify-content-sm-center">
-                                  <img class="img-fluid" src={{ asset('images/hnin.jpeg') }} alt="" />
+                                  <img class="img-fluid1" src={{ asset('images/ni.jpg') }} alt="" />
                                 </div>
                                 <div class="meta-text text-sm-center">
-                                  <h4>Daw Hnin Yi Aye</h4>
+                                  <h4>Daw Ni Ni Win</h4>
                                   <p class="designation">Associate Professor</p>
                                   <div class="mb-4">
                                     <p>
@@ -637,11 +456,11 @@
 
            <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
             <div class="thumb d-flex justify-content-sm-center">
-              <img class="img-fluid" src="img/trainer/t4.jpg" alt="" />
+              <img class="img-fluid1" src={{ asset('images/nge.jpg') }} alt="" />
             </div>
             <div class="meta-text text-sm-center">
-              <h4>Nathan Macken</h4>
-              <p class="designation">Sr. web designer</p>
+              <h4>Daw Nge</h4>
+              <p class="designation">Lecturer</p>
               <div class="mb-4">
                 <p>
                   If you are looking at blank cassettes on the web, you may be
@@ -658,11 +477,11 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
                 <div class="thumb d-flex justify-content-sm-center">
-                  <img class="img-fluid" src={{ asset('images/khet.jpg') }} alt="" />
+                  <img class="img-fluid1" src={{ asset('images/thu.jpg') }} alt="" />
                 </div>
                 <div class="meta-text text-sm-center">
-                  <h4>Nathan Macken</h4>
-                  <p class="designation">Sr. web designer</p>
+                  <h4>Daw Thu Zar Win</h4>
+                  <p class="designation">Assistant Lecturer</p>
                   <div class="mb-4">
                     <p>
                       If you are looking at blank cassettes on the web, you may be
@@ -677,16 +496,36 @@
                   </div>
                 </div>
               </div>
-
-        </div>
 
         <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
                 <div class="thumb d-flex justify-content-sm-center">
-                  <img class="img-fluid" src={{ asset('images/khet.jpg') }} alt="" />
+                  <img class="img-fluid1" src={{ asset('images/phyo.jpg') }} alt="" />
                 </div>
                 <div class="meta-text text-sm-center">
-                  <h4>Nathan Macken</h4>
-                  <p class="designation">Sr. web designer</p>
+                  <h4>Daw Phyo Phyo Aung</h4>
+                  <p class="designation">Lecturer</p>
+                  <div class="mb-4">
+                    <p>
+                      If you are looking at blank cassettes on the web, you may be
+                      very confused at the.
+                    </p>
+                  </div>
+                  <div class="align-items-center justify-content-center d-flex">
+                    <a href="#"><i class="ti-facebook"></i></a>
+                    <a href="#"><i class="ti-twitter"></i></a>
+                    <a href="#"><i class="ti-linkedin"></i></a>
+                    <a href="#"><i class="ti-pinterest"></i></a>
+                  </div>
+                </div>
+           </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                <div class="thumb d-flex justify-content-sm-center">
+                  <img class="img-fluid1" src={{ asset('images/han.jpeg') }} alt="" />
+                </div>
+                <div class="meta-text text-sm-center">
+                  <h4>Daw Han Myint Shin</h4>
+                  <p class="designation">Assistant Lecturer</p>
                   <div class="mb-4">
                     <p>
                       If you are looking at blank cassettes on the web, you may be
@@ -702,7 +541,249 @@
                 </div>
               </div>
 
-        </div> 
+             <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                <div class="thumb d-flex justify-content-sm-center">
+                  <img class="img-fluid1" src={{ asset('images/su.jpg') }} alt="" />
+                </div>
+                <div class="meta-text text-sm-center">
+                  <h4>Daw Su Su Tin</h4>
+                  <p class="designation">Assistant Lecturer</p>
+                  <div class="mb-4">
+                    <p>
+                      If you are looking at blank cassettes on the web, you may be
+                      very confused at the.
+                    </p>
+                  </div>
+                  <div class="align-items-center justify-content-center d-flex">
+                    <a href="#"><i class="ti-facebook"></i></a>
+                    <a href="#"><i class="ti-twitter"></i></a>
+                    <a href="#"><i class="ti-linkedin"></i></a>
+                    <a href="#"><i class="ti-pinterest"></i></a>
+                  </div>
+                </div>
+          </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                <div class="thumb d-flex justify-content-sm-center">
+                  <img class="img-fluid1" src={{ asset('images/khu.jpg') }} alt="" />
+                </div>
+                <div class="meta-text text-sm-center">
+                  <h4>U Zonun Khuma</h4>
+                  <p class="designation"> Lecturer</p>
+                  <div class="mb-4">
+                    <p>
+                      If you are looking at blank cassettes on the web, you may be
+                      very confused at the.
+                    </p>
+                  </div>
+                  <div class="align-items-center justify-content-center d-flex">
+                    <a href="#"><i class="ti-facebook"></i></a>
+                    <a href="#"><i class="ti-twitter"></i></a>
+                    <a href="#"><i class="ti-linkedin"></i></a>
+                    <a href="#"><i class="ti-pinterest"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                <div class="thumb d-flex justify-content-sm-center">
+                  <img class="img-fluid1" src={{ asset('images/kyu.jpg') }} alt="" />
+                </div>
+                <div class="meta-text text-sm-center">
+                  <h4>Daw Kyu Kyu Than </h4>
+                  <p class="designation"> Lecturer</p>
+                  <div class="mb-4">
+                    <p>
+                      If you are looking at blank cassettes on the web, you may be
+                      very confused at the.
+                    </p>
+                  </div>
+                  <div class="align-items-center justify-content-center d-flex">
+                    <a href="#"><i class="ti-facebook"></i></a>
+                    <a href="#"><i class="ti-twitter"></i></a>
+                    <a href="#"><i class="ti-linkedin"></i></a>
+                    <a href="#"><i class="ti-pinterest"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                <div class="thumb d-flex justify-content-sm-center">
+                  <img class="img-fluid1" src={{ asset('images/lai.jpg') }} alt="" />
+                </div>
+                <div class="meta-text text-sm-center">
+                  <h4>Daw Lai Yee Myint</h4>
+                  <p class="designation"> Lecturer</p>
+                  <div class="mb-4">
+                    <p>
+                      If you are looking at blank cassettes on the web, you may be
+                      very confused at the.
+                    </p>
+                  </div>
+                  <div class="align-items-center justify-content-center d-flex">
+                    <a href="#"><i class="ti-facebook"></i></a>
+                    <a href="#"><i class="ti-twitter"></i></a>
+                    <a href="#"><i class="ti-linkedin"></i></a>
+                    <a href="#"><i class="ti-pinterest"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                <div class="thumb d-flex justify-content-sm-center">
+                  <img class="img-fluid1" src={{ asset('images/hnin.jpg') }} alt="" />
+                </div>
+                <div class="meta-text text-sm-center">
+                  <h4>Daw Hnin Myat Mon</h4>
+                  <p class="designation"> Lecturer</p>
+                  <div class="mb-4">
+                    <p>
+                      If you are looking at blank cassettes on the web, you may be
+                      very confused at the.
+                    </p>
+                  </div>
+                  <div class="align-items-center justify-content-center d-flex">
+                    <a href="#"><i class="ti-facebook"></i></a>
+                    <a href="#"><i class="ti-twitter"></i></a>
+                    <a href="#"><i class="ti-linkedin"></i></a>
+                    <a href="#"><i class="ti-pinterest"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                <div class="thumb d-flex justify-content-sm-center">
+                  <img class="img-fluid1" src={{ asset('images/lawun.jpg') }} alt="" />
+                </div>
+                <div class="meta-text text-sm-center">
+                  <h4>Daw La Wun Nandar Kyaw</h4>
+                  <p class="designation"> Lecturer</p>
+                  <div class="mb-4">
+                    <p>
+                      If you are looking at blank cassettes on the web, you may be
+                      very confused at the.
+                    </p>
+                  </div>
+                  <div class="align-items-center justify-content-center d-flex">
+                    <a href="#"><i class="ti-facebook"></i></a>
+                    <a href="#"><i class="ti-twitter"></i></a>
+                    <a href="#"><i class="ti-linkedin"></i></a>
+                    <a href="#"><i class="ti-pinterest"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                <div class="thumb d-flex justify-content-sm-center">
+                  <img class="img-fluid1" src={{ asset('images/khaing.jpg') }} alt="" />
+                </div>
+                <div class="meta-text text-sm-center">
+                  <h4>Dr. Khaing Myat Mon</h4>
+                  <p class="designation"> Lecturer</p>
+                  <div class="mb-4">
+                    <p>
+                      If you are looking at blank cassettes on the web, you may be
+                      very confused at the.
+                    </p>
+                  </div>
+                  <div class="align-items-center justify-content-center d-flex">
+                    <a href="#"><i class="ti-facebook"></i></a>
+                    <a href="#"><i class="ti-twitter"></i></a>
+                    <a href="#"><i class="ti-linkedin"></i></a>
+                    <a href="#"><i class="ti-pinterest"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                <div class="thumb d-flex justify-content-sm-center">
+                  <img class="img-fluid1" src={{ asset('images/suhlaing.jpg') }} alt="" />
+                </div>
+                <div class="meta-text text-sm-center">
+                  <h4>Dr. Su Su Hlaing</h4>
+                  <p class="designation"> Lecturer</p>
+                  <div class="mb-4">
+                    <p>
+                      If you are looking at blank cassettes on the web, you may be
+                      very confused at the.
+                    </p>
+                  </div>
+                  <div class="align-items-center justify-content-center d-flex">
+                    <a href="#"><i class="ti-facebook"></i></a>
+                    <a href="#"><i class="ti-twitter"></i></a>
+                    <a href="#"><i class="ti-linkedin"></i></a>
+                    <a href="#"><i class="ti-pinterest"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                <div class="thumb d-flex justify-content-sm-center">
+                  <img class="img-fluid1" src={{ asset('images/pyae.jpg') }} alt="" />
+                </div>
+                <div class="meta-text text-sm-center">
+                  <h4>Daw Pyae Ma</h4>
+                  <p class="designation"> Lecturer</p>
+                  <div class="mb-4">
+                    <p>
+                      If you are looking at blank cassettes on the web, you may be
+                      very confused at the.
+                    </p>
+                  </div>
+                  <div class="align-items-center justify-content-center d-flex">
+                    <a href="#"><i class="ti-facebook"></i></a>
+                    <a href="#"><i class="ti-twitter"></i></a>
+                    <a href="#"><i class="ti-linkedin"></i></a>
+                    <a href="#"><i class="ti-pinterest"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                <div class="thumb d-flex justify-content-sm-center">
+                  <img class="img-fluid1" src={{ asset('images/nandar.jpg') }} alt="" />
+                </div>
+                <div class="meta-text text-sm-center">
+                  <h4>Daw Nandar Linn</h4>
+                  <p class="designation">Assistant Lecturer</p>
+                  <div class="mb-4">
+                    <p>
+                      If you are looking at blank cassettes on the web, you may be
+                      very confused at the.
+                    </p>
+                  </div>
+                  <div class="align-items-center justify-content-center d-flex">
+                    <a href="#"><i class="ti-facebook"></i></a>
+                    <a href="#"><i class="ti-twitter"></i></a>
+                    <a href="#"><i class="ti-linkedin"></i></a>
+                    <a href="#"><i class="ti-pinterest"></i></a>
+                  </div>
+                </div>
+              </div>
+
+      
+        </div>
+
+        </div>
+
+        </div>
+
+        </div>
+
+        </div>
+
+        </div>
+
+        </div>
+
+        </div>
+
+        </div>
+
+        </div>
+
+        </div>
+
         </div> 
       </div>
     </section>
@@ -797,7 +878,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-5">
             <div class="main_title">
-              <h2 class="mb-3">Client say about me</h2>
+              <h2 class="mb-3">Video Lessons</h2>
               <p>
                 Replenish man have thing gathering lights yielding shall you
               </p>
@@ -810,11 +891,12 @@
             <div class="testi_item">
               <div class="row">
                 <div class="col-lg-4 col-md-6">
-                  <img src="img/testimonials/t1.jpg" alt="" />
+                  <img src={{ asset('images/cho.jpeg') }} alt="" />
                 </div>
                 <div class="col-lg-8">
                   <div class="testi_text">
-                    <h4>Elite Martin</h4>
+                    <h4>Dr. Cho Cho Myint</h4>
+                    <h5><a href="/">Video Title</a></h5>
                     <p>
                       Him, made can't called over won't there on divide there
                       male fish beast own his day third seed sixth seas unto.
@@ -827,11 +909,12 @@
             <div class="testi_item">
               <div class="row">
                 <div class="col-lg-4 col-md-6">
-                  <img src="img/testimonials/t2.jpg" alt="" />
+                  <img src={{ asset('images/kyi.jpeg') }} alt="" />
                 </div>
                 <div class="col-lg-8">
                   <div class="testi_text">
-                    <h4>Davil Saden</h4>
+                    <h4>Dr. Kyi Kyi Win</h4>
+                    <h5><a href="/">Video Title</a></h5>
                     <p>
                       Him, made can't called over won't there on divide there
                       male fish beast own his day third seed sixth seas unto.
@@ -844,11 +927,12 @@
             <div class="testi_item">
               <div class="row">
                 <div class="col-lg-4 col-md-6">
-                  <img src="img/testimonials/t1.jpg" alt="" />
+                <img src={{ asset('images/hnin.jpeg') }} alt="" />
                 </div>
                 <div class="col-lg-8">
                   <div class="testi_text">
-                    <h4>Elite Martin</h4>
+                    <h4>Daw Hnin Yi Aye</h4>
+                    <h5><a href="/">Video Title</a>
                     <p>
                       Him, made can't called over won't there on divide there
                       male fish beast own his day third seed sixth seas unto.
@@ -861,11 +945,12 @@
             <div class="testi_item">
               <div class="row">
                 <div class="col-lg-4 col-md-6">
-                  <img src="img/testimonials/t2.jpg" alt="" />
+                <img src={{ asset('images/khet.jpg') }} alt="" />
                 </div>
                 <div class="col-lg-8">
                   <div class="testi_text">
-                    <h4>Davil Saden</h4>
+                    <h4>Dr. Khin Khat Khat Kyaw</h4>
+                    <h5><a href="/">Video Title</a></h5>
                     <p>
                       Him, made can't called over won't there on divide there
                       male fish beast own his day third seed sixth seas unto.
@@ -878,11 +963,12 @@
             <div class="testi_item">
               <div class="row">
                 <div class="col-lg-4 col-md-6">
-                  <img src="img/testimonials/t1.jpg" alt="" />
+                <img src={{ asset('images/may.jpg') }} alt="" />
                 </div>
                 <div class="col-lg-8">
                   <div class="testi_text">
-                    <h4>Elite Martin</h4>
+                    <h4>Dr. May Cho Aye</h4>
+                    <h5><a href="/">Video Title</a></h5>
                     <p>
                       Him, made can't called over won't there on divide there
                       male fish beast own his day third seed sixth seas unto.
@@ -895,11 +981,12 @@
             <div class="testi_item">
               <div class="row">
                 <div class="col-lg-4 col-md-6">
-                  <img src="img/testimonials/t2.jpg" alt="" />
+                <img src={{ asset('images/ni.jpg') }} alt="" />
                 </div>
                 <div class="col-lg-8">
                   <div class="testi_text">
-                    <h4>Davil Saden</h4>
+                    <h4>Daw Ni Ni Win</h4>
+                    <h5><a href="/">Video Title</a></h5>
                     <p>
                       Him, made can't called over won't there on divide there
                       male fish beast own his day third seed sixth seas unto.

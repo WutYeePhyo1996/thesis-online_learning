@@ -65,19 +65,19 @@
                       >
                       <ul class="dropdown-menu">
                         <li class="nav-item">
-                          <a class="nav-link" href={{url('/about')}}>Assignment 1</a>
+                          <a class="nav-link" href={{url('/')}}>Assignment 1</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href={{url('/about')}}
+                          <a class="nav-link" href={{url('/')}}
                             > Assignment 2</a
                           >
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href={{url('/about')}}>Elements</a>
+                          <a class="nav-link" href={{url('/')}}>Elements</a>
                         </li>
                       </ul>
                   <li class="nav-item">
-                      <a class="nav-link" href={{url('/about')}}>Lessons</a>
+                      <a class="nav-link" href={{url('/client_speakers')}}>Lessons</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href={{url('/about')}}>News & Events</a>

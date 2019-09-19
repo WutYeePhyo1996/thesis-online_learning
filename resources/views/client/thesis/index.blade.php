@@ -15,8 +15,8 @@
             <div class="banner_content text-center">
               <h2>Thesis</h2>
               <div class="page_link">
-                <a href="index.html">Home</a>
-                <a href="about-us.html">Thesis</a>
+                <a href="{{url('/')}}">Home</a>
+                <a href="{{url('/thesis')}}">Thesis</a>
               </div>
             </div>
           </div>
@@ -29,7 +29,7 @@
   <!--================ Start About Area =================-->
   <section class="about_area section_gap">
     <div class="container">
-        <div class="row">
+        <div class="row" >
     @foreach($theses as $thesis)
        
         <div class="col-3 mb-2">

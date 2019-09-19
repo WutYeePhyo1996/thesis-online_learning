@@ -36,7 +36,7 @@
                     
                     
                     <td>
-                      <span class="badge badge-dark">Inactive</span>
+                     {{$lesson->created_at}}
                     </td>
                     <td>
                             {!! Form::open(array('url' => route('audio_lessons.destroy', $lesson->id),'method' => 'DELETE', 'class'=> '')) !!}

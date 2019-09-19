@@ -178,7 +178,7 @@
             <i class="icon-envelope-letter"></i>
             <span class="badge badge-pill badge-info">7</span>
           </a>
-          <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+          <!-- <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
             <div class="dropdown-header text-center">
               <strong>You have 4 messages</strong>
             </div>
@@ -250,7 +250,7 @@
             <a class="dropdown-item text-center" href="#">
               <strong>View all messages</strong>
             </a>
-          </div>
+          </div> -->
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
