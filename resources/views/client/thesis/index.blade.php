@@ -60,7 +60,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-5">
           <div class="main_title">
-            <h2 class="mb-3 text-white">wut yee phyo idiot</h2>
+            <h2 class="mb-3 text-white">Information Technology Department</h2>
             <p>
               Replenish man have thing gathering lights yielding shall you
             </p>
