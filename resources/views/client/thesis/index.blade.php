@@ -30,8 +30,9 @@
   <section class="about_area section_gap">
     <div class="container">
         <div class="row" >
+
     @foreach($theses as $thesis)
-       
+
         <div class="col-3 mb-2">
 
             <div class="card" >
@@ -42,12 +43,11 @@
                 <p class="card-text">Authors : {{$thesis->author}} </p>
                 <p class="card-text">downloads: <a href="{{ $thesis->filePath() }}">{{ $thesis->file }}</a> </p>
 
-                      
+
                 </div>
             </div>
         </div>
     @endforeach
-        
     </div>
     </div>
 

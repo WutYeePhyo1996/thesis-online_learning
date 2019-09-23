@@ -10,21 +10,25 @@ use Storage;
 
 class ThesisController extends Controller
 {
-    
-    public function index()
+    public function __construct()
     {
-        $all_thesis = \App\Thesis::all();
-        return view('admin.thesis.index', compact('all_thesis'));
+        $this->middleware(['admin', 'isAdmin']);
     }
 
-    
+    public function index()
+    {
+        $theses = \App\Thesis::all();
+        return view('admin.thesis.index', compact('theses'));
+    }
+
+
     public function create()
     {
         $thesis = new Thesis;
         return view('admin.thesis.create-edit', compact('thesis'));
     }
 
-    
+
     public function store(ThesisFormStore $request)
     {
         $path = "/public/pdf";
@@ -37,20 +41,20 @@ class ThesisController extends Controller
         return redirect('secureadmin/thesis');
     }
 
-    
+
     public function show($id)
     {
-        
+
     }
 
-    
+
     public function edit($id)
     {
         $thesis = Thesis::findorFail($id);
         return view('admin.thesis.create-edit', compact('thesis'));
     }
 
-    
+
     public function update(ThesisFormUpdate $request, $id)
     {
         $old_thesis = Thesis::findorFail($id);
@@ -61,7 +65,7 @@ class ThesisController extends Controller
         return redirect('secureadmin/thesis');
     }
 
-    
+
     public function destroy($id)
     {
         $data = Thesis::findOrFail($id);

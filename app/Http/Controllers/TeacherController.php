@@ -10,19 +10,16 @@ use Storage;
 
 class TeacherController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
+    public function __construct()
+    {
+        $this->middleware(['admin', 'isAdmin']);
+    }
+
     public function index()
     {
-<<<<<<< HEAD
-        $teachers = Teacher::all();
-        return view ('admin.teacher.index', compact('teachers'));
-=======
-        return 'teacher';
->>>>>>> 299caa43e8c1a0665887470df3f67c865ac044bb
+        // $teachers = Teacher::all();
+        // return view ('admin.teacher.index', compact('teachers'));
     }
 
     /**
@@ -33,7 +30,7 @@ class TeacherController extends Controller
     public function create()
     {
         $teacher = new Teacher;
-       
+
         return view('admin.teacher.create-edit', compact('teacher'));
     }
 
@@ -44,12 +41,12 @@ class TeacherController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    { 
+    {
         $path = "/public/teachers";
         $file = $request->file;
         $data = $request->all();
         $data['file'] = $file->getClientOriginalName();
-        
+
         Teacher::create($data);
         UploadService::fileUpload($file, $path);
         return redirect('secureadmin/teacher');

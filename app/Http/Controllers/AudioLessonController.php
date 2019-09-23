@@ -9,7 +9,12 @@ use Storage;
 
 class AudioLessonController extends Controller
 {
-  
+
+    public function __construct()
+    {
+        $this->middleware(['admin', 'isAdmin']);
+    }
+
     public function index()
     {
         $lessons = AudioLesson::all();
@@ -23,7 +28,7 @@ class AudioLessonController extends Controller
         return view('admin.audio_lessons.create', compact('lesson', 'speakers'));
     }
 
-  
+
     public function store(Request $request)
     {
         $path = "/public/audios";
@@ -41,7 +46,7 @@ class AudioLessonController extends Controller
         //
     }
 
-  
+
     public function edit($id)
     {
         $lesson = AudioLesson::findOrFail($id);
@@ -49,7 +54,7 @@ class AudioLessonController extends Controller
         return view('admin.audio_lessons.create', compact('lesson', 'speakers'));
     }
 
- 
+
     public function update(Request $request, $id)
     {
         $data = $request->all();

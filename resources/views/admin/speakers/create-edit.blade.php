@@ -10,13 +10,13 @@
             @csrf
     @else
     <form action="{{route('speakers.store')}}" method="post">
-        
+
             @csrf
     @endif
-        
+
                 <div class="card">
                         <div class="card-header">
-                          <strong>Normal</strong> Form</div>
+                          <strong>Speaker</strong> Form</div>
                         <div class="card-body">
                             <div class="form-group">
                               <label for="nf-email">Name</label>

@@ -1,15 +1,6 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+
 
 
 
@@ -23,26 +14,30 @@ Route::group(['prefix' => 'secureadmin'], function () {
     Route::resource('/speakers','SpeakerController');
     Route::resource('/thesis','ThesisController');
     Route::resource('/teacher','TeacherController');
+    Route::resource('/eventType', 'EventTypeController');
+    Route::resource('/event', 'EventController');
     Route::post('login','AdminController@postLogin')->name('adminLogin');
 });
 
 
 
+Route::get('/about', 'client\PageController@about');
+Route::get('/contact', 'client\PageController@contact');
+Route::get('/thesis', 'client\PageController@thesis');
 
 
-Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/about', function() {
-    $active = 'about';
-    return view('client.about',compact('active'));
-});
-Route::resource('/', 'client\TeacherController');
-Route::get('/contact', function() {
-    $active = 'contact';
-    return view('client.contact',compact('active'));
-});
+// Route::get('/about', function() {
+//     $active = 'about';
+//     return view('client.about',compact('active'));
+// });
+// Route::resource('/', 'client\TeacherController');
+// Route::get('/contact', function() {
+//     $active = 'contact';
+//     return view('client.contact',compact('active'));
+// });
 
-Route::get('/thesis', 'client\ThesisController@index');
-Route::post('/thesis/search', 'client\ThesisController@search');
+// Route::get('/thesis', 'client\ThesisController@index');
+// Route::post('/thesis/search', 'client\ThesisController@search');
 
-Route::resource('/client_speakers', 'client\SpeakerController');
+// Route::resource('/client_speakers', 'client\SpeakerController');

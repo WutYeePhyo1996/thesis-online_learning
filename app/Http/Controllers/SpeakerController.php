@@ -8,6 +8,11 @@ use App\Speaker;
 class SpeakerController extends Controller
 {
 
+    public function __construct()
+    {
+        $this->middleware(['admin', 'isAdmin']);
+    }
+
     public function index()
     {
         $speakers = Speaker::all();
@@ -26,12 +31,12 @@ class SpeakerController extends Controller
         Speaker::create($request->all());
         return redirect('secureadmin/speakers');
     }
- 
+
     public function show($id)
     {
         //
     }
- 
+
     public function edit($id)
     {
         $speaker = Speaker::findOrFail($id);
@@ -41,7 +46,7 @@ class SpeakerController extends Controller
     public function update(Request $request, $id)
     {
         Speaker::findOrFail($id)->update($request->all());
-        return redirect('secureadmin/speakers'); 
+        return redirect('secureadmin/speakers');
     }
 
     public function destroy($id)

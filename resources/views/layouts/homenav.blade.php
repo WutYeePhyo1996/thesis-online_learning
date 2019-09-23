@@ -20,7 +20,7 @@
               </form>
             </div>
           </div>
-  
+
           <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
               <!-- Brand and toggle get grouped for better mobile display -->
