@@ -20,12 +20,12 @@ Route::group(['prefix' => 'secureadmin'], function () {
 });
 
 
-
+// ================ Client =================
 Route::get('/about', 'client\PageController@about');
 Route::get('/contact', 'client\PageController@contact');
 Route::get('/thesis', 'client\PageController@thesis');
-
-
+Route::get('/client_speakers', 'client\PageController@client_speaker');
+// ================End Client =================
 
 // Route::get('/about', function() {
 //     $active = 'about';

@@ -23,4 +23,10 @@ class PageController extends Controller
                 ->withTheses(\App\Thesis::all());
     }
 
+    public function client_speaker(){
+        return view('client.audio_lessons.speakers')
+                ->withSpeakers(\App\Speaker::all());
+
+    }
+
 }
