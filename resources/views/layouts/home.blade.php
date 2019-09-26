@@ -299,7 +299,7 @@
 
 
            <!-- <div class="col-lg-3 col-md-6 col-sm-12 single-trainer"> -->
-          <!-- @foreach($teacher as $teach)
+          {{-- @foreach($teacher as $teach)
             <div class="thumb d-flex justify-content-sm-center">
               <img class="img-fluid" src="{{asset('/storage/teachers/'. $teach->file)}}" alt=""/>
             </div>
@@ -320,7 +320,7 @@
               </div>
             </div>
           </div>
-          @endforeach  -->
+          @endforeach   --}}
 
           <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
             <div class="thumb d-flex justify-content-sm-center">

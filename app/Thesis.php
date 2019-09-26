@@ -11,7 +11,7 @@ class Thesis extends Model
         'title',
         'author',
         'academic_year',
-        'description',
+        'rollno',
         'abstract',
         'file',
     ];

@@ -29,4 +29,12 @@ class PageController extends Controller
 
     }
 
+    public function home(){
+        return view('client.home');
+    }
+
+    public function thesis_link(){
+        return view('client.thesis.thesis_link')
+                ->withTheses(\App\Thesis::all());
+    }
 }

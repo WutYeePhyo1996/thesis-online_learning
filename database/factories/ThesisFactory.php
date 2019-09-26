@@ -9,9 +9,9 @@ $factory->define(Thesis::class, function (Faker $faker) {
     return [
         'title' => $faker->word(),
         'author' => $faker->name(),
-        'academic_year' => '2009',
-        'description' => $faker->paragraph(),
+        'academic_year' => '2018',
+        'rollno' => $faker->randomDigit(),
         'abstract' => $faker->paragraph(),
-        'file' => 'the-basics-of-ux-design.pdf',
+        'file' => 'defaulthesis.pdf'
     ];
 });

@@ -3,8 +3,6 @@
 
 @section('content')
 
-
-
 <!--================Home Banner Area =================-->
 <section class="banner_area">
     <div class="banner_inner d-flex align-items-center">
@@ -16,7 +14,7 @@
               <h2>Thesis</h2>
               <div class="page_link">
                 <a href="{{url('/')}}">Home</a>
-                <a href="{{url('/thesis')}}">Thesis Detail</a>
+                <a href="{{url('/thesis_link')}}">Thesis</a>
               </div>
             </div>
           </div>
@@ -24,10 +22,10 @@
       </div>
     </div>
   </section>
-  <!--================End Home Banner Area =================-->
+<!--================End Home Banner Area =================-->
 
-  <!--================ Start About Area =================-->
-  <section class="about_area section_gap">
+ <!--================ Start About Area =================-->
+ <section class="about_area section_gap">
     <div class="container">
         <div class="row" >
 
@@ -37,13 +35,8 @@
 
             <div class="card" >
                 <div class="card-body">
-                <h5 class="card-title">{{$thesis->title}}</h5>
-                <h5 class="card-title">File :{{$thesis->file}}</h5>
-
-                <p class="card-text">Authors : {{$thesis->author}} </p>
-                <p class="card-text">downloads: <a href="{{ $thesis->filePath() }}">{{ $thesis->file }}</a> </p>
-
-
+                <h5 class="card-title">{{$thesis->id}} .</h5>
+                <h5 class="card-title">File :{{$thesis->title}}</h5>
                 </div>
             </div>
         </div>
@@ -55,7 +48,7 @@
   </section>
   <!--================ End About Area =================-->
 
-<section class="feature_area section_gap_top title-bg">
+  <section class="feature_area section_gap_top title-bg">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-5">
@@ -110,3 +103,4 @@
     </div>
   </section>
 @endsection
+
