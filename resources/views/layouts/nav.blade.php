@@ -21,7 +21,7 @@
               </form>
             </div>
           </div>
-  
+
           <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
               <!-- Brand and toggle get grouped for better mobile display -->
@@ -80,7 +80,7 @@
                       <a class="nav-link" href={{url('/client_speakers')}}>Lessons</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href={{url('/about')}}>News & Events</a>
+                      <a class="nav-link" href={{url('/event')}}>News & Events</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href={{url('/thesis')}}>Thesis Title</a>

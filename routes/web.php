@@ -27,6 +27,7 @@ Route::get('/thesis', 'client\PageController@thesis');
 Route::get('/client_speakers', 'client\PageController@client_speaker');
 Route::get('/', 'client\PageController@home');
 Route::get('/thesis_link', 'client\PageController@thesis_link');
+Route::get('/event','client\PageController@events');
 
 // ================End Client =================
 

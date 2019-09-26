@@ -91,7 +91,75 @@ class ThesisSeeder extends Seeder
             'rollno'        => 'VI.IT-58',
         ]);
 
+        factory('App\Thesis')->create([
+            'title'         => 'Education Learning System for Matriculation Students',
+            'rollno'        => 'VI.IT-5',
+        ]);
 
+        factory('App\Thesis')->create([
+            'title'         => 'WEB Development Based On PHP, HTML, JQUERY, JAVASCRIPT, CSS, BOOSTRAP (Little Lion Handmake World)',
+            'rollno'        => 'VI.IT-140',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Online Student Registration For WYTU Training Programme',
+            'rollno'        => 'VI.IT-8',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Product Analysis Of 3G Site',
+            'rollno'        => 'VI.IT-10',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Business Support System',
+            'rollno'        => 'VI.IT-83',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'IOT Based Fire Alert System',
+            'rollno'        => 'VI.IT-15',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Android Tic-Tac-Toe Game',
+            'rollno'        => 'VI.IT-74',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Flats/Hostels And Private Housing Rental Information System in Yangon',
+            'rollno'        => 'VI.IT-4',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'English For Kids Using Android Studio',
+            'rollno'        => 'VI.IT-35',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Online IT Quiz System',
+            'rollno'        => 'VI.IT-31',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Housing Society Mangement System ',
+            'rollno'        => 'VI.IT-73',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Online Food Ordering System',
+            'rollno'        => 'VI.IT-34',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Arduino Based Car Direction Control And Image Capturing System With SmartPhone',
+            'rollno'        => 'VI.IT-51',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Earquake Detector Alarm',
+            'rollno'        => 'VI.IT-76',
+        ]);
 
     }
 }

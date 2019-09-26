@@ -31,7 +31,7 @@
 
     @foreach($theses as $thesis)
 
-        <div class="col-3 mb-2">
+        <div class="col-6 mb-2">
 
             <div class="card" >
                 <div class="card-body">

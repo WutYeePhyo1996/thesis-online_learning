@@ -37,4 +37,9 @@ class PageController extends Controller
         return view('client.thesis.thesis_link')
                 ->withTheses(\App\Thesis::all());
     }
+
+    public function events(){
+        return view('client.event')
+                ->withEvents(\App\Event::all());
+    }
 }
