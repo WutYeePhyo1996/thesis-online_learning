@@ -18,6 +18,7 @@
               <th>Author</th>
               <th>file</th>
               <th>Academic Year</th>
+              <th>Abstract</th>
               <th>Actions</th>
             </tr>
           </thead>
@@ -32,6 +33,7 @@
               <td>
                 <span class="badge badge-dark">{{ $thesis->academic_year }}</span>
               </td>
+            <td>{{$thesis->abstract}}</td>
               <td>
                 <a class="btn btn-success" href="#">
                   <i class="fa fa-info"></i>

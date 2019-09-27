@@ -23,10 +23,11 @@ Route::group(['prefix' => 'secureadmin'], function () {
 // ================ Client =================
 Route::get('/about', 'client\PageController@about');
 Route::get('/contact', 'client\PageController@contact');
-Route::get('/thesis', 'client\PageController@thesis');
+Route::get('/thesis/{id}', 'client\PageController@thesis');
 Route::get('/client_speakers', 'client\PageController@client_speaker');
 Route::get('/', 'client\PageController@home');
 Route::get('/thesis_link', 'client\PageController@thesis_link');
+Route::get('/event_detail/{id}', 'client\PageController@event_detail');
 Route::get('/event','client\PageController@events');
 
 // ================End Client =================
