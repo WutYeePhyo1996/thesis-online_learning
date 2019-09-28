@@ -54,6 +54,8 @@
                     @csrf
                     <a href="{{route('event.edit', $event->id)}}" class="btn btn-info"><i class="fa fa-edit"></i></a>
 
+                    <a href="{{url('/secureadmin/event_images/'.$event->id)}}" class="btn btn-dark">Event Image</a>
+
                         <button class="btn btn-danger" type="submit"><i class="fa fa-trash"></i></button>
                     {!! Form::close() !!}
                     </td>

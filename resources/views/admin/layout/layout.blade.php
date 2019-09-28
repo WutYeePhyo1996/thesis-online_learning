@@ -22,6 +22,7 @@
     <!-- Icons-->
     <link href="{{asset('admin/vendors/@coreui/icons/css/coreui-icons.min.css')}}" rel="stylesheet">
     <link href="{{asset('admin/vendors/flag-icon-css/css/flag-icon.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/app.css')}}" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
@@ -351,6 +352,7 @@
     </footer>
     <!-- CoreUI and necessary plugins-->
     <script src="{{asset('admin/vendors/jquery/js/jquery.min.js')}}"></script>
+    @yield('script')
     <script src="{{asset('admin/vendors/popper.js/js/popper.min.js')}}"></script>
     <script src="{{asset('admin/vendors/bootstrap/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('admin/vendors/pace-progress/js/pace.min.js')}}"></script>

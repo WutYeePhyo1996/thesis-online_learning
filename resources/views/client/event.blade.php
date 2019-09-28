@@ -33,12 +33,12 @@
 
     @foreach($events as $event)
 
-        <div class="col-12 mb-2">
+        <div class="col-6 mb-2">
 
             <div class="card" >
                 <div class="card-body">
                 <h5 class="card-title">{{$event->name}}</h5>
-                <h5 class="card-title">{{str_limit($event->description, 90)}}</h5>
+                <p class="card-text">{{Str::limit($event->description, 90)}}</p>
 
                 {{-- <p class="card-text">Authors : {{$event->author}} </p>
                 <p class="card-text">downloads: <a href="{{ $event->filePath() }}">{{ $event->file }}</a> </p> --}}
