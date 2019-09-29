@@ -317,6 +317,13 @@
                    Event Type</a>
               </li>
 
+              
+              <li class="nav-item">
+                <a class="nav-link" href="{{route('eventType.index')}}">
+                    <i class="fas fa-user" aria-hidden="true"></i>
+                   User</a>
+              </li>
+
               <li class="nav-item">
                     <a class="nav-link" href="{{route('event.index')}}">
                         <i class="fas fa-calendar-alt" aria-hidden="true"></i>
