@@ -1,5 +1,25 @@
 <!--================ Start Header Menu Area =================-->
 <header class="header_area white-header">
+
+<style>
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu .dropdown-menu {
+    top:0;
+    left:100%;
+}
+</style>
+
+<script type="text/javascript">
+$('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    $(this).next('.dropdown-menu').toggle();
+});
+</script>
+
+
         <div class="main_menu">
           <div class="search_input" id="search_input_box">
             <div class="container">
@@ -76,9 +96,46 @@
                           <a class="nav-link" href={{url('/')}}>Elements</a>
                         </li>
                       </ul>
-                  <li class="nav-item">
-                      <a class="nav-link" href={{url('/client_speakers')}}>Lessons</a>
-                    </li>
+                  </li>
+
+                  <li class="nav-item submenu dropdown">
+                      <a
+                        href="#"
+                        class="nav-link dropdown-toggle"
+                        data-toggle="dropdown"
+                        role="button"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >Lecture</a
+                      >
+                      <ul class="dropdown-menu">
+                      <li class="nav-item">
+                          <a
+                          class="nav-link" href={{url('/1beit')}}>1BE-IT</a>                   </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/2beit')}}> 2BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/3beit')}}> 3BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/4beit')}}> 4BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/5beit')}}> 5BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/6beit')}}> VIT-IT</a>
+                        </li>
+                      
+                      </ul>
+                  </li>
+
                     <li class="nav-item">
                       <a class="nav-link" href={{url('/event')}}>News & Events</a>
                     </li>

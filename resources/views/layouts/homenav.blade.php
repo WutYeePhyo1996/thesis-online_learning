@@ -61,36 +61,52 @@
                       aria-expanded="false"
                       >Assignments</a
                     >
-                    <ul class="dropdown-menu">
-                      <li class="nav-item">
-                        <a class="nav-link" href={{url('/about')}}>Assignment 1</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href={{url('/about')}}
-                          > Assignment 2</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href={{url('/about')}}>Elements</a>
-                      </li>
-                    </ul>
+
                   </li>
-                   <li class="nav-item">
-                    <a class="nav-link" href={{url('/client_speakers')}}>Audio Lessons</a>
+                  <li class="nav-item submenu dropdown">
+                      <a
+                        href="#"
+                        class="nav-link dropdown-toggle"
+                        data-toggle="dropdown"
+                        role="button"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >Lecture</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li class="nav-item">
+                          <a
+                          class="nav-link" href={{url('/1beit')}}>1BE-IT</a>                    
+
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/2beit')}}> 2BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/3beit')}}> 3BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/4beit')}}> 4BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/5beit')}}> 5BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/6beit')}}> VIT-IT</a>
+                        </li>
+                      
+                      </ul>
                   </li>
+
                   <li class="nav-item">
                       <a class="nav-link" href={{url('/event')}}>News & Events</a>
                     </li>
-                  {{-- <li class="nav-item submenu dropdown">
-                    <a
-                      href="#"
-                      class="nav-link dropdown-toggle"
-                      data-toggle="dropdown"
-                      role="button"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      >News & Events</a
-                    > --}}
+
                     <!-- <ul class="dropdown-menu">
                       <li class="nav-item">
                         <a class="nav-link" href="blog.html"></a>

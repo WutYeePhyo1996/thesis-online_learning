@@ -12,6 +12,37 @@ class PageController extends Controller
         return view('client.about');
     }
 
+    public function onebeit()
+    {
+        return view('client.lecture.1beit');
+    }
+
+    public function twobeit()
+    {
+        return view('client.lecture.2beit');
+    }
+
+    public function threebeit()
+    {
+        return view('client.lecture.3beit');
+    }
+
+    public function fourbeit()
+    {
+        return view('client.lecture.4beit');
+    }
+
+    public function fivebeit()
+    {
+        return view('client.lecture.5beit');
+    }
+
+    public function sixbeit()
+    {
+        return view('client.lecture.6beit');
+    }
+
+
     public function contact()
     {
         return view('client.contact');

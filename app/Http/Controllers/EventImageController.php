@@ -29,10 +29,12 @@ class EventImageController extends Controller
     }
 
     public function create_file($id)
-    {
-        $event = Event::findOrFail($id);
+    { 
+        // $event = Event::findOrFail($id);
+
+        $event_images =new EventImage();
          $event =Event::all();
-        return view('admin/event_image/create_edit', compact('id', 'event'));
+        return view('admin/event_image/create_edit', compact('id', 'event_images','event'));
     }
 
 
@@ -53,7 +55,7 @@ class EventImageController extends Controller
             $data->save();
             UploadService::fileUpload($file, $path);
     }
-        return redirect('e-admin/event_images/'. $request->event_id);
+        return redirect('secureadmin/event_images/'. $request->event_id);
     }
 
 

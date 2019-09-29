@@ -2,10 +2,10 @@
 @section('content')
 <ol class="breadcrumb">
   <li class="breadcrumb-item">
-    <a href="{{url('/e-admin/events')}}">Event</a>
+    <a href="{{url('/secureadmin/events')}}">Event</a>
   </li>
   <li class="breadcrumb-item">
-    <a href="{{url('/e-admin/event_images/'. $id)}}">Event Image</a>
+    <a href="{{url('/secureadmin/event_images/'. $id)}}">Event Image</a>
   </li>
 </ol>
     <div class="row m-1" id="app">
@@ -19,7 +19,7 @@
                 </div>
                 <div class="card-body">
                     <div class="col-md-3 py-3">
-                        <a href="{{url('/e-admin/event_images/create/'.$id)}}" class="btn btn-info btn-ladda" data-style="slide-down">Create New</a>
+                        <a href="{{url('/secureadmin/event_images/create/'.$id)}}" class="btn btn-info btn-ladda" data-style="slide-down">Create New</a>
                     </div>
                     <div class="col-12">
 
@@ -40,11 +40,11 @@
                                 <td>
                                     <i class="icons mr-2 cui-file"></i><a href="{{asset('storage/event_img/'.$event_image->file_name)}}">{{$event_image->file_name}}</a>
                                 </td>
-                                {{-- <td> </td> --}}
+                              
                                 <td>
-                                  <form action="{{url('e-admin/event_images/'.$event_image->id)}}" method="POST">
+                                  <form action="{{url('secureadmin/event_images/'.$event_image->id)}}" method="POST">
                                     @csrf
-                                  {{-- <a href="{{url('e-admin/event_images/1')}}" class="btn btn-success">Detail</a> --}}
+                                  {{-- <a href="{{url('secureadmin/event_images/1')}}" class="btn btn-success">Detail</a> --}}
                                   @method('DELETE')
                                     <button class="btn btn-danger">Delete</button>
                                   </form>
