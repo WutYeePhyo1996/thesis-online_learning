@@ -23,17 +23,24 @@
                     <tbody>
                         
                         
-                        
+                        @foreach ($users as $user)
                         <tr>
-                            <td>Wut Yee Phyo Idiot</td>
-                            <td>wutyeephyoidiot@gmail.com</td>
-                            <td>Super Admin</td>
+                            <td>{{ $user->name }}</td>
+                            <td>{{ $user->email }}</td>
+                            <td>{{ $user->type }}</td>
                             
                             <td>
-                                <button class="btn btn-info">Edit</button>
-                                <button class="btn btn-danger">del</button>
+                                <a class="btn btn-info" href="{{route('user.edit', $user->id)}}">
+                                    <i class="fa fa-edit"></i>
+                                </a>
+                                {!! Form::open(array('url' => route('user.destroy', $user->id),'method' => 'DELETE', 'class'=> '')) !!}
+                                @csrf
+                                <button class="btn btn-danger" type="submit"><i class="fa fa-trash"></i></button>
+                                {!! Form::close() !!}
                             </td>
                         </tr>
+                        @endforeach
+                        
                         
                         
                     </tbody>

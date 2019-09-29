@@ -17,5 +17,11 @@ class UsersTableSeeder extends Seeder
             'email' => 'admin@gmail.com',
             'type'=>'admin'
         ]);
+
+        Factory('App\User')->create([
+            'name' => 'teacher',
+            'email' => 'teacher@gmail.com',
+            'type'=>'teacher'
+        ]);
     }
 }

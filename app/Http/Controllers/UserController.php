@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -13,7 +14,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('admin.user.index');
+        return view('admin.user.index')
+                ->withUsers(\App\User::all());
     }
 
     /**
@@ -23,7 +25,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.user.create-edit')
+                ->withUser(new \App\User);
     }
 
     /**
@@ -32,9 +35,17 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store()
     {
-        //
+        $user = request()->validate([
+            'name' => 'required',
+            'email' => 'required|unique:users,email',
+            'password' => 'required',
+            'type' => 'required'
+        ]);
+        $user['password'] = hash::make($user['password']);
+        \App\User::create($user);
+        return redirect('/secureadmin/user');
     }
 
     /**
@@ -56,7 +67,9 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        
+        return view('admin.user.create-edit')
+                ->withUser(\App\User::find($id));
     }
 
     /**
@@ -68,7 +81,14 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        request()->validate([
+            'name' => 'required',
+            'email' => 'required',
+            'password' => 'required',
+            'type' => 'required'
+        ]);
+        \App\user::find($id)->update($request->all());
+        return redirect('secureadmin/user');
     }
 
     /**
@@ -79,6 +99,7 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        \App\User::find($id)->delete();
+        return redirect('/secureadmin/user');
     }
 }
