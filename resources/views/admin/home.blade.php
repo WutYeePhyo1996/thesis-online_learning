@@ -23,7 +23,7 @@
             </div>
           </li>
         </ol>
-        <div class="container-fluid">
+        <!-- <div class="container-fluid">
           <div class="animated fadeIn">
             <div class="row">
               <div class="col-sm-6 col-lg-3">
@@ -46,9 +46,9 @@
                     <canvas class="chart" id="card-chart1" height="70"></canvas>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!-- /.col-->
-              <div class="col-sm-6 col-lg-3">
+              <!-- <div class="col-sm-6 col-lg-3">
                 <div class="card text-white bg-info">
                   <div class="card-body pb-0">
                     <button class="btn btn-transparent p-0 float-right" type="button">
@@ -61,9 +61,9 @@
                     <canvas class="chart" id="card-chart2" height="70"></canvas>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!-- /.col-->
-              <div class="col-sm-6 col-lg-3">
+              <!-- <div class="col-sm-6 col-lg-3">
                 <div class="card text-white bg-warning">
                   <div class="card-body pb-0">
                     <div class="btn-group float-right">
@@ -83,9 +83,9 @@
                     <canvas class="chart" id="card-chart3" height="70"></canvas>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!-- /.col-->
-              <div class="col-sm-6 col-lg-3">
+              <!-- <div class="col-sm-6 col-lg-3">
                 <div class="card text-white bg-danger">
                   <div class="card-body pb-0">
                     <div class="btn-group float-right">
@@ -105,19 +105,19 @@
                     <canvas class="chart" id="card-chart4" height="70"></canvas>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!-- /.col-->
             </div>
             <!-- /.row-->
-            <div class="card">
+            <!-- <div class="card">
               <div class="card-body">
                 <div class="row">
-                  <div class="col-sm-5">
+                  <div class="col-sm-5"> -->
                     <!-- <h4 class="card-title mb-0">Wut Yee Phyo Idiot <span><= who said that?</span></h4>  -->
-                    <div class="small text-muted">November 2017</div>
-                  </div>
+                    <!-- <div class="small text-muted">November 2017</div>
+                  </div> -->
                   <!-- /.col-->
-                  <div class="col-sm-7 d-none d-md-block">
+                  <!-- <div class="col-sm-7 d-none d-md-block">
                     <button class="btn btn-primary float-right" type="button">
                       <i class="icon-cloud-download"></i>
                     </button>
@@ -132,11 +132,11 @@
                         <input id="option3" type="radio" name="options" autocomplete="off"> Year
                       </label>
                     </div>
-                  </div>
+                  </div> -->
                   <!-- /.col-->
                 </div>
                 <!-- /.row-->
-                <div class="chart-wrapper" style="height:300px;margin-top:40px;">
+                <!-- <div class="chart-wrapper" style="height:300px;margin-top:40px;">
                   <canvas class="chart" id="main-chart" height="300"></canvas>
                 </div>
               </div>
@@ -179,9 +179,9 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
             <!-- /.card-->
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-sm-6 col-lg-3">
                 <div class="brand-card">
                   <div class="brand-card-header bg-facebook">
@@ -201,9 +201,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!-- /.col-->
-              <div class="col-sm-6 col-lg-3">
+              <!-- <div class="col-sm-6 col-lg-3">
                 <div class="brand-card">
                   <div class="brand-card-header bg-twitter">
                     <i class="fa fa-twitter"></i>
@@ -222,9 +222,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!-- /.col-->
-              <div class="col-sm-6 col-lg-3">
+              <!-- <div class="col-sm-6 col-lg-3">
                 <div class="brand-card">
                   <div class="brand-card-header bg-linkedin">
                     <i class="fa fa-linkedin"></i>
@@ -243,9 +243,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!-- /.col-->
-              <div class="col-sm-6 col-lg-3">
+              <!-- <div class="col-sm-6 col-lg-3">
                 <div class="brand-card">
                   <div class="brand-card-header bg-google-plus">
                     <i class="fa fa-google-plus"></i>
@@ -264,11 +264,11 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!-- /.col-->
-            </div>
+            <!-- </div> -->
             <!-- /.row-->
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-md-12">
                 <div class="card">
                   <div class="card-header">Traffic & Sales</div>
@@ -285,9 +285,9 @@
                                 <canvas id="sparkline-chart-1" width="100" height="30"></canvas>
                               </div>
                             </div>
-                          </div>
+                          </div> -->
                           <!-- /.col-->
-                          <div class="col-sm-6">
+                          <!-- <div class="col-sm-6">
                             <div class="callout callout-danger">
                               <small class="text-muted">Recuring Clients</small>
                               <br>
@@ -296,11 +296,11 @@
                                 <canvas id="sparkline-chart-2" width="100" height="30"></canvas>
                               </div>
                             </div>
-                          </div>
+                          </div> -->
                           <!-- /.col-->
-                        </div>
+                        <!-- </div> -->
                         <!-- /.row-->
-                        <hr class="mt-0">
+                        <!-- <hr class="mt-0">
                         <div class="progress-group mb-4">
                           <div class="progress-group-prepend">
                             <span class="progress-group-text">Monday</span>
@@ -392,9 +392,9 @@
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
                       <!-- /.col-->
-                      <div class="col-sm-6">
+                      <!-- <div class="col-sm-6">
                         <div class="row">
                           <div class="col-sm-6">
                             <div class="callout callout-warning">
@@ -405,9 +405,9 @@
                                 <canvas id="sparkline-chart-3" width="100" height="30"></canvas>
                               </div>
                             </div>
-                          </div>
+                          </div> -->
                           <!-- /.col-->
-                          <div class="col-sm-6">
+                          <!-- <div class="col-sm-6">
                             <div class="callout callout-success">
                               <small class="text-muted">Organic</small>
                               <br>
@@ -416,12 +416,12 @@
                                 <canvas id="sparkline-chart-4" width="100" height="30"></canvas>
                               </div>
                             </div>
-                          </div>
+                          </div> -->
                           <!-- /.col-->
                         </div>
                         <!-- /.row-->
-                        <hr class="mt-0">
-                        <div class="progress-group">
+                        <!-- <hr class="mt-0"> -->
+                        <!-- <div class="progress-group">
                           <div class="progress-group-header">
                             <i class="icon-user progress-group-icon"></i>
                             <div>Male</div>
@@ -497,11 +497,11 @@
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
                       <!-- /.col-->
-                    </div>
+                    <!-- </div> -->
                     <!-- /.row-->
-                    <br>
+                    <!-- <br>
                     <table class="table table-responsive-sm table-hover table-outline mb-0">
                       <thead class="thead-light">
                         <tr>
@@ -736,12 +736,12 @@
                     </table>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!-- /.col-->
-            </div>
+            <!-- </div> -->
             <!-- /.row-->
-          </div>
-        </div>
+          <!-- </div>
+        </div> -->
 
 
 @endsection

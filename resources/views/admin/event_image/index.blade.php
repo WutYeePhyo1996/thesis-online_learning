@@ -38,7 +38,7 @@
                                 <td>{{ $event_image->id}}</td>
                                 <td>{{$event_image->created_at}}</td>
                                 <td>
-                                    <i class="icons mr-2 cui-file"></i><a href="{{asset('storage/event_img/'.$event_image->file_name)}}">{{$event_image->file_name}}</a>
+                                    <i class="icons mr-2 cui-file"></i><a href="{{asset('/storage/event_image/'.$event_image->file)}}">{{$event_image->file}}</a>
                                 </td>
                               
                                 <td>

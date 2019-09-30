@@ -8,7 +8,6 @@
                           <strong>Create New Event Image</strong> </div>
                         <div class="card-body">
                                 <form action="{{url('secureadmin/event_images')}}" method="post" enctype="multipart/form-data">
-                                <!-- <form action="{{url('e-admin/event_images')}}" method="post" enctype="multipart/form-data"> -->
                                @csrf
 
                                 <fieldset class="form-group col-12">
@@ -34,7 +33,7 @@
                                             <i class="fa fa-sticky-note"></i>
                                             </span>
                                             </span>
-                                            <input class="form-control" type="file" name="file_name[]">
+                                            <input class="form-control" type="file" name="file">
                                         </div>
                                     </transition-group>
 

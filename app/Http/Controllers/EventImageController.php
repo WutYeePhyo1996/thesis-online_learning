@@ -1,8 +1,11 @@
 <?php
-
+namespace App\Service;
 namespace App\Http\Controllers;
 use App\{Event, EventImage};
 use Illuminate\Http\Request;
+// use Illuminate\Http\UploadService\Controller;
+use App\Service\UploadService;
+use Storage,Service;
 
 
 class EventImageController extends Controller
@@ -41,16 +44,13 @@ class EventImageController extends Controller
      */
     public function store(Request $request)
     {
-        $files = $request->file;
-        $path = '/public/event_image';
-        // foreach($files as $file){
-            $data = new EventImage;
-            $data->event_id = $request->event_id;
-            $data->file_name = $file->getClientOriginalName();
-            $data->save();
-            UploadService::fileUpload($files, $path);
-    // }
+        $path = "/public/event_image";
+        $file = $request->file;
+        $data = $request->all();
+        $data['file'] = $file->getClientOriginalName();
 
+        EventImage::create($data);
+        UploadService::fileUpload($file, $path);
         return redirect('secureadmin/event_images/'. $request->event_id);
     }
 

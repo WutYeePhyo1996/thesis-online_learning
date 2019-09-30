@@ -115,7 +115,7 @@
                     </a>
                   </div>
                 </li>
-                <li class="nav-item dropdown d-md-down-none">
+                <!-- <li class="nav-item dropdown d-md-down-none">
                   <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="icon-list"></i>
                     <span class="badge badge-pill badge-warning">15</span>
@@ -183,7 +183,7 @@
                   <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="icon-envelope-letter"></i>
                     <span class="badge badge-pill badge-info">7</span>
-                  </a>
+                  </a> -->
                   <!-- <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
                     <div class="dropdown-header text-center">
                       <strong>You have 4 messages</strong>
@@ -321,7 +321,7 @@
                                 <i class="fas fa-edit" aria-hidden="true"></i>
                                 Assignment
                                 </a> 
-                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"  style="background-color:#002347;">
                                 <li class="nav-item">
                                 <a class="nav-link" href="{{route('eventType.index')}}">
                                 <i class="fas fa-edit" aria-hidden="true"></i> 1BE-IT</a>

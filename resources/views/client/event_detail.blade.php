@@ -30,13 +30,17 @@
   <section class="about_area section_gap">
     <div class="container">
         <div class="row" >
-
         <div class="col-12 mb-2">
 
             <div class="card" >
                 <div class="card-body">
                 <h5 class="card-title text-center">{{$event->name}}</h5>
                 <p class="card-text">Description : {{$event->description}} </p>
+                @foreach($event->event_imgs as $event_img)
+                <div class="col-md-4">
+                  <img class="" src="{{asset('/storage/event_image/'.$event_img->file)}}" alt="..." width="300px" height="300px" style="margin-bottom: 20px">
+              </div>
+              @endforeach
 
                 </div>
             </div>
