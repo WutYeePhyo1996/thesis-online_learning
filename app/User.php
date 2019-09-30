@@ -12,9 +12,14 @@ class User extends Authenticatable
     
     const ADMIN_TYPE = 'admin';
     const DEFAULT_TYPE = 'default';
+    const TEACHER_TYPE = 'teacher';
 
     public function isAdmin()    {        
         return $this->type === self::ADMIN_TYPE;    
+    }
+    public function isTeacher()
+    {
+        return $this->type === self::TEACHER_TYPE;
     }
     /**
     * The attributes that are mass assignable.
@@ -22,7 +27,7 @@ class User extends Authenticatable
     * @var array
     */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','type'
     ];
     
     

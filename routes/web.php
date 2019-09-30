@@ -10,6 +10,7 @@ Route::group(['prefix' => 'secureadmin'], function () {
     Route::get('home','AdminController@index');
     Route::get('login','AdminController@login');
     Route::get('/','AdminController@index');
+    Route::resource('user','UserController');
     Route::resource('/audio_lessons','AudioLessonController');
     Route::resource('/speakers','SpeakerController');
     Route::resource('/thesis','ThesisController');
