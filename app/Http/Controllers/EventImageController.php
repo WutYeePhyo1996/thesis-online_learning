@@ -4,13 +4,10 @@ namespace App\Http\Controllers;
 use App\{Event, EventImage};
 use Illuminate\Http\Request;
 
+
 class EventImageController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+  
     public function index()
     {
         $event_images =EventImage::all();
@@ -30,11 +27,9 @@ class EventImageController extends Controller
 
     public function create_file($id)
     { 
-        // $event = Event::findOrFail($id);
-
-        $event_images =new EventImage();
-         $event =Event::all();
-        return view('admin/event_image/create_edit', compact('id', 'event_images','event'));
+        $event = Event::where('id',$id)->first();
+        $event_images = EventImage::where('event_id', $id)->get();
+        return view('admin/event_image/create_edit', compact('id', 'event','event_images'));
     }
 
 
@@ -48,13 +43,14 @@ class EventImageController extends Controller
     {
         $files = $request->file;
         $path = '/public/event_image';
-        foreach($files as $file){
+        // foreach($files as $file){
             $data = new EventImage;
             $data->event_id = $request->event_id;
             $data->file_name = $file->getClientOriginalName();
             $data->save();
-            UploadService::fileUpload($file, $path);
-    }
+            UploadService::fileUpload($files, $path);
+    // }
+
         return redirect('secureadmin/event_images/'. $request->event_id);
     }
 

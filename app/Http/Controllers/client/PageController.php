@@ -67,7 +67,8 @@ class PageController extends Controller
     }
 
     public function home(){
-        return view('client.home');
+        $events = Event::all();
+        return view('client.home', compact('events'));
     }
 
     public function thesis_link(){

@@ -8,6 +8,8 @@
                           <strong>Create New Event Image</strong> </div>
                         <div class="card-body">
                                 <form action="{{url('secureadmin/event_images')}}" method="post" enctype="multipart/form-data">
+                                <!-- <form action="{{url('e-admin/event_images')}}" method="post" enctype="multipart/form-data"> -->
+                               @csrf
 
                                 <fieldset class="form-group col-12">
                                     <div class="form-group">
@@ -37,7 +39,6 @@
                                     </transition-group>
 
                             </fieldset>
-
                             <div class="card-footer">
                                     <button class="btn btn-sm btn-primary" type="submit">
                                       <i class="fa fa-dot-circle-o"></i> Submit</button>

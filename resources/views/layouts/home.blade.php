@@ -888,7 +888,7 @@
 
         <div class="row">
           <div class="testi_slider owl-carousel">
-            <div class="testi_item">
+            <!-- <div class="testi_item">
               <div class="row">
                 <div class="col-lg-4 col-md-6">
                   <img src={{ asset('images/cho.jpeg') }} alt="" />
@@ -905,7 +905,8 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
+            @foreach($events as $event)
             <div class="testi_item">
               <div class="row">
                 <div class="col-lg-4 col-md-6">
@@ -913,18 +914,20 @@
                 </div>
                 <div class="col-lg-8">
                   <div class="testi_text">
-                    <h4>Dr. Kyi Kyi Win</h4>
+                    <h4>{{$event->name}}</h4>
                     <h5><a href="/">Video Title</a></h5>
                     <p>
-                      Him, made can't called over won't there on divide there
+                      <!-- Him, made can't called over won't there on divide there
                       male fish beast own his day third seed sixth seas unto.
-                      Saw from
+                      Saw from -->
+                      {{$event->description}}
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="testi_item">
+            @endforeach
+            <!-- <div class="testi_item">
               <div class="row">
                 <div class="col-lg-4 col-md-6">
                 <img src={{ asset('images/hnin.jpeg') }} alt="" />
@@ -995,7 +998,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

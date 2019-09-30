@@ -316,11 +316,44 @@
                             @endif
                             
                             
-                            <li class="nav-item">
-                              <a class="nav-link" href="{{route('eventType.index')}}">
+                            <li class="nav-item dropdown">
+                             <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{{route('eventType.index')}}"> 
                                 <i class="fas fa-edit" aria-hidden="true"></i>
-                                Assignment</a>
+                                Assignment
+                                </a> 
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="nav-item">
+                                <a class="nav-link" href="{{route('eventType.index')}}">
+                                <i class="fas fa-edit" aria-hidden="true"></i> 1BE-IT</a>
+                                </li>
+
+                                <li class="nav-item">
+                                <a class="nav-link" href="{{route('eventType.index')}}">
+                                <i class="fas fa-edit" aria-hidden="true"></i>2BE-IT</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="{{route('eventType.index')}}">
+                                <i class="fas fa-edit" aria-hidden="true"></i>3BE-IT</a>
+                                </li>
+
+                                <li class="nav-item">
+                                <a class="nav-link" href="{{route('eventType.index')}}">
+                                <i class="fas fa-edit" aria-hidden="true"></i>4BE-IT</a>
+                                </li>
+
+                                <li class="nav-item">
+                                <a class="nav-link" href="{{route('eventType.index')}}">
+                                <i class="fas fa-edit" aria-hidden="true"></i>5BE-IT</a>
+                                </li>
+
+                                <li class="nav-item">
+                                <a class="nav-link" href="{{route('eventType.index')}}">
+                                <i class="fas fa-edit" aria-hidden="true"></i> VIT-IT</a>
+                                </li>
+                              </ul>
                               </li>
+
+                       
                               
 
                             @if(auth()->user()->isAdmin())
