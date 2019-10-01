@@ -33,7 +33,7 @@
                                             <i class="fa fa-sticky-note"></i>
                                             </span>
                                             </span>
-                                            <input class="form-control" type="file" name="file">
+                                            <input class="form-control" type="file" name="file[]">
                                         </div>
                                     </transition-group>
 

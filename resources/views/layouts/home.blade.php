@@ -878,7 +878,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-5">
             <div class="main_title">
-              <h2 class="mb-3">Video Lessons</h2>
+              <h2 class="mb-3">Latest Events</h2>
               <p>
                 Replenish man have thing gathering lights yielding shall you
               </p>
@@ -888,24 +888,6 @@
 
         <div class="row">
           <div class="testi_slider owl-carousel">
-            <!-- <div class="testi_item">
-              <div class="row">
-                <div class="col-lg-4 col-md-6">
-                  <img src={{ asset('images/cho.jpeg') }} alt="" />
-                </div>
-                <div class="col-lg-8">
-                  <div class="testi_text">
-                    <h4>Dr. Cho Cho Myint</h4>
-                    <h5><a href="/">Video Title</a></h5>
-                    <p>
-                      Him, made can't called over won't there on divide there
-                      male fish beast own his day third seed sixth seas unto.
-                      Saw from
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div> -->
             @foreach($events as $event)
             <div class="testi_item">
               <div class="row">

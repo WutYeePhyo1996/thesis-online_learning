@@ -34,6 +34,7 @@ class EventController extends Controller
     public function store(Request $request)
     {
         Event::create($request->all());
+
         return redirect('secureadmin/event');
     }
 

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\client;
-use App\{Thesis, Event};
+use App\{Thesis, Event, EventImage};
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -84,6 +84,7 @@ class PageController extends Controller
     public function event_detail($id)
     {
         $event = Event::where('id', $id)->first();
-        return view('client.event.index', compact('event'));
+        $event_images = EventImage::where('event_id', $id)->get();
+        return view('client.event_detail', compact('event', 'event_images'));
     }
 }
