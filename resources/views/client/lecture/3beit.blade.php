@@ -16,7 +16,7 @@
               <h2>Lecture</h2>
               <div class="page_link">
                 <a href="{{url('/')}}">Home</a>
-                <a href="{{url('/thesis')}}">1BE-IT</a>
+                <a href="{{url('/3beit')}}">3BE-IT</a>
               </div>
             </div>
           </div>

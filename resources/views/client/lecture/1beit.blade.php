@@ -16,7 +16,7 @@
               <h2>Lecture</h2>
               <div class="page_link">
                 <a href="{{url('/')}}">Home</a>
-                <a href="{{url('/thesis')}}">1BE-IT</a>
+                <a href="{{url('/1beit')}}">1BE-IT</a>
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@ tr, td, th{ border:solid 1px gray;}
                     </thead>
 
                     <tbody>
-                        <tr>
+                        <tr>beit
                         <th scope="row">Monday</th>
                         <td colspan="3" class="text-center">NPM</td>
                         <td></td>

@@ -45,9 +45,9 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
           <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
               <!-- Brand and toggle get grouped for better mobile display -->
-              <a class="navbar-brand" href="index.html">
-                <img class="logo-2" src="/img/logo2.png" alt="" />
-              </a>
+              <a class="navbar-brand logo_h" href={{url('/')}}
+                ><img src={{ asset('images/wytu.png') }} alt="" width="60px" height="75px"
+              /></a>
               <button
                 class="navbar-toggler"
                 type="button"
@@ -132,7 +132,7 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
                         <li class="nav-item">
                           <a class="nav-link" href={{url('/6beit')}}> VIT-IT</a>
                         </li>
-                      
+
                       </ul>
                   </li>
 

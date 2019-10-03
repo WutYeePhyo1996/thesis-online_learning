@@ -13,10 +13,10 @@
         <div class="row justify-content-center">
           <div class="col-lg-6">
             <div class="banner_content text-center">
-              <h2>Thesis</h2>
+              <h2>News & Events</h2>
               <div class="page_link">
                 <a href="{{url('/')}}">Home</a>
-                <a href="{{url('/thesis')}}">Thesis Detail</a>
+                <a href="{{url('/event')}}">News & Events</a>
               </div>
             </div>
           </div>

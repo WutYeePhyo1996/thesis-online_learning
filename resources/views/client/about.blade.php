@@ -15,8 +15,8 @@
             <div class="banner_content text-center">
               <h2>About Us</h2>
               <div class="page_link">
-                <a href="index.html">Home</a>
-                <a href="about-us.html">About Us</a>
+                <a href={{url('/')}}>Home</a>
+                <a href={{url('/about')}}>About Us</a>
               </div>
             </div>
           </div>
