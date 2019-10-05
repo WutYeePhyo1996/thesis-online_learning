@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
 
+  <script src="https://kit.fontawesome.com/yourcode.js"></script>
+
    <style type="text/css">
      .nav-link{ color:#fff; }
      .img-fluid1{ width:255px;
@@ -23,6 +25,15 @@
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+              <link href="css/pe-icon-7-stroke.css" rel="stylesheet" />
+              <link href="css/ct-navbar.css" rel="stylesheet" />
+
+              <script src="js/jquery-1.10.2.js"></script>
+              <script src="js/bootstrap.js"></script>
+              <script src="js/ct-navbar.js"></script>
+
   </head>
 
 
@@ -32,6 +43,7 @@
     <!--================ Start Home Banner Area =================-->
     <section class="home_banner_area">
       <div class="banner_inner">
+     
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
@@ -43,8 +55,8 @@
                   One Step Ahead This Season
                 </h2>
                 <div>
-                  <a href="#" class="primary-btn2 mb-3 mb-sm-0">learn more</a>
-                  <a href="#" class="primary-btn ml-sm-3 ml-0">see course</a>
+                  <a href="/about" class="primary-btn2 mb-3 mb-sm-0">learn more</a>
+                  <a href="#" class="primary-btn ml-sm-3 ml-0">See Course</a>
                 </div>
               </div>
             </div>

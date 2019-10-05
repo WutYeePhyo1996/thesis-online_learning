@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Assignment extends Model
 {
     protected $fillable= [
-        'file_name'
+        'file'
     ];
 }

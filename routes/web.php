@@ -18,6 +18,7 @@ Route::group(['prefix' => 'secureadmin'], function () {
     Route::resource('/eventType', 'EventTypeController');
     Route::resource('/event', 'EventController');
     Route::resource('/event_images', 'EventImageController');
+    Route::resource('/assignment', 'AssignmentController');
     Route::get('/event_images/create/{id}', 'EventImageController@create_file');
     Route::post('login','AdminController@postLogin')->name('adminLogin');
 });

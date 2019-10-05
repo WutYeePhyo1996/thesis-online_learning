@@ -19,7 +19,7 @@
                                         </div>
                                 </fieldset>
 
-                                       <fieldset class="form-group col-md-6 col-12">
+                            <fieldset class="form-group col-md-6 col-12">
                                     <label>Image</label>
                                 <div class="pull-right">
                                     <a id="add" @click="add" class="text-success cursor-pointer"><i class="fa fa-lg fa-plus-square"></i></a>

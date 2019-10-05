@@ -1,4 +1,7 @@
 <!--================ Start Header Menu Area =================-->
+    
+
+
 <header class="header_area">
         <div class="main_menu">
           <div class="search_input" id="search_input_box">
@@ -107,16 +110,6 @@
                       <a class="nav-link" href={{url('/event')}}>News & Events</a>
                     </li>
 
-                    <!-- <ul class="dropdown-menu">
-                      <li class="nav-item">
-                        <a class="nav-link" href="blog.html"></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="single-blog.html"
-                          >News Details</a
-                        >
-                      </li>
-                    </ul> -->
                   </li>
                    <li class="nav-item">
                     <a class="nav-link" href={{url('/thesis_link')}}>Thesis Title</a>
@@ -124,6 +117,11 @@
                   <li class="nav-item">
                     <a class="nav-link" href={{url('/contact')}}>Contact</a>
                   </li>
+
+                  <li class="nav-item">
+                  <a href="{{url('/secureadmin/')}}" class="nav-link"><i class="fa fa-fw fa-user ml-5" style="font-size:24px;" ></i> Login</a>
+                  </li>       
+
                   <li class="nav-item">
                     <a href="#" class="nav-link search" id="search">
                       <i class="ti-search"></i>
@@ -135,4 +133,6 @@
           </nav>
         </div>
       </header>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <!--================ End Header Menu Area =================-->

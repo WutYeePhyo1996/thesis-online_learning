@@ -25,7 +25,7 @@
 
     <!--================ Start Feature Area =================-->
    @include('layouts.feature')
-   <div style="background-color: aliceblue; padding:50px;"></div>
+   <!-- <div style="background-color: aliceblue; padding:50px;"></div> -->
 
     <!--================ End Feature Area =================-->
 
