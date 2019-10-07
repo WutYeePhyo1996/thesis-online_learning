@@ -176,50 +176,6 @@
                             <a class="nav-link" href="{{route('thesis.index')}}">
                               <i class="fas fa-book"></i>  Thesis</a>
                             </li>
-<<<<<<< HEAD
-                            
-                            @else
-                            
-                            <li class="nav-item dropdown">
-                             <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{{route('assignment.index')}}"> 
-                                <i class="fas fa-edit" aria-hidden="true"></i>
-                                Assignment
-                                </a> 
-                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"  style="background-color:#002347;">
-                                <li class="nav-item">
-                                <a class="nav-link" href="{{route('assignment.index')}}">
-                                <i class="fas fa-edit" aria-hidden="true"></i> 1BE-IT</a>
-                                </li>
-
-                                <li class="nav-item">
-                                <a class="nav-link" href="{{route('assignment.index')}}">
-                                <i class="fas fa-edit" aria-hidden="true"></i>2BE-IT</a>
-                                </li>
-                                <li class="nav-item">
-                                <a class="nav-link" href="{{route('assignment.index')}}">
-                                <i class="fas fa-edit" aria-hidden="true"></i>3BE-IT</a>
-                                </li>
-
-                                <li class="nav-item">
-                                <a class="nav-link" href="{{route('assignment.index')}}">
-                                <i class="fas fa-edit" aria-hidden="true"></i>4BE-IT</a>
-                                </li>
-
-                                <li class="nav-item">
-                                <a class="nav-link" href="{{route('assignment.index')}}">
-                                <i class="fas fa-edit" aria-hidden="true"></i>5BE-IT</a>
-                                </li>
-
-                                <li class="nav-item">
-                                <a class="nav-link" href="{{route('assignment.index')}}">
-                                <i class="fas fa-edit" aria-hidden="true"></i> VIT-IT</a>
-                                </li>
-                              </ul>
-                              </li>
-
-                       @endif
-                              
-=======
                             @endif
 
 
@@ -267,7 +223,6 @@
                     </li>
 
 
->>>>>>> c8d98907bf94c366dc1120f5fd0eee8765c907cb
 
                             @if(auth()->user()->isAdmin())
                             <li class="nav-item">
