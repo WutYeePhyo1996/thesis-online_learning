@@ -65,11 +65,10 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
                 class="collapse navbar-collapse offset"
                 id="navbarSupportedContent"
               >
-                <ul class="nav navbar-nav menu_nav ml-auto">
-                  <li class="nav-item">
+              <ul class="nav navbar-nav menu_nav ml-auto">
+                  <li class="nav-item active">
                     <a class="nav-link" href={{url('/')}}>Home</a>
                   </li>
-                  {{-- {{ $active == 'about'? 'active': '' }} --}}
                   <li class="nav-item">
                     <a class="nav-link" href={{url('/about')}}>About</a>
                   </li>
@@ -85,33 +84,10 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
                       >
                       <ul class="dropdown-menu">
                         <li class="nav-item">
-                          <a class="nav-link" href={{url('/')}}>Assignment 1</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href={{url('/')}}
-                            > Assignment 2</a
-                          >
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href={{url('/')}}>Elements</a>
-                        </li>
-                      </ul>
-                  </li>
-
-                  <li class="nav-item submenu dropdown">
-                      <a
-                        href="#"
-                        class="nav-link dropdown-toggle"
-                        data-toggle="dropdown"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Lecture</a
-                      >
-                      <ul class="dropdown-menu">
-                      <li class="nav-item">
                           <a
-                          class="nav-link" href={{url('/1beit')}}>1BE-IT</a>                   </li>
+                          class="nav-link" href={{url('/1beit')}}>1BE-IT</a>                    
+
+                        </li>
 
                         <li class="nav-item">
                           <a class="nav-link" href={{url('/2beit')}}> 2BE-IT</a>
@@ -132,19 +108,65 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
                         <li class="nav-item">
                           <a class="nav-link" href={{url('/6beit')}}> VIT-IT</a>
                         </li>
+                      
+                      </ul>
+                  </li>
+                  <li class="nav-item submenu dropdown">
+                      <a
+                        href="#"
+                        class="nav-link dropdown-toggle"
+                        data-toggle="dropdown"
+                        role="button"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >Lecture</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li class="nav-item">
+                          <a
+                          class="nav-link" href={{url('/1beit')}}>1BE-IT</a>                    
 
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/2beit')}}> 2BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/3beit')}}> 3BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/4beit')}}> 4BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/5beit')}}> 5BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/6beit')}}> VIT-IT</a>
+                        </li>
+                      
                       </ul>
                   </li>
 
-                    <li class="nav-item">
+                  <li class="nav-item">
                       <a class="nav-link" href={{url('/event')}}>News & Events</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href={{url('/thesis_link')}}>Thesis Title</a>
-                    </li>
-                  <li class="nav-item ">
+
+                  </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href={{url('/thesis_link')}}>Thesis Title</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href={{url('/contact')}}>Contact</a>
                   </li>
+
+                  <li class="nav-item">
+                  <a href="{{url('/secureadmin/')}}" class="nav-link"><i class="fa fa-fw fa-user ml-5" style="font-size:24px;" ></i> Login</a>
+                  </li>       
+
                   <li class="nav-item">
                     <a href="#" class="nav-link search" id="search">
                       <i class="ti-search"></i>
@@ -156,4 +178,6 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
           </nav>
         </div>
       </header>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <!--================ End Header Menu Area =================-->

@@ -36,9 +36,9 @@
                      {{$assignment->created_at}}
                     </td>
                     <td>
-                            {!! Form::open(array('url' => route('audio_assignments.destroy', $assignment->id),'method' => 'DELETE', 'class'=> '')) !!}
+                            {!! Form::open(array('url' => route('assignment.destroy', $assignment->id),'method' => 'DELETE', 'class'=> '')) !!}
                             @csrf
-                            <a href="{{route('assignments.edit', $assignment->id)}}" class="btn btn-info"><i class="fa fa-edit"></i></a>
+                            <a href="{{route('assignment.edit', $assignment->id)}}" class="btn btn-info"><i class="fa fa-edit"></i></a>
                                 
                                 <button class="btn btn-danger" type="submit"><i class="fa fa-trash"></i></button>         
                             {!! Form::close() !!}

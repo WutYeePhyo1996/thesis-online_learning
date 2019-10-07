@@ -672,7 +672,6 @@
                 <div class="col-lg-8">
                   <div class="testi_text">
                     <h4>{{$event->name}}</h4>
-                    {{-- <h5><a href="/">Depa</a></h5> style="max-width: 18rem;" --}}
                     <p>
                       {{Str::limit($event->description, 90)}}
                     </p>

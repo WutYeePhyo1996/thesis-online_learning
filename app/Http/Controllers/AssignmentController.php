@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Assignment;
+use App\Service\UploadService;
+use Storage;
 
 class AssignmentController extends Controller
 {
@@ -23,13 +25,13 @@ class AssignmentController extends Controller
 
     public function store(Request $request)
     {
-        parent::upload_document($request->file,
-        ['name'=>rand(),
-        'id'=>$request->id,
-        'data_id'=> $request->id,
-        'path'=>'/public/assignment/',
-        'obj'=>'App\Assignment',
-        'file'=>'file']);
+        $path = "/public/assignment";
+        $file = $request->file;
+        $data = $request->all();
+        $data['file'] = $file->getClientOriginalName();
+
+        Assignment::create($data);
+        UploadService::fileUpload($file, $path);
         return redirect('secureadmin/assignment');
     }
 

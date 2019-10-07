@@ -115,148 +115,7 @@
                     </a>
                   </div>
                 </li>
-                <!-- <li class="nav-item dropdown d-md-down-none">
-                  <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <i class="icon-list"></i>
-                    <span class="badge badge-pill badge-warning">15</span>
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
-                    <div class="dropdown-header text-center">
-                      <strong>You have 5 pending tasks</strong>
-                    </div>
-                    <a class="dropdown-item" href="#">
-                      <div class="small mb-1">Upgrade NPM & Bower
-                        <span class="float-right">
-                          <strong>0%</strong>
-                        </span>
-                      </div>
-                      <span class="progress progress-xs">
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                      </span>
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      <div class="small mb-1">ReactJS Version
-                        <span class="float-right">
-                          <strong>25%</strong>
-                        </span>
-                      </div>
-                      <span class="progress progress-xs">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </span>
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      <div class="small mb-1">VueJS Version
-                        <span class="float-right">
-                          <strong>50%</strong>
-                        </span>
-                      </div>
-                      <span class="progress progress-xs">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                      </span>
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      <div class="small mb-1">Add new layouts
-                        <span class="float-right">
-                          <strong>75%</strong>
-                        </span>
-                      </div>
-                      <span class="progress progress-xs">
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                      </span>
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      <div class="small mb-1">Angular 2 Cli Version
-                        <span class="float-right">
-                          <strong>100%</strong>
-                        </span>
-                      </div>
-                      <span class="progress progress-xs">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                      </span>
-                    </a>
-                    <a class="dropdown-item text-center" href="#">
-                      <strong>View all tasks</strong>
-                    </a>
-                  </div>
-                </li>
-                <li class="nav-item dropdown d-md-down-none">
-                  <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <i class="icon-envelope-letter"></i>
-                    <span class="badge badge-pill badge-info">7</span>
-                  </a> -->
-                  <!-- <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
-                    <div class="dropdown-header text-center">
-                      <strong>You have 4 messages</strong>
-                    </div>
-                    <a class="dropdown-item" href="#">
-                      <div class="message">
-                        <div class="py-3 mr-3 float-left">
-                          <div class="avatar">
-                            <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
-                            <span class="avatar-status badge-success"></span>
-                          </div>
-                        </div>
-                        <div>
-                          <small class="text-muted">John Doe</small>
-                          <small class="text-muted float-right mt-1">Just now</small>
-                        </div>
-                        <div class="text-truncate font-weight-bold">
-                          <span class="fa fa-exclamation text-danger"></span> Important message</div>
-                          <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
-                        </div>
-                      </a>
-                      <a class="dropdown-item" href="#">
-                        <div class="message">
-                          <div class="py-3 mr-3 float-left">
-                            <div class="avatar">
-                              <img class="img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com">
-                              <span class="avatar-status badge-warning"></span>
-                            </div>
-                          </div>
-                          <div>
-                            <small class="text-muted">John Doe</small>
-                            <small class="text-muted float-right mt-1">5 minutes ago</small>
-                          </div>
-                          <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-                          <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
-                        </div>
-                      </a>
-                      <a class="dropdown-item" href="#">
-                        <div class="message">
-                          <div class="py-3 mr-3 float-left">
-                            <div class="avatar">
-                              <img class="img-avatar" src="img/avatars/5.jpg" alt="admin@bootstrapmaster.com">
-                              <span class="avatar-status badge-danger"></span>
-                            </div>
-                          </div>
-                          <div>
-                            <small class="text-muted">John Doe</small>
-                            <small class="text-muted float-right mt-1">1:52 PM</small>
-                          </div>
-                          <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-                          <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
-                        </div>
-                      </a>
-                      <a class="dropdown-item" href="#">
-                        <div class="message">
-                          <div class="py-3 mr-3 float-left">
-                            <div class="avatar">
-                              <img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
-                              <span class="avatar-status badge-info"></span>
-                            </div>
-                          </div>
-                          <div>
-                            <small class="text-muted">John Doe</small>
-                            <small class="text-muted float-right mt-1">4:03 PM</small>
-                          </div>
-                          <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-                          <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
-                        </div>
-                      </a>
-                      <a class="dropdown-item text-center" href="#">
-                        <strong>View all messages</strong>
-                      </a>
-                    </div> -->
+               
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -313,47 +172,47 @@
                             <a class="nav-link" href="{{route('thesis.index')}}">
                               <i class="fas fa-book"></i>  Thesis</a>
                             </li>
-                            @endif
                             
+                            @else
                             
                             <li class="nav-item dropdown">
-                             <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{{route('eventType.index')}}"> 
+                             <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{{route('assignment.index')}}"> 
                                 <i class="fas fa-edit" aria-hidden="true"></i>
                                 Assignment
                                 </a> 
                               <ul class="dropdown-menu" aria-labelledby="navbarDropdown"  style="background-color:#002347;">
                                 <li class="nav-item">
-                                <a class="nav-link" href="{{route('eventType.index')}}">
+                                <a class="nav-link" href="{{route('assignment.index')}}">
                                 <i class="fas fa-edit" aria-hidden="true"></i> 1BE-IT</a>
                                 </li>
 
                                 <li class="nav-item">
-                                <a class="nav-link" href="{{route('eventType.index')}}">
+                                <a class="nav-link" href="{{route('assignment.index')}}">
                                 <i class="fas fa-edit" aria-hidden="true"></i>2BE-IT</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="{{route('eventType.index')}}">
+                                <a class="nav-link" href="{{route('assignment.index')}}">
                                 <i class="fas fa-edit" aria-hidden="true"></i>3BE-IT</a>
                                 </li>
 
                                 <li class="nav-item">
-                                <a class="nav-link" href="{{route('eventType.index')}}">
+                                <a class="nav-link" href="{{route('assignment.index')}}">
                                 <i class="fas fa-edit" aria-hidden="true"></i>4BE-IT</a>
                                 </li>
 
                                 <li class="nav-item">
-                                <a class="nav-link" href="{{route('eventType.index')}}">
+                                <a class="nav-link" href="{{route('assignment.index')}}">
                                 <i class="fas fa-edit" aria-hidden="true"></i>5BE-IT</a>
                                 </li>
 
                                 <li class="nav-item">
-                                <a class="nav-link" href="{{route('eventType.index')}}">
+                                <a class="nav-link" href="{{route('assignment.index')}}">
                                 <i class="fas fa-edit" aria-hidden="true"></i> VIT-IT</a>
                                 </li>
                               </ul>
                               </li>
 
-                       
+                       @endif
                               
 
                             @if(auth()->user()->isAdmin())

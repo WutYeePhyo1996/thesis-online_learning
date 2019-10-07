@@ -161,5 +161,41 @@ class ThesisSeeder extends Seeder
             'rollno'        => 'VI.IT-76',
         ]);
 
+        factory('App\Thesis')->create([
+            'title'         => 'Package (Box) Sale Supporting System',
+            'rollno'        => 'VI.IT-23',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Generating Electricity Using Themielectric Cooler',
+            'rollno'        => 'VI.IT-26',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Web Application Based On PHP (E-Learning For Project Management',
+            'rollno'        => 'VI.IT-11',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Student Evaluation System',
+            'rollno'        => 'VI.IT-14',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Safety Device',
+            'rollno'        => 'VI.IT-12',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Website For Bee (Better English For Everyone) English Class',
+            'rollno'        => 'VI.IT-45',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Organization Website Using WEB Content Management System',
+            'rollno'        => 'VI.IT-44',
+        ]);
+
+
     }
 }

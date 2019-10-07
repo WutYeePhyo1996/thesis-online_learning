@@ -23,11 +23,12 @@
         </div>
       </div>
     </div>
+    @include('layouts.feature')
   </section>
   <!--================End Home Banner Area =================-->
 
   <!--================ Start About Area =================-->
-  {{-- <section class="about_area section_gap">
+  <!-- <section class="about_area section_gap">
     <div class="container">
       <div class="row h_blog_item">
         <div class="col-lg-6">
@@ -57,8 +58,7 @@
         </div>
       </div>
     </div>
-  </section> --}}
-
+  </section>  -->
   <!--================ End About Area =================-->
 
 
