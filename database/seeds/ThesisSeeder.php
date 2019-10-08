@@ -161,5 +161,126 @@ class ThesisSeeder extends Seeder
             'rollno'        => 'VI.IT-76',
         ]);
 
+        factory('App\Thesis')->create([
+            'title'         => 'Package (Box) Sale Supporting System',
+            'rollno'        => 'VI.IT-23',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Generating Electricity Using Themielectric Cooler',
+            'rollno'        => 'VI.IT-26',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Web Application Based On PHP (E-Learning For Project Management',
+            'rollno'        => 'VI.IT-11',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Student Evaluation System',
+            'rollno'        => 'VI.IT-14',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Safety Device',
+            'rollno'        => 'VI.IT-12',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Website For Bee (Better English For Everyone) English Class',
+            'rollno'        => 'VI.IT-45',
+        ]);
+
+        factory('App\Thesis')->create([
+            'title'         => 'Organization Website Using WEB Content Management System',
+            'rollno'        => 'VI.IT-144',
+        ]);
+
+        
+        factory('App\Thesis')->create([
+            'title'         => 'Design of Online Cinema Ticket Booking',
+            'rollno'        => 'VI.IT-143',
+        ]);
+
+        
+        factory('App\Thesis')->create([
+            'title'         => 'Blood Donation Mangement System ',
+            'rollno'        => 'VI.IT-61',
+        ]);
+
+
+        factory('App\Thesis')->create([
+            'title'         => 'Web Application Based On PHP (Online Voting System for King and Queen of W.Y.T.U)',
+            'rollno'        => 'VI.IT-25',
+        ]);
+
+        
+        factory('App\Thesis')->create([
+            'title'         => 'Android Based Online Shopping System',
+            'rollno'        => 'VI.IT-24',
+        ]);
+
+        
+        factory('App\Thesis')->create([
+            'title'         => 'Privacy Social Media Application for Organization',
+            'rollno'        => 'VI.IT-63',
+        ]);
+
+
+        factory('App\Thesis')->create([
+            'title'         => 'Website Page Application (Online Auto Auction System)',
+            'rollno'        => 'VI.IT-129',
+        ]);
+
+        
+        factory('App\Thesis')->create([
+            'title'         => 'IT Students Social Media',
+            'rollno'        => 'VI.IT-135',
+        ]);
+
+        
+        factory('App\Thesis')->create([
+            'title'         => 'Design and Implementation of Android Music Player',
+            'rollno'        => 'VI.IT-103',
+        ]);
+
+        
+        factory('App\Thesis')->create([
+            'title'         => 'Arduino Based Vehicle Accident Alert System Using GPS, GSM',
+            'rollno'        => 'VI.IT-143',
+        ]);
+
+        
+        factory('App\Thesis')->create([
+            'title'         => 'Book Distribution Management System ',
+            'rollno'        => 'VI.IT-88',
+        ]);
+
+
+        factory('App\Thesis')->create([
+            'title'         => 'Student Internship Platform by Using PHP',
+            'rollno'        => 'VI.IT-55',
+        ]);
+
+
+        factory('App\Thesis')->create([
+            'title'         => 'Point of Sale Grocery Store',
+            'rollno'        => 'VI.IT-122',
+        ]);
+
+
+        factory('App\Thesis')->create([
+            'title'         => 'Teacher Biography Android Application Using Android Studio',
+            'rollno'        => 'VI.IT-109',
+        ]);
+
+        
+        factory('App\Thesis')->create([
+            'title'         => 'Organization Website Using WEB Content Management System',
+            'rollno'        => 'VI.IT-144',
+        ]);
+
+
+
     }
 }

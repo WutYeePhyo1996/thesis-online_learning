@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\client;
-use App\{Thesis, Event, EventImage};
+use App\{Thesis, Event, EventImage, AudioLesson};
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,32 +14,38 @@ class PageController extends Controller
 
     public function onebeit()
     {
-        return view('client.lecture.1beit');
+        $audios = AudioLesson::all();
+        return view('client.lecture.1beit', compact('audios'));
     }
 
     public function twobeit()
     {
-        return view('client.lecture.2beit');
+        $audios = AudioLesson::all();
+        return view('client.lecture.2beit', compact('audios'));
     }
 
     public function threebeit()
     {
-        return view('client.lecture.3beit');
+        $audios = AudioLesson::all();
+        return view('client.lecture.3beit', compact('audios'));
     }
 
     public function fourbeit()
     {
-        return view('client.lecture.4beit');
+        $audios = AudioLesson::all();
+        return view('client.lecture.4beit', compact('audios'));
     }
 
     public function fivebeit()
     {
-        return view('client.lecture.5beit');
+        $audios = AudioLesson::all();
+        return view('client.lecture.5beit', compact('audios'));
     }
 
     public function sixbeit()
     {
-        return view('client.lecture.6beit');
+        $audios = AudioLesson::all();
+        return view('client.lecture.6beit', compact('audios'));
     }
 
 

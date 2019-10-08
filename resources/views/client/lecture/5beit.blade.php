@@ -105,6 +105,32 @@ tr, td, th{border:solid 1px gray;}
             </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="testi_slider owl-carousel">
+          @foreach($audios as $audio)
+            <div class="testi_item">
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card text-white bg-primary mb-2" style="max-width: 18rem;">
+                        <div class="card-body">
+                          <p class="card-text"> {{$audio->created_at->format('d F Y')}}</p>
+                        </div>
+                      </div>
+
+                </div>
+                <div class="col-lg-8">
+                  <div class="testi_text">
+                    <h4>  <a href="{{asset('/storage/audios/'.$audio->file)}}">{{$audio->file}}</a>
+                     </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            @endforeach
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

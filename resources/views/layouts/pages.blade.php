@@ -24,7 +24,7 @@
     @yield('content')
 
     <!--================ Start Feature Area =================-->
-   @include('layouts.feature')
+   <!-- @include('layouts.feature') -->
    <!-- <div style="background-color: aliceblue; padding:50px;"></div> -->
 
     <!--================ End Feature Area =================-->
