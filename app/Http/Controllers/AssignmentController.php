@@ -9,14 +9,14 @@ use Storage;
 
 class AssignmentController extends Controller
 {
-    
+
     public function index()
     {
         $assignments =Assignment::all();
         return view('admin.assignment.index', compact('assignments'));
     }
 
- 
+
     public function create()
     {
         $assignment = new Assignment;
@@ -45,7 +45,7 @@ class AssignmentController extends Controller
         //
     }
 
-  
+
     public function update(Request $request, $id)
     {
         //

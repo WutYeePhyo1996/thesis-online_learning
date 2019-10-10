@@ -115,11 +115,6 @@
                     </a>
                   </div>
                 </li>
-<<<<<<< HEAD
-               
-=======
-
->>>>>>> c8d98907bf94c366dc1120f5fd0eee8765c907cb
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">

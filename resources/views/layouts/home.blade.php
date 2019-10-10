@@ -56,7 +56,7 @@
                 </h2>
                 <div>
                   <a href="/about" class="primary-btn2 mb-3 mb-sm-0">learn more</a>
-                  <a href="#" class="primary-btn ml-sm-3 ml-0">See Course</a>
+                  {{-- <a href="#" class="primary-btn ml-sm-3 ml-0">See Course</a> --}}
                 </div>
               </div>
             </div>
