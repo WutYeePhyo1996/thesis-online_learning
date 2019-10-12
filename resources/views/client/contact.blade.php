@@ -56,7 +56,7 @@
          </style>
 
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-8">
           <div class="contact_info">
             <div class="info_item">
               <i class="ti-home"></i>

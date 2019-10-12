@@ -55,4 +55,10 @@ class AssignmentController extends Controller
     {
         //
     }
+
+    public function onebeit(){
+        dd('hii');
+        $assignment = new Assignment;
+        return view('admin.assignment.create-edit', compact('assignment'));
+    }
 }
