@@ -23,11 +23,11 @@
   <link href="{{asset('admin/vendors/@coreui/icons/css/coreui-icons.min.css')}}" rel="stylesheet">
   <link href="{{asset('admin/vendors/flag-icon-css/css/flag-icon.min.css')}}" rel="stylesheet">
   <link href="{{asset('css/app.css')}}" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  
+
   {{-- <link href="{{asset('admin/vendors/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet"> --}}
-  
+
   <link href="{{asset('admin/vendors/simple-line-icons/css/simple-line-icons.css')}}" rel="stylesheet">
   <!-- Main styles for this application-->
   <link href="{{asset('admin/css/style.css')}}" rel="stylesheet">
@@ -263,8 +263,8 @@
                       <img class="img-avatar" src="{{asset('images/wytu.png')}}" alt="{{ Auth::user()->name }} ">
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
-                      
-                      
+
+
                       <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                       document.getElementById('logout-form').submit();">
                       <i class="fa fa-lock"></i> Logout</a>
@@ -281,9 +281,9 @@
                   <span class="navbar-toggler-icon"></span>
                 </button>
               </header>
-              
+
               <div class="app-body">
-                
+
                 <div class="sidebar">
                   <nav class="sidebar-nav">
                     <ul class="nav">
@@ -297,73 +297,73 @@
                       @if(auth()->user()->isAdmin())
                       <li class="nav-item">
                         <a class="nav-link" href="{{route('speakers.index')}}">
-                          <i class="fa fa-user" aria-hidden="true"></i>
+                          <i class="fa fa-user mr-2" aria-hidden="true"></i>
                           Speakers</a>
                         </li>
                         @endif
                         @if(auth()->user()->isAdmin())
                         <li class="nav-item">
                           <a class="nav-link" href="{{route('audio_lessons.index')}}">
-                            <i class="fas fa-file-audio"></i>  Audio Lessons</a>
+                            <i class="fas fa-file-audio mr-2"></i>  Audio Lessons</a>
                           </li>
                           @endif
-                          
+
                           @if(auth()->user()->isAdmin())
                           <li class="nav-item">
                             <a class="nav-link" href="{{route('thesis.index')}}">
-                              <i class="fas fa-book"></i>  Thesis</a>
+                              <i class="fas fa-book mr-2"></i>Thesis</a>
                             </li>
                             @endif
-                            
-                            
+
+
                             <li class="nav-item">
                               <a class="nav-link" href="{{route('eventType.index')}}">
-                                <i class="fas fa-edit" aria-hidden="true"></i>
+                                <i class="fas fa-edit mr-2" aria-hidden="true"></i>
                                 Assignment</a>
                               </li>
-                              
+
 
                             @if(auth()->user()->isAdmin())
                             <li class="nav-item">
                               <a class="nav-link" href="{{route('eventType.index')}}">
-                                <i class="fas fa-edit" aria-hidden="true"></i>
+                                <i class="fas fa-edit mr-2" aria-hidden="true"></i>
                                 Event Type</a>
                               </li>
                               @endif
-                              
+
                               @if(auth()->user()->isAdmin())
                               <li class="nav-item">
                                 <a class="nav-link" href="{{route('user.index')}}">
-                                  <i class="fas fa-user" aria-hidden="true"></i>
+                                  <i class="fas fa-user mr-2" aria-hidden="true"></i>
                                   User</a>
                                 </li>
                                 @endif
-                                
+
                                 @if(auth()->user()->isAdmin())
                                 <li class="nav-item">
                                   <a class="nav-link" href="{{route('event.index')}}">
-                                    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                    <i class="fas fa-calendar-alt mr-2" aria-hidden="true"></i>
                                     Event </a>
                                   </li>
                                   @endif
-                                  
+
                                 </ul>
                               </nav>
                               <button class="sidebar-minimizer brand-minimizer" type="button"></button>
                             </div>
-                            
-                            
-                            
+
+
+
                             <main class="main">
                               @yield('content')
-                              
-                              
+
+
                             </main>
-                            
+
                           </div>
                         </div>
-                        
-                        
+
+
                         <footer class="app-footer">
                           <div>
                             <a href="https://coreui.io/pro/">CoreUI Pro</a>
@@ -386,11 +386,10 @@
                         <script src="{{asset('admin/vendors/chart.js/js/Chart.min.js')}}"></script>
                         <script src="{{asset('admin/vendors/@coreui/coreui-plugin-chartjs-custom-tooltips/js/custom-tooltips.min.js')}}"></script>
                         <script src="{{asset('admin/js/main.js')}}"></script>
-                        
+
                         <script src="{{asset('admin/vendors/datatables.net/js/jquery.dataTables.js')}}"></script>
                         <script src="{{asset('admin/vendors/datatables.net-bs4/js/dataTables.bootstrap4.js')}}"></script>
                         <script src="{{asset('admin/js/datatables.js')}}"></script>
-                        
+
                       </body>
                       </html>
-                      
