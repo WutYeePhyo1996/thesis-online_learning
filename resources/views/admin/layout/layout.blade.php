@@ -50,15 +50,15 @@
       <li class="nav-item px-3">
         <a class="nav-link" href="#">Dashboard</a>
       </li>
-      <li class="nav-item px-3">
+      {{-- <li class="nav-item px-3">
         <a class="nav-link" href="#">Users</a>
       </li>
       <li class="nav-item px-3">
         <a class="nav-link" href="#">Settings</a>
-      </li>
+      </li> --}}
     </ul>
     <ul class="nav navbar-nav ml-auto">
-      <li class="nav-item dropdown d-md-down-none">
+      {{-- <li class="nav-item dropdown d-md-down-none">
         <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
           <i class="icon-bell"></i>
           <span class="badge badge-pill badge-danger">5</span>
@@ -114,7 +114,7 @@
                       <small class="text-muted">243GB/256GB</small>
                     </a>
                   </div>
-                </li>
+                </li> --}}
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -171,7 +171,7 @@
                             <a class="nav-link" href="{{route('thesis.index')}}">
                               <i class="fas fa-book"></i>  Thesis</a>
                             </li>
-                            @endif
+                            @else
 
                                <li class="nav-item nav-dropdown">
                         <a class="nav-link nav-dropdown-toggle" href="#">
@@ -215,7 +215,7 @@
 
                         </ul>
                     </li>
-
+                    @endif
 
 
                             @if(auth()->user()->isAdmin())
