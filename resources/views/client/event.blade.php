@@ -37,7 +37,7 @@
 
             <div class="card" >
                 <div class="card-body">
-                <h5 class="card-title">{{$event->name}}</h5>
+                <h5 class="card-title"><a href="{{url('/event_detail/'.$event->id)}}">{{$event->name}}</a></h5>
                 <p class="card-text">{{Str::limit($event->description, 90)}}</p>
 
                 {{-- <p class="card-text">Authors : {{$event->author}} </p>

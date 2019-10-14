@@ -14,7 +14,7 @@ class EventImageController extends Controller
     {
         $event_images =EventImage::all();
         $event =Event::all();
-        return view('admin.event-images.index', compact('event_images', 'event'));
+        return view('admin.event_image.index', compact('event_images', 'event'));
     }
 
 
