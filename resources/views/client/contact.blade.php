@@ -13,8 +13,8 @@
             <div class="banner_content text-center">
               <h2>Contact Us</h2>
               <div class="page_link">
-                <a href="index.html">Home</a>
-                <a href="about-us.html">Contact Us</a>
+                <a href={{url('/')}}>Home</a>
+                <a href={{url('/contact')}}>Contact Us</a>
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@
          </style>
 
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-8">
           <div class="contact_info">
             <div class="info_item">
               <i class="ti-home"></i>

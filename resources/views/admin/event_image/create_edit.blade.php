@@ -8,6 +8,7 @@
                           <strong>Create New Event Image</strong> </div>
                         <div class="card-body">
                                 <form action="{{url('secureadmin/event_images')}}" method="post" enctype="multipart/form-data">
+                               @csrf
 
                                 <fieldset class="form-group col-12">
                                     <div class="form-group">
@@ -18,7 +19,7 @@
                                         </div>
                                 </fieldset>
 
-                                       <fieldset class="form-group col-md-6 col-12">
+                            <fieldset class="form-group col-md-6 col-12">
                                     <label>Image</label>
                                 <div class="pull-right">
                                     <a id="add" @click="add" class="text-success cursor-pointer"><i class="fa fa-lg fa-plus-square"></i></a>
@@ -32,12 +33,11 @@
                                             <i class="fa fa-sticky-note"></i>
                                             </span>
                                             </span>
-                                            <input class="form-control" type="file" name="file_name[]">
+                                            <input class="form-control" type="file" name="file[]">
                                         </div>
                                     </transition-group>
 
                             </fieldset>
-
                             <div class="card-footer">
                                     <button class="btn btn-sm btn-primary" type="submit">
                                       <i class="fa fa-dot-circle-o"></i> Submit</button>

@@ -25,7 +25,7 @@
     <form action="{{ route('adminLogin') }}" method="POST">
             @csrf
             <div class="login-form">
-                <h1>Admin Login</h1>
+                <h1> Login</h1>
                 <hr>
                 <div class="form-group row">
                     <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>

@@ -8,7 +8,7 @@ class EventImage extends Model
 {
     protected $fillable = [
         'event_id',
-        'file_name'
+        'file'
     ];
 
     public function event(){

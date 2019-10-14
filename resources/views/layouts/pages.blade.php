@@ -20,12 +20,14 @@
   </head>
 
   <body>
+
+
     @include('layouts.nav')
     @yield('content')
 
     <!--================ Start Feature Area =================-->
-   @include('layouts.feature')
-   <div style="background-color: aliceblue; padding:50px;"></div>
+   <!-- @include('layouts.feature') -->
+   <!-- <div style="background-color: aliceblue; padding:50px;"></div> -->
 
     <!--================ End Feature Area =================-->
 

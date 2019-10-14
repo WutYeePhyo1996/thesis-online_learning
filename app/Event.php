@@ -15,4 +15,8 @@ class Event extends Model
     public function eventType(){
         return $this->belongsTo('App\EventType', 'eventType_id')->withDefault();
     }
+
+    public function event_imgs(){
+        return $this->hasMany('App\EventImage');
+    }
 }
