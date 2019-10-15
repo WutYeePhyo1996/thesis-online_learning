@@ -27,6 +27,7 @@
             <div class="login-form">
                 <h1> Login</h1>
                 <hr>
+                
                 <div class="form-group row">
                     <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
                     <div class="col-sm-10">
@@ -40,9 +41,11 @@
                     </div>
                 </div>
                 <div class="form-group clearfix">
+                    
                     <div class="float-right">
                         <input type="submit" class="btn btn-success btn-lg btn-block" value="Send">
                     </div>
+                    <div class="float-right pb-2 pt-2 mr-2"><a href="#">Sing Up</a></div>
                 </div>
             </div>
             

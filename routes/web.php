@@ -20,6 +20,7 @@ Route::group(['prefix' => 'secureadmin'], function () {
     Route::resource('/event_images', 'EventImageController');
     Route::resource('/assignment', 'AssignmentController');
     Route::post('login','AdminController@postLogin')->name('adminLogin');
+    
     Route::get('/event_images/create/{id}', 'EventImageController@create_file');
 });
 
@@ -61,17 +62,6 @@ Route::get('/thesis', 'client\ThesisController@index');
 
 // ================End Client =================
 
-// Route::get('/about', function() {
-//     $active = 'about';
-//     return view('client.about',compact('active'));
-// });
-// Route::resource('/', 'client\TeacherController');
-// Route::get('/contact', function() {
-//     $active = 'contact';
-//     return view('client.contact',compact('active'));
-// });
-
-// Route::get('/thesis', 'client\ThesisController@index');
-// Route::post('/thesis/search', 'client\ThesisController@search');
-
-// Route::resource('/client_speakers', 'client\SpeakerController');
+// ================ Student ===================
+Route::get('/register', 'client\UserController@index')->name('register');
+Route::post('/register', 'client\UserController@create')->name('postRegister');

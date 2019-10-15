@@ -10,7 +10,7 @@ class Admin {
         if(auth()->user()->isAdmin() || auth()->user()->isTeacher() || auth()->user()->isStudent()) {
             return $next($request);
         }
-        return redirect('admin/login');
+        return redirect('secureadmin/login');
 
     }
 
