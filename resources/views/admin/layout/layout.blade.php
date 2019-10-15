@@ -155,21 +155,21 @@
                       @if(auth()->user()->isAdmin())
                       <li class="nav-item">
                         <a class="nav-link" href="{{route('speakers.index')}}">
-                          <i class="fa fa-user" aria-hidden="true"></i>
+                          <i class="fa fa-user mr-2" aria-hidden="true"></i>
                           Speakers</a>
                         </li>
                         @endif
                         @if(auth()->user()->isAdmin())
                         <li class="nav-item">
                           <a class="nav-link" href="{{route('audio_lessons.index')}}">
-                            <i class="fas fa-file-audio"></i>  Audio Lessons</a>
+                            <i class="fas fa-file-audio mr-2"></i>  Audio Lessons</a>
                           </li>
                           @endif
 
                           @if(auth()->user()->isAdmin())
                           <li class="nav-item">
                             <a class="nav-link" href="{{route('thesis.index')}}">
-                              <i class="fas fa-book"></i>  Thesis</a>
+                              <i class="fas fa-book mr-2"></i>Thesis</a>
                             </li>
                             @else
 
@@ -221,7 +221,7 @@
                               @if(auth()->user()->isAdmin())
                               <li class="nav-item">
                                 <a class="nav-link" href="{{route('user.index')}}">
-                                  <i class="fas fa-user" aria-hidden="true"></i>
+                                  <i class="fas fa-user mr-2" aria-hidden="true"></i>
                                   User</a>
                                 </li>
                                 @endif
@@ -237,7 +237,7 @@
                                 @if(auth()->user()->isAdmin())
                                 <li class="nav-item">
                                   <a class="nav-link" href="{{route('event.index')}}">
-                                    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                    <i class="fas fa-calendar-alt mr-2" aria-hidden="true"></i>
                                     Event </a>
                                   </li>
                                   @endif
@@ -252,7 +252,7 @@
                             <main class="main">
                               @yield('content')
 
-                              ?
+                              
                             </main>
 
                           </div>
@@ -285,7 +285,6 @@
                         <script src="{{asset('admin/vendors/datatables.net/js/jquery.dataTables.js')}}"></script>
                         <script src="{{asset('admin/vendors/datatables.net-bs4/js/dataTables.bootstrap4.js')}}"></script>
                         <script src="{{asset('admin/js/datatables.js')}}"></script>
-
 
                       </body>
                       </html>
