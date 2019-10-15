@@ -58,12 +58,6 @@ class PageController extends Controller
     {
         $thesis = Thesis::where('id', $id)->first();
         return view('client.thesis.index', compact('thesis'));
-
-
-                // $event = Event::where('id',$id)->first();
-                // $event_images = EventImage::where('event_id', $id)->get();
-
-                // return view('client.news_detail', compact('event_images', 'event'));
     }
 
     public function client_speaker(){

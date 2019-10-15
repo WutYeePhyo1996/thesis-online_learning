@@ -56,6 +56,8 @@ Route::get('/', 'client\PageController@home');
 Route::get('/thesis_link', 'client\PageController@thesis_link');
 Route::get('/event_detail/{id}', 'client\PageController@event_detail');
 Route::get('/event','client\PageController@events');
+Route::post('/thesis/search', 'client\ThesisController@search');
+Route::get('/thesis', 'client\ThesisController@index');
 
 // ================End Client =================
 
