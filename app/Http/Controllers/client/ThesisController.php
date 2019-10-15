@@ -16,9 +16,9 @@ class ThesisController extends Controller
 
     public function search(Request $request) 
     {
-        $theses = Thesis::where('title','like','%'.$request->keyword.'%')
+        $thesis = Thesis::where('title','like','%'.$request->keyword.'%')
         ->orWhere('author','like','%'.$request->keyword.'%')
         ->get();
-        return view('client.thesis.index',compact('theses'));
+        return view('client.thesis.index',compact('thesis'));
     }
 }
