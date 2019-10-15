@@ -40,12 +40,12 @@ Route::get('/6beit', 'client\PageController@sixbeit');
 
 //=================Assignment=====================
 
-Route::get('assignment/1beit', 'AssignmentController@aonebeit');
-Route::get('assignment/2beit', 'AssignmentController@twobeit');
-Route::get('assignment/3beit', 'AssignmentController@threebeit');
-Route::get('assignment/4beit', 'AssignmentController@fourbeit');
-Route::get('assignment/5beit', 'AssignmentController@fivebeit');
-Route::get('assignment/6beit', 'AssignmentController@sixbeit');
+// Route::get('assignment/1beit', 'AssignmentController@onebeit');
+// Route::get('assignment/2beit', 'AssignmentController@twobeit');
+// Route::get('assignment/3beit', 'AssignmentController@threebeit');
+// Route::get('assignment/4beit', 'AssignmentController@fourbeit');
+// Route::get('assignment/5beit', 'AssignmentController@fivebeit');
+// Route::get('assignment/6beit', 'AssignmentController@sixbeit');
 
 //===============end Assignment=======================
 

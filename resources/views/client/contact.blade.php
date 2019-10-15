@@ -26,22 +26,13 @@
 
 <section class="contact_area section_gap">
     <div class="container">
-      {{-- <div
-        id="mapBox"
-        class="mapBox"
-        data-lat="16.867924"
-        data-lon="96.0070864"
-        data-zoom="13"
-        data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
-        data-mlat="16.867924"
-        data-mlon="96.0070864"
-      ></div> --}}
+     
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.1610891316172!2d96.00708641486912!3d16.867923988391944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1bf1c49ac518d%3A0xf20029d58b338b3a!2sWest%20Yangon%20Technological%20University!5e0!3m2!1sen!2smm!4v1568797878325!5m2!1sen!2smm" width="992" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
         <style>
             .googlemap {
         position: relative;
-        padding-bottom: 75%; /* 4:3 ratio*/
+        padding-bottom: 75%; 
         height: 0;
         overflow: hidden;
 }
