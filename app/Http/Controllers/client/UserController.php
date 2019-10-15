@@ -4,7 +4,7 @@ namespace App\Http\Controllers\client;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\User;
+use App\{User,Classes};
 use App\Http\Requests\RegisterFormStore;
 use Auth;
 use Illuminate\Support\Facades\Hash;
@@ -20,7 +20,8 @@ class UserController extends Controller
 
     public function index()
     {
-        return view('admin.register');
+        return view('admin.register')
+                    ->withClasses(Classes::all());
     }
     public function create(RegisterFormStore $request) 
     {

@@ -17,6 +17,7 @@ class CreateAssignmentsTable extends Migration
             $table->bigIncrements('id');
             $table->integer('class_id');
             $table->string('file');
+            $table->string('class_id');
             $table->timestamps();
         });
     }
