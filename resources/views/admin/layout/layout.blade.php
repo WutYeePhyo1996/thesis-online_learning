@@ -218,14 +218,6 @@
                     @endif
 
 
-                            @if(auth()->user()->isAdmin())
-                            <li class="nav-item">
-                              <a class="nav-link" href="{{route('eventType.index')}}">
-                                <i class="fas fa-edit mr-2" aria-hidden="true"></i>
-                                Event Type</a>
-                              </li>
-                              @endif
-
                               @if(auth()->user()->isAdmin())
                               <li class="nav-item">
                                 <a class="nav-link" href="{{route('user.index')}}">
@@ -233,6 +225,14 @@
                                   User</a>
                                 </li>
                                 @endif
+
+                                @if(auth()->user()->isAdmin())
+                                <li class="nav-item">
+                                  <a class="nav-link" href="{{route('eventType.index')}}">
+                                    <i class="fas fa-edit" aria-hidden="true"></i>
+                                    Event Type</a>
+                                  </li>
+                                  @endif
 
                                 @if(auth()->user()->isAdmin())
                                 <li class="nav-item">

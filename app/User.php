@@ -11,7 +11,7 @@ class User extends Authenticatable
     use Notifiable;
     
     const ADMIN_TYPE = 'admin';
-    const DEFAULT_TYPE = 'default';
+    const DEFAULT_TYPE = 'student';
     const TEACHER_TYPE = 'teacher';
 
     public function isAdmin()    {        
@@ -20,6 +20,10 @@ class User extends Authenticatable
     public function isTeacher()
     {
         return $this->type === self::TEACHER_TYPE;
+    }
+    public function isStudent() 
+    {
+        return $this->type === self::DEFAULT_TYPE;
     }
     /**
     * The attributes that are mass assignable.
