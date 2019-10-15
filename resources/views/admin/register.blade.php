@@ -82,17 +82,17 @@
                     </div>
                     
                 </div>
+                
                 <div class="form-group row">
                     <label for="inputPassword" class="col-sm-2 col-form-label">Class</label>
                     <div class="col-sm-10">
-                        <select name="year" class="form-control @error('year') is-invalid @enderror" id="year">
+                        <select name="class_id" class="form-control @error('year') is-invalid @enderror" id="year">
                             <option value="">Choose ...</option>
-                            <option value="1BE-IT">1BE-IT</option>
-                            <option value="2BE-IT">2BE-IT</option>
-                            <option value="3BE-IT">3BE-IT</option>
-                            <option value="4BE-IT">4BE-IT</option>
-                            <option value="5BE-IT">5BE-IT</option>
-                            <option value="VIBE-IT">VIBE-IT</option>
+                            @foreach ($classes as $class)
+                            <option value="{{ $class->id }}">{{ $class->year }}</option>
+                            @endforeach
+                            
+                            
                         </select>
                         @error('year')
                         <span class="invalid-feedback" role="alert">

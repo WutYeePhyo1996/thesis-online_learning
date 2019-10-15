@@ -21,6 +21,7 @@ class RegisterFormStore extends FormRequest
      *
      * @return array
      */
+
     public function rules()
     {
         return [
@@ -28,7 +29,7 @@ class RegisterFormStore extends FormRequest
             'email' => 'required|email',
             'password' => 'required|min:6|confirmed',
             'password_confirmation' => 'required|min:6',
-            'year' => 'required'
+            'class_id' => 'required'
         ];
     }
 
