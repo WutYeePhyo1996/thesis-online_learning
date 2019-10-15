@@ -26,32 +26,13 @@
                             <div class="form-group">
                                 <label for="">Class</label>
                                 <select name="" id="" class="form-control">
-                                  {{-- @foreach($speakers as $speaker) --}}
-                                  <option value="">
-                                    1BEIT
+                                  @foreach($classes as $class)
+                                  <option value="{{$class->id}}" @if($class->id == old('class_id', $assignment->class_id)) selected @endif>
+                                    {{$class->year}}
                                   </option>
+                                  
 
-                                  <option value="">
-                                    2BEIT
-                                  </option>
-
-                                  <option value="">
-                                    3BEIT
-                                  </option>
-
-                                  <option value="">
-                                    4BEIT
-                                  </option>
-
-                                  <option value="">
-                                    5BEIT
-                                  </option>
-
-                                  <option value="">
-                                    VIT-IT
-                                  </option>
-
-                                  {{-- @endforeach --}}
+                                  @endforeach
                                 </select>
                               </div>
 

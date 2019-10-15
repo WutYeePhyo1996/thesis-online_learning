@@ -19,6 +19,8 @@ Route::group(['prefix' => 'secureadmin'], function () {
     Route::resource('/event', 'EventController');
     Route::resource('/event_images', 'EventImageController');
     Route::resource('/assignment', 'AssignmentController');
+    Route::get('assignment/create/{class_id}', 'AssignmentController@create_assignment');
+    Route::resource('/class', 'ClassController');
     Route::post('login','AdminController@postLogin')->name('adminLogin');
     
     Route::get('/event_images/create/{id}', 'EventImageController@create_file');
@@ -41,7 +43,7 @@ Route::get('/6beit', 'client\PageController@sixbeit');
 
 //=================Assignment=====================
 
-// Route::get('assignment/1beit', 'AssignmentController@onebeit');
+
 // Route::get('assignment/2beit', 'AssignmentController@twobeit');
 // Route::get('assignment/3beit', 'AssignmentController@threebeit');
 // Route::get('assignment/4beit', 'AssignmentController@fourbeit');
