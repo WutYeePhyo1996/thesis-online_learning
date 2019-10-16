@@ -45,7 +45,7 @@ class AudioLessonController extends Controller
         $speakers = Speaker::all();
         $classes = Classes::where('id', $id)->first();
         $lesson = AudioLesson::where('class_id', $id)->get();
-        return view('admin.class.create', compact('id', 'classes', 'lesson', 'speakers'));
+        return view('admin.audio_lessons.create', compact('id', 'classes', 'lesson', 'speakers'));
     }
 
     public function show($id)

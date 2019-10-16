@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\StudentClass;
+use App\Classes;
 use Illuminate\Http\Request;
 
 class ClassController extends Controller
@@ -9,20 +9,20 @@ class ClassController extends Controller
     
     public function index()
     {
-        $classes = StudentClass::all();
+        $classes = Classes::all();
         return view('admin.class.index', compact('classes'));
     }
 
     public function create()
     {
-        $class = new StudentClass();
+        $class = new Classes();
         return view('admin.class.create', compact('class'));
     }
 
    
     public function store(Request $request)
     {
-        StudentClass::create($request->all());
+        Classes::create($request->all());
         return redirect('secureadmin/class');
     }
 
