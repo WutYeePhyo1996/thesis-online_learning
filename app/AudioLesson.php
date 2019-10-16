@@ -12,6 +12,10 @@ class AudioLesson extends Model
     ];
 
     public function speaker(){
-    return $this->belongsTo('App\Speaker');
+    return $this->belongsTo('App\Speaker')->withDefault();
+    }
+
+    public function class(){
+        return $this->belongsTo('App\Classes')->withDefault();
     }
 }

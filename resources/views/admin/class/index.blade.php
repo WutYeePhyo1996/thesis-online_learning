@@ -32,6 +32,8 @@
                     <td>
                       {{$class->created_at}}
                     </td>
+
+                    <td> <a href="{{url('/secureadmin/audio_lessons/'.$class->id)}}" class="btn btn-dark">Lecture</a></td>
                     {{-- <td>
 
                     {!! Form::open(array('url' => route('classs.destroy', $class->id),'method' => 'DELETE', 'class'=> '')) !!}
