@@ -177,39 +177,15 @@
                         <a class="nav-link nav-dropdown-toggle" href="#">
                             <i class="nav-icon fa fa-code"></i> Assignment</a>
                         <ul class="nav-dropdown-items nav-border" style="background-color:#303F42;">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{route('eventType.index')}}">
-                                    <i class="nav-icon icon-user"></i> 1BE-IT </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="{{route('eventType.index')}}">
-                                    <i class="nav-icon icon-user"></i> 2BE-IT </a>
-
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="{{route('eventType.index')}}">
-                                    <i class="nav-icon icon-user"></i> 3BE-IT </a>
-
-                            </li>
-
-                             <li class="nav-item">
-                                <a class="nav-link " href="{{route('eventType.index')}}">
-                                    <i class="nav-icon icon-user"></i> 4BE-IT </a>
-
-                            </li>
-
-                             <li class="nav-item">
-                                <a class="nav-link " href="{{route('eventType.index')}}">
-                                    <i class="nav-icon icon-user"></i> 5BE-IT </a>
-
-                            </li>
-
-
-                              <li class="nav-item">
-                                <a class="nav-link " href="{{route('eventType.index')}}">
-                                    <i class="nav-icon icon-user"></i> VIT-IT </a>
-
-                            </li>
+                          @foreach (\App\Classes::all() as $item)
+                           @if(auth()->user()->class->id === $item->id)
+                          <li class="nav-item">
+                          <a class="nav-link" href="/secureadmin/assignment/showByClass/{{ $item->id }}">
+                                <i class="nav-icon icon-user"></i> {{ $item->year }} </a>
+                          </li>
+                          @endif
+                          @endforeach
+                            
 
 
 

@@ -45,6 +45,13 @@ class AssignmentController extends Controller
         //
     }
 
+    public function showByClass($class_id)
+    {
+        $assignments  = Assignment::where('class_id', $class_id)->get();
+        return view('admin.assignment.index',compact('assignments'));
+    }
+
+
     public function edit($id)
     {
         //

@@ -3,7 +3,9 @@
 
 @section('content')
 <div class="container-fluid">
-        <a class="btn btn-success mb-2" href="{{url('secureadmin/assignment/create/'.$class_id)}}">Create New</a>
+        @if(auth()->user()->isTeacher())
+        <a class="btn btn-success mb-2" href="{{url('secureadmin/assignment/create')}}">Create New</a>
+        @endif
         <div class="animated fadeIn">
           <div class="card">
             <div class="card-header">

@@ -20,6 +20,7 @@ Route::group(['prefix' => 'secureadmin'], function () {
     Route::resource('/event_images', 'EventImageController');
     Route::resource('/assignment', 'AssignmentController');
     Route::get('assignment/create/{class_id}', 'AssignmentController@create_assignment');
+    Route::get('assignment/showByClass/{class_id}', 'AssignmentController@showByClass')->name('show-by-class');
     Route::resource('/class', 'ClassController');
     Route::post('login','AdminController@postLogin')->name('adminLogin');
     
