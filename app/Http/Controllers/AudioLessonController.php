@@ -31,10 +31,13 @@ class AudioLessonController extends Controller
 
     public function store(Request $request)
     {
+        
         $path = "/public/audios";
         $file = $request->file;
         $data = $request->all();
-        $data['file'] = $file->getClientOriginalName();
+        $data_id = $request->speakera_id;
+       
+        $data['file'] = $file[0]->getClientOriginalName();
 
         AudioLesson::create($data);
         UploadService::fileUpload($file, $path);

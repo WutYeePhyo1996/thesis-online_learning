@@ -8,6 +8,7 @@ class AudioLesson extends Model
 {
     protected $fillable = [
         'speaker_id',
+        'class_id',
         'file'
     ];
 
