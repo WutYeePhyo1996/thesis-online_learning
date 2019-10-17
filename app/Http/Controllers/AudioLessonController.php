@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\{AudioLesson, Speaker};
+use App\{AudioLesson, Speaker,Classes};
 use App\Service\UploadService;
 use Storage;
 
@@ -23,9 +23,9 @@ class AudioLessonController extends Controller
 
     public function create()
     {
-        $lesson = new AudioLesson;
-        $speakers = Speaker::all();
-        return view('admin.audio_lessons.create', compact('lesson', 'speakers'));
+        // $lesson = new AudioLesson;
+        // $speakers = Speaker::all();
+        // return view('admin.audio_lessons.create', compact('lesson', 'speakers'));
     }
 
 
@@ -39,6 +39,13 @@ class AudioLessonController extends Controller
         AudioLesson::create($data);
         UploadService::fileUpload($file, $path);
         return redirect('secureadmin/audio_lessons');
+    }
+
+    public function create_file($id){
+        $speakers = Speaker::all();
+        $classes = Classes::where('id', $id)->first();
+        $lesson = AudioLesson::where('class_id', $id)->get();
+        return view('admin.audio_lessons.create', compact('id', 'classes', 'lesson', 'speakers'));
     }
 
     public function show($id)

@@ -16,7 +16,7 @@
               
               <div class="form-group">
                 <label for="">Year</label>
-                <input class="form-control  @error('year') is-invalid @enderror" id="year" type="text" name="year" placeholder="Enter Event year" autocomplete="off" value="{{old('year', $class->year)}}">
+                <input class="form-control  @error('year') is-invalid @enderror" id="year" type="text" name="year" placeholder="Enter Event year" autocomplete="off" value="{{old('year', $classes->year)}}">
                 <span class="invalid-feedback">{{$errors->first('year')}}</span>
               </div>
               

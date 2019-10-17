@@ -13,6 +13,8 @@ class Classes extends Model
     {
         return $this->hasMany('App\User');
     }
-
+     public function audio_lessons(){
+         return $this->hasMany('App\AudioLesson')
+;     }
     # Has Many Assignemnt
 }
