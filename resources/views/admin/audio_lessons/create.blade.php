@@ -6,7 +6,7 @@
   <div class="col-md-10 offset-md-1">
     @if(isset($lesson->id))
     <form action="{{route('audio_lessons.update', $lesson->id)}}" method="post" enctype="multipart/form-data">
-      {{-- @method('patch') --}}
+      @method('patch')
       @csrf
       @else
       <form action="{{route('audio_lessons.store')}}" method="post" enctype="multipart/form-data">
@@ -23,7 +23,7 @@
                 <label for="">Speaker Name</label>
                 <select name="speaker_id" id="" class="form-control">
                   @foreach ($speakers as $speaker)
-                <option value="{{ $speaker->id }}" @if($speaker->id === old('speaker_id',$speaker->id)) selected @endif>{{ $speaker->name }}</option>
+                <option value="{{ $speaker->id }}" @if($speaker->id == old('speaker_id', $lesson->speaker_id)) selected @endif>{{ $speaker->name }}</option>
                   @endforeach 
               
                   {{-- @foreach($speakers as $speaker)
