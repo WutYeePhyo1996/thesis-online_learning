@@ -1,17 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+   public function __construct(){
+    $this->middleware('auth');
+   }
     public function index()
     {
         return view('admin.user.index')
@@ -67,7 +65,7 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        
+
         return view('admin.user.create-edit')
                 ->withUser(\App\User::find($id));
     }
@@ -87,7 +85,7 @@ class UserController extends Controller
             'password' => 'required',
             'type' => 'required'
         ]);
-        \App\user::find($id)->update($request->all());
+        \App\User::find($id)->update($request->all());
         return redirect('secureadmin/user');
     }
 

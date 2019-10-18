@@ -54,7 +54,7 @@ class AssignmentController extends Controller
     public function showByClass($class_id)
     {
         $assignments  = Assignment::where('class_id', $class_id)->get();
-        return view('admin.assignment.index',compact('assignments'));
+        return view('admin.assignment.list',compact('assignments'));
     }
 
 

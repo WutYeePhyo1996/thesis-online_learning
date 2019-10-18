@@ -14,10 +14,6 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(UsersTableSeeder::class);
         $this->call(ThesisSeeder::class);
-<<<<<<< HEAD
-        $this->call(StudentClassSeeder::class);
-=======
->>>>>>> 4444736b525943205cfc4d22f71cfb8ca20eaa4c
         $this->call(ClassesTableSeeder::class);
     }
 }

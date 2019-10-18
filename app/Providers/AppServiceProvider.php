@@ -23,6 +23,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        public function __construct()
+    {
+        $classes = App\Classes::all();
+
+        View::share('layout', $classes);
+    }
     }
 }

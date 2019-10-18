@@ -19,13 +19,8 @@ Route::group(['prefix' => 'secureadmin'], function () {
     Route::resource('/event', 'EventController');
     Route::resource('/event_images', 'EventImageController');
     Route::resource('/assignment', 'AssignmentController');
-<<<<<<< HEAD
-    // Route::get('assignment/create/{class_id}', 'AssignmentController@create_assignment'); // change
-    // Route::resource('assignment/{class_id}', 'AssignmentController@list');
-=======
     Route::get('assignment/create/{class_id}', 'AssignmentController@create_assignment');
     Route::get('assignment/showByClass/{class_id}', 'AssignmentController@showByClass')->name('show-by-class');
->>>>>>> 4444736b525943205cfc4d22f71cfb8ca20eaa4c
     Route::resource('/class', 'ClassController');
     Route::post('login','AdminController@postLogin')->name('adminLogin');
 
