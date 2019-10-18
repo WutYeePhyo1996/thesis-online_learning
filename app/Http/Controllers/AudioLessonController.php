@@ -31,11 +31,10 @@ class AudioLessonController extends Controller
 
     public function store(Request $request)
     {
-        
         $path = "/public/audios";
         $file = $request->file;
         $data = $request->all();
-        $data_id = $request->speakera_id;
+         $data_id = $request->speaker_id;
        
         $data['file'] = $file[0]->getClientOriginalName();
 
@@ -45,8 +44,8 @@ class AudioLessonController extends Controller
     }
 
     public function create_file($id){
-        $speakers = Speaker::all();
         $classes = Classes::where('id', $id)->first();
+        $speakers = Speaker::all();
         $lesson = AudioLesson::where('class_id', $id)->get();
         return view('admin.audio_lessons.create', compact('id', 'classes', 'lesson', 'speakers'));
     }
