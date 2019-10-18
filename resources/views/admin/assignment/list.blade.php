@@ -20,7 +20,7 @@
                   <tr>
                     <th>Assignment</th>
                     <th>Created_at</th>
-                    
+
                   </tr>
                 </thead>
                 <tbody>
@@ -28,10 +28,10 @@
                   <tr>
                     <td>
                     <a href="{{asset('/storage/assignment/'.$assignment->file)}}">{{$assignment->file}}</a>
-                  
+
                     </td>
-                    
-                    
+
+
                     <td>
                      {{$assignment->created_at}}
                     </td>
@@ -39,14 +39,14 @@
                             {!! Form::open(array('url' => route('assignment.destroy', $assignment->id),'method' => 'DELETE', 'class'=> '')) !!}
                             @csrf
                             <a href="{{route('assignment.edit', $assignment->id)}}" class="btn btn-info"><i class="fa fa-edit"></i></a>
-                                
-                                <button class="btn btn-danger" type="submit"><i class="fa fa-trash"></i></button>         
+
+                                <button class="btn btn-danger" type="submit"><i class="fa fa-trash"></i></button>
                             {!! Form::close() !!}
                     </td>
                   </tr>
                 @endforeach
-                  
-                
+
+
                 </tbody>
               </table>
             </div>

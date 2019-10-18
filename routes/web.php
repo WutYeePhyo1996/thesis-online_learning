@@ -19,10 +19,11 @@ Route::group(['prefix' => 'secureadmin'], function () {
     Route::resource('/event', 'EventController');
     Route::resource('/event_images', 'EventImageController');
     Route::resource('/assignment', 'AssignmentController');
-    Route::get('assignment/create/{class_id}', 'AssignmentController@create_assignment');
+    // Route::get('assignment/create/{class_id}', 'AssignmentController@create_assignment'); // change
+    // Route::resource('assignment/{class_id}', 'AssignmentController@list');
     Route::resource('/class', 'ClassController');
     Route::post('login','AdminController@postLogin')->name('adminLogin');
-    
+
     Route::get('/event_images/create/{id}', 'EventImageController@create_file');
 });
 
@@ -42,13 +43,6 @@ Route::get('/6beit', 'client\PageController@sixbeit');
 //===============end lecture=======================
 
 //=================Assignment=====================
-
-
-// Route::get('assignment/2beit', 'AssignmentController@twobeit');
-// Route::get('assignment/3beit', 'AssignmentController@threebeit');
-// Route::get('assignment/4beit', 'AssignmentController@fourbeit');
-// Route::get('assignment/5beit', 'AssignmentController@fivebeit');
-// Route::get('assignment/6beit', 'AssignmentController@sixbeit');
 
 //===============end Assignment=======================
 

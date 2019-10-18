@@ -12,9 +12,15 @@ class AssignmentController extends Controller
 
     public function index()
     {
-        $assignments =Assignment::all();
-        // $classes = StudentClass::all();
-        return view('admin.assignment.index', compact('assignments'));
+        // $assignments =Assignment::all();
+        //  $classes = StudentClass::all();
+        // return view('admin.assignment.index', compact('assignments'));
+    }
+
+    public function list($class_id){
+        dd('hii');
+        $assignments = Assignment::findOrFail($class_id);
+        return view ('admin.assignment.list', compact('assignments'));
     }
 
     public function create(){

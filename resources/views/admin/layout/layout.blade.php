@@ -152,6 +152,7 @@
                         </a>
                       </li>
                       <li class="nav-title">Theme</li>
+
                       @if(auth()->user()->isAdmin())
                       <li class="nav-item">
                         <a class="nav-link" href="{{route('speakers.index')}}">
@@ -177,6 +178,9 @@
                         <a class="nav-link nav-dropdown-toggle" href="#">
                             <i class="nav-icon fa fa-code"></i> Assignment</a>
                         <ul class="nav-dropdown-items nav-border" style="background-color:#303F42;">
+                            {{-- foreach class get id --}}
+
+
                             <li class="nav-item">
                                 <a class="nav-link" href="{{route('eventType.index')}}">
                                     <i class="nav-icon icon-user"></i> 1BE-IT </a>
@@ -252,7 +256,7 @@
                             <main class="main">
                               @yield('content')
 
-                              
+
                             </main>
 
                           </div>

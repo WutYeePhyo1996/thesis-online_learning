@@ -15,7 +15,6 @@ class CreateAssignmentsTable extends Migration
     {
         Schema::create('assignments', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('class_id');
             $table->string('file');
             $table->string('class_id');
             $table->timestamps();
