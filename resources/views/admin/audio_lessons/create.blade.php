@@ -6,7 +6,7 @@
   <div class="col-md-10 offset-md-1">
     @if(isset($lesson->id))
     <form action="{{route('audio_lessons.update', $lesson->id)}}" method="post" enctype="multipart/form-data">
-      @method('patch')
+      {{-- @method('patch') --}}
       @csrf
       @else
       <form action="{{route('audio_lessons.store')}}" method="post" enctype="multipart/form-data">
@@ -18,19 +18,36 @@
           <div class="card-header">
             <strong>Normal</strong> Form</div>
             <div class="card-body">
+<<<<<<< HEAD
               <div class="form-group">
                 <label for="speaker_id">Speaker Name</label>
                 <input type="hidden" name="speaker_id" value="{{$speakers->id}}">
                 <select name="speaker_id" id="speaker_id" class="form-control">
                   @foreach($speakers as $speaker)
+=======
+              
+              <div class="form-group">
+                <label for="">Speaker Name</label>
+                <select name="speaker_id" id="" class="form-control">
+                  @foreach ($speakers as $speaker)
+                <option value="{{ $speaker->id }}" @if($speaker->id === old('speaker_id',$speaker->id)) selected @endif>{{ $speaker->name }}</option>
+                  @endforeach 
+              
+                  {{-- @foreach($speakers as $speaker)
+>>>>>>> a95bf5af8a35809f405910d03c8c4a164cbe742b
                   <option value="{{$speaker->id}}" @if($speaker->id == old('speaker_id', $lesson->speaker_id)) selected @endif>
                     {{$speaker->name}}
                   </option>
 
                   
-                  @endforeach
+                  @endforeach --}}
                 </select>
               </div>
+<<<<<<< HEAD
+=======
+              
+          
+>>>>>>> a95bf5af8a35809f405910d03c8c4a164cbe742b
 
               <fieldset class="form-group col-12">
                 <div class="form-group">
