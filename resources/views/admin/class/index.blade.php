@@ -33,7 +33,13 @@
                     <td>{{$class->year}}</td>
                     {{-- <td>
                       {{$class->created_at}}
+<<<<<<< HEAD
                     </td> --}}
+=======
+                    </td>
+
+                    <td> <a href="{{url('/secureadmin/audio_lessons/create/'.$class->id)}}" class="btn btn-dark">Lecture</a></td>
+>>>>>>> 4444736b525943205cfc4d22f71cfb8ca20eaa4c
                     {{-- <td>
 
                     {!! Form::open(array('url' => route('classs.destroy', $class->id),'method' => 'DELETE', 'class'=> '')) !!}
