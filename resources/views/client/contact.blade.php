@@ -66,10 +66,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-9">
+
+        <div class="col-lg-9 pt-3">
           <form
             class="row contact_form"
-            action="contact_process.php"
+        action='{{url('/secureadmin/feedback')}}'
             method="post"
             id="contactForm"
             novalidate="novalidate"

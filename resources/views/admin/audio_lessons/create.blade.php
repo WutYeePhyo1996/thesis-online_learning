@@ -30,6 +30,7 @@
                   <option value="{{$speaker->id}}" @if($speaker->id == old('speaker_id', $lesson->speaker_id)) selected @endif>
                     {{$speaker->name}}
                   </option>
+
                   
                   @endforeach --}}
                 </select>
