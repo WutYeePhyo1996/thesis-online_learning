@@ -32,7 +32,7 @@ class ClassesTableSeeder extends Seeder
             'year' => '5BE-IT'
         ]);
         factory('App\Classes')->create([
-            'id'    => '6',
+            'id'    => '6 ',
             'year' => 'VIBE-IT'
         ]);
     }
