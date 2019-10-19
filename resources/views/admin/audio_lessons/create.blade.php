@@ -19,17 +19,24 @@
             <strong>Normal</strong> Form</div>
             <div class="card-body">
               
-              {{-- <div class="form-group">
+              <div class="form-group">
                 <label for="">Speaker Name</label>
                 <select name="speaker_id" id="" class="form-control">
-                  @foreach($speakers as $speaker)
+                  @foreach ($speakers as $speaker)
+                <option value="{{ $speaker->id }}" @if($speaker->id == old('speaker_id', $lesson->speaker_id)) selected @endif>{{ $speaker->name }}</option>
+                  @endforeach 
+              
+                  {{-- @foreach($speakers as $speaker)
                   <option value="{{$speaker->id}}" @if($speaker->id == old('speaker_id', $lesson->speaker_id)) selected @endif>
                     {{$speaker->name}}
                   </option>
+
                   
-                  @endforeach
+                  @endforeach --}}
                 </select>
-              </div> --}}
+              </div>
+              
+          
 
               <fieldset class="form-group col-12">
                 <div class="form-group">

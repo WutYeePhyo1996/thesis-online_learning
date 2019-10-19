@@ -23,32 +23,37 @@ class AudioLessonController extends Controller
 
     public function create()
     {
-        // $lesson = new AudioLesson;
-        // $speakers = Speaker::all();
-        // return view('admin.audio_lessons.create', compact('lesson', 'speakers'));
+        $lesson = new AudioLesson;
+        $speakers = Speaker::all();
+        return view('admin.audio_lessons.create', compact('lesson', 'speakers'));
     }
 
 
     public function store(Request $request)
     {
-        
-        $path = "/public/audios";
-        $file = $request->file;
-        $data = $request->all();
-        $data_id = $request->speakera_id;
-       
-        $data['file'] = $file[0]->getClientOriginalName();
 
+        $path = "/public/audios";
+        $files = $request->file;
+        $data = $request->all();
+         $data_id = $request->speaker_id;
+       
+        $data['file'] = $files[0]->getClientOriginalName();
+
+        
+        foreach($files as $file) {
+            UploadService::fileUpload($file, $path);
+        }
+        
         AudioLesson::create($data);
-        UploadService::fileUpload($file, $path);
+        
         return redirect('secureadmin/audio_lessons');
     }
 
     public function create_file($id){
-        $speakers = Speaker::all();
         $classes = Classes::where('id', $id)->first();
-        $lesson = AudioLesson::where('class_id', $id)->get();
-        return view('admin.audio_lessons.create', compact('id', 'classes', 'lesson', 'speakers'));
+        // $lesson = AudioLesson::where('class_id', $id)->get();
+        $lesson = AudioLesson::where('class_id', $id)->get()->first();
+        return view('admin.audio_lessons.create', compact( 'classes', 'lesson', 'speakers'));
     }
 
     public function show($id)
@@ -71,7 +76,11 @@ class AudioLessonController extends Controller
         $lesson = AudioLesson::findOrFail($id);
         $path = '/public/audios';
 
-        $data['file'] = UploadService::checkFileExist($request->file, $lesson['file'], $path);
+        foreach($request->file as $file)
+        {
+            $data['file'] = UploadService::checkFileExist($file, $lesson['file'], $path);
+        }
+        
         $lesson->update($data);
         return redirect('secureadmin/audio_lessons');
 
