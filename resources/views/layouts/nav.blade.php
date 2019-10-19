@@ -88,13 +88,15 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
                         >Assignments</a
                       >
                       <ul class="dropdown-menu">
+                          @foreach($classes as $class)
                         <li class="nav-item">
                           <a
-                          class="nav-link" href={{url('/1beit')}}>1BE-IT</a>                    
+                          class="nav-link" href={{url('/secureadmin/login')}}>{{$class->year}}</a>
 
                         </li>
+                        @endforeach()
 
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                           <a class="nav-link" href={{url('/2beit')}}> 2BE-IT</a>
                         </li>
 
@@ -112,8 +114,8 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
 
                         <li class="nav-item">
                           <a class="nav-link" href={{url('/6beit')}}> VIT-IT</a>
-                        </li>
-                      
+                        </li> --}}
+
                       </ul>
                   </li>
                   <li class="nav-item submenu dropdown">
@@ -129,7 +131,7 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
                       <ul class="dropdown-menu">
                         <li class="nav-item">
                           <a
-                          class="nav-link" href={{url('/1beit')}}>1BE-IT</a>                    
+                          class="nav-link" href={{url('/1beit')}}>1BE-IT</a>
 
                         </li>
 
@@ -152,7 +154,7 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
                         <li class="nav-item">
                           <a class="nav-link" href={{url('/6beit')}}> VIT-IT</a>
                         </li>
-                      
+
                       </ul>
                   </li>
 
@@ -178,17 +180,17 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
                     <ul class="dropdown-menu">
                       <li class="nav-item">
                         <a
-                        class="nav-link" href={{url('/')}}>Easy</a>                  
+                        class="nav-link" href={{url('/')}}>Easy</a>
                       </li>
 
                       <li class="nav-item">
                         <a
-                        class="nav-link" href={{url('/')}}>Normal</a>                  
+                        class="nav-link" href={{url('/')}}>Normal</a>
                       </li>
 
                       <li class="nav-item">
                         <a
-                        class="nav-link" href={{url('/')}}>Hard</a>                  
+                        class="nav-link" href={{url('/')}}>Hard</a>
                       </li>
                     </ul>
                   </li>
@@ -199,7 +201,7 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
 
                   <li class="nav-item">
                   <a href="{{url('/secureadmin/')}}" class="nav-link"><i class="fa fa-fw fa-user ml-5" style="font-size:24px;" ></i> Login</a>
-                  </li>       
+                  </li>
 
                   <li class="nav-item">
                     <a href="#" class="nav-link search" id="search">

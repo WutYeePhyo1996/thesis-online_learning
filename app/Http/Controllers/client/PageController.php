@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\client;
-use App\{Thesis, Event, EventImage, AudioLesson};
+use App\{Thesis, Event, EventImage, AudioLesson, Classes};
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -9,7 +9,8 @@ class PageController extends Controller
 {
     public function about()
     {
-        return view('client.about');
+        $classes = Classes::all();
+        return view('client.about', compact('classes'));
     }
 
     public function onebeit()
@@ -51,7 +52,8 @@ class PageController extends Controller
 
     public function contact()
     {
-        return view('client.contact');
+        $classes = Classes::all();
+        return view('client.contact',compact('classes'));
     }
 
     public function thesis($id)
@@ -77,14 +79,15 @@ class PageController extends Controller
     }
 
     public function events(){
-        return view('client.event')
+        $classes = Classes::all();
+        return view('client.event', compact('classes'))
                 ->withEvents(\App\Event::all());
     }
 
     public function event_detail($id)
-    {
+    {   $classes = Classes::all();
         $event = Event::where('id', $id)->first();
         $event_images = EventImage::where('event_id', $id)->get();
-        return view('client.event_detail', compact('event', 'event_images'));
+        return view('client.event_detail', compact('event', 'event_images','classes'));
     }
 }

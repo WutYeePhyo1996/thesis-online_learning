@@ -176,18 +176,18 @@
 
                                <li class="nav-item nav-dropdown">
                         <a class="nav-link nav-dropdown-toggle" href="#">
-                            <i class="nav-icon fa fa-code"></i> Assignment</a>
+                            <i class="nav-icon fa fa-code"></i> Assignment </a>
                         <ul class="nav-dropdown-items nav-border" style="background-color:#303F42;">
 
 
-                          {{-- @foreach (\App\Classes::all() as $item)
+                          @foreach ($classes as $item)
                            @if(auth()->user()->class->id === $item->id)
                           <li class="nav-item">
                           <a class="nav-link" href="/secureadmin/assignment/showByClass/{{ $item->id }}">
                                 <i class="nav-icon icon-user"></i> {{ $item->year }} </a>
                           </li>
                           @endif
-                          @endforeach --}}
+                          @endforeach
 
 
 

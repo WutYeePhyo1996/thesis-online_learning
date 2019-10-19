@@ -30,7 +30,7 @@
                                   <option value="{{$class->id}}" @if($class->id == old('class_id', $assignment->class_id)) selected @endif>
                                     {{$class->year}}
                                   </option>
-                                  
+
 
                                   @endforeach
                                 </select>

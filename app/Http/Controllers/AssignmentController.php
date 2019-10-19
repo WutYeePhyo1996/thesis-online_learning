@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\{Assignment, StudentClass};
+use App\{Assignment, Classes};
 use App\Service\UploadService;
 use Storage;
 
@@ -30,7 +30,7 @@ class AssignmentController extends Controller
     public function create_assignment($class_id)
     {
         $assignment = new Assignment;
-        $classes = StudentClass::all();
+        $classes = Classes::all();
         return view('admin.assignment.create', compact('assignment', 'classes'));
     }
 
