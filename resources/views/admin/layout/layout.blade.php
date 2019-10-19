@@ -50,71 +50,10 @@
       <li class="nav-item px-3">
         <a class="nav-link" href="#">Dashboard</a>
       </li>
-      {{-- <li class="nav-item px-3">
-        <a class="nav-link" href="#">Users</a>
-      </li>
-      <li class="nav-item px-3">
-        <a class="nav-link" href="#">Settings</a>
-      </li> --}}
+     
     </ul>
     <ul class="nav navbar-nav ml-auto">
-      {{-- <li class="nav-item dropdown d-md-down-none">
-        <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-          <i class="icon-bell"></i>
-          <span class="badge badge-pill badge-danger">5</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
-          <div class="dropdown-header text-center">
-            <strong>You have 5 notifications</strong>
-          </div>
-          <a class="dropdown-item" href="#">
-            <i class="icon-user-follow text-success"></i> New user registered</a>
-            <a class="dropdown-item" href="#">
-              <i class="icon-user-unfollow text-danger"></i> User deleted</a>
-              <a class="dropdown-item" href="#">
-                <i class="icon-chart text-info"></i> Sales report is ready</a>
-                <a class="dropdown-item" href="#">
-                  <i class="icon-basket-loaded text-primary"></i> New client</a>
-                  <a class="dropdown-item" href="#">
-                    <i class="icon-speedometer text-warning"></i> Server overloaded</a>
-                    <div class="dropdown-header text-center">
-                      <strong>Server</strong>
-                    </div>
-                    <a class="dropdown-item" href="#">
-                      <div class="text-uppercase mb-1">
-                        <small>
-                          <b>CPU Usage</b>
-                        </small>
-                      </div>
-                      <span class="progress progress-xs">
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </span>
-                      <small class="text-muted">348 Processes. 1/4 Cores.</small>
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      <div class="text-uppercase mb-1">
-                        <small>
-                          <b>Memory Usage</b>
-                        </small>
-                      </div>
-                      <span class="progress progress-xs">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                      </span>
-                      <small class="text-muted">11444GB/16384MB</small>
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      <div class="text-uppercase mb-1">
-                        <small>
-                          <b>SSD 1 Usage</b>
-                        </small>
-                      </div>
-                      <span class="progress progress-xs">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                      </span>
-                      <small class="text-muted">243GB/256GB</small>
-                    </a>
-                  </div>
-                </li> --}}
+    
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -151,9 +90,10 @@
                           <span class="badge badge-info">NEW</span>
                         </a>
                       </li>
+
                       <li class="nav-title">Theme</li>
 
-                      @if(auth()->user()->isAdmin())
+                      {{-- @if(auth()->user()->isAdmin())
                       <li class="nav-item">
                         <a class="nav-link" href="{{route('speakers.index')}}">
                           <i class="fa fa-user mr-2" aria-hidden="true"></i>
@@ -165,7 +105,7 @@
                           <a class="nav-link" href="{{route('audio_lessons.index')}}">
                             <i class="fas fa-file-audio mr-2"></i>  Audio Lessons</a>
                           </li>
-                          @endif
+                          @endif --}}
 
                           @if(auth()->user()->isAdmin())
                           <li class="nav-item">
@@ -174,6 +114,12 @@
                             </li>
                             @else
 
+                            {{-- <li class="nav-item">
+                                <a class="nav-link" href="{{url('/secureadmin/class')}}">
+                                  <i class="fas fa-book mr-2"></i>Classes</a>
+                                </li> --}}
+      
+                            
                                <li class="nav-item nav-dropdown">
                         <a class="nav-link nav-dropdown-toggle" href="#">
                             <i class="nav-icon fa fa-code"></i> Assignment </a>

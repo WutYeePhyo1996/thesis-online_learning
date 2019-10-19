@@ -13,8 +13,9 @@ class Classes extends Model
     {
         return $this->hasMany('App\User');
     }
-     public function audio_lessons(){
-         return $this->hasMany('App\AudioLesson')
-;     }
+
+    public function speakers(){
+        return $this->hasMany('App\Speaker')->withDefatult();
+    }
     # Has Many Assignemnt
 }

@@ -3,7 +3,7 @@
 
 @section('content')
 <div class="container-fluid">
-<a href="{{ route('audio_lessons.create') }}" class="btn btn-info btn-ladda" data-style="slide-down">Create New</a>
+<a href="{{ url('/secureadmin/audio_lessons/create/'.$id) }}" class="btn btn-info btn-ladda" data-style="slide-down">Create New</a>
         <div class="animated fadeIn">
           <div class="card">
             <div class="card-header">

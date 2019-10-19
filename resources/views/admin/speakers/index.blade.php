@@ -6,8 +6,8 @@
 <div class="container-fluid">
 
         <div class="animated fadeIn">
-                <a class="btn btn-success mb-2" href="{{route('speakers.create')}}">Create New</a>
 
+          <a href="{{url('/secureadmin/speakers/create/'.$id)}}" class="btn btn-info btn-ladda" data-style="slide-down">Create New</a> 
           <div class="card">
             <div class="card-header">
               <i class="fa fa-edit"></i> DataTables
@@ -23,6 +23,7 @@
                   <tr>
                     <th>Name</th>
                     <th>Position</th>
+                    <th>Class</th>
                     <th>Created at</th>
                     <th>Operation</th>
                   </tr>
@@ -32,21 +33,11 @@
                   <tr>
                     <td>{{$speaker->name}}</td>
                     <td>{{$speaker->position}}</td>
+                  <td>{{$speaker->class->year}}</td>
                     <td>
                       {{$speaker->created_at}}
                     </td>
                     <td>
-                      {{-- <a class="btn btn-success" href="#">
-                        <i class="fa fa-search-plus"></i>
-                      </a> --}}
-                    {{-- <a class="btn btn-info" href="{{route('speakers.edit', $speaker->id)}}">
-                        <i class="fa fa-edit"></i>
-                      </a>
-                    <form action="{{route('speakers.destroy', $speaker->id)}}" method="post">
-                        @method('destroy')
-                        @csrf
-                        <input type="submit" value="delete" class="btn btn-danger">
-                    </form> --}}
 
                     {!! Form::open(array('url' => route('speakers.destroy', $speaker->id),'method' => 'DELETE', 'class'=> '')) !!}
                     @csrf
@@ -55,6 +46,9 @@
                         <button class="btn btn-danger" type="submit"><i class="fa fa-trash"></i></button>         
                     {!! Form::close() !!}
                     </td>
+
+                    <td> <a href="{{url('/secureadmin/audio_lessons/create/'.$speaker->id)}}" class="btn btn-dark">Lecture</a></td>
+
                   </tr>
                 @endforeach
                 

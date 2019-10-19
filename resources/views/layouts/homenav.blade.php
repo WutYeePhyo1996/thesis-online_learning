@@ -147,7 +147,7 @@
                     <a class="nav-link" href={{url('/thesis_link')}}>Thesis Title</a>
                   </li>
 
-                  <li class="nav-item submenu dropdown">
+                  {{-- <li class="nav-item submenu dropdown">
                     <a
                       href="#"
                       class="nav-link dropdown-toggle"
@@ -173,7 +173,7 @@
                         class="nav-link" href={{url('/')}}>Hard</a>                  
                       </li>
                     </ul>
-                  </li>
+                  </li> --}}
 
                   <li class="nav-item">
                     <a class="nav-link" href={{url('/contact')}}>Contact</a>

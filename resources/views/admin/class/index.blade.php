@@ -33,22 +33,11 @@
                     <td>{{$class->year}}</td>
                     {{-- <td>
                       {{$class->created_at}}
-<<<<<<< HEAD
                     </td> --}}
-=======
                     </td>
 
-                    <td> <a href="{{url('/secureadmin/audio_lessons/create/'.$class->id)}}" class="btn btn-dark">Lecture</a></td>
->>>>>>> 4444736b525943205cfc4d22f71cfb8ca20eaa4c
-                    {{-- <td>
-
-                    {!! Form::open(array('url' => route('classs.destroy', $class->id),'method' => 'DELETE', 'class'=> '')) !!}
-                    @csrf
-                    <a href="{{route('classs.edit', $class->id)}}" class="btn btn-info"><i class="fa fa-edit"></i></a>
-
-                        <button class="btn btn-danger" type="submit"><i class="fa fa-trash"></i></button>
-                    {!! Form::close() !!}
-                    </td> --}}
+                    <td> <a href="{{url('/secureadmin/speakers/create/'.$class->id)}}" class="btn btn-dark">Speaker</a></td>
+                  
                   </tr>
                 @endforeach
 

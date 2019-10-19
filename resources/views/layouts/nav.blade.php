@@ -167,33 +167,6 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
                     <a class="nav-link" href={{url('/thesis_link')}}>Thesis Title</a>
                   </li>
 
-                  <li class="nav-item submenu dropdown">
-                    <a
-                      href="#"
-                      class="nav-link dropdown-toggle"
-                      data-toggle="dropdown"
-                      role="button"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      >Quiz</a>
-
-                    <ul class="dropdown-menu">
-                      <li class="nav-item">
-                        <a
-                        class="nav-link" href={{url('/')}}>Easy</a>
-                      </li>
-
-                      <li class="nav-item">
-                        <a
-                        class="nav-link" href={{url('/')}}>Normal</a>
-                      </li>
-
-                      <li class="nav-item">
-                        <a
-                        class="nav-link" href={{url('/')}}>Hard</a>
-                      </li>
-                    </ul>
-                  </li>
 
                   <li class="nav-item">
                     <a class="nav-link" href={{url('/contact')}}>Contact</a>

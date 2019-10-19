@@ -79,7 +79,34 @@
 
     <!--================ Start Trainers Area =================-->
     <section class="trainer_area section_gap_top">
-      <div class="container">
+        <div class="container">
+    <div class="row">
+        <div class="testi_slider owl-carousel">
+          @foreach($events as $event)
+          <div class="testi_item">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                  <div class="card text-white bg-primary mb-2" style="max-width: 18rem;">
+                      <div class="card-body">
+                        <p class="card-text">{{$event->created_at->format('d F Y')}}</p>
+                      </div>
+                    </div>
+
+              </div>
+              <div class="col-lg-8">
+                <div class="testi_text">
+                  <h4>{{$event->name}}</h4>
+                  <p>
+                    {{Str::limit($event->description, 90)}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          @endforeach
+        </div>
+      </div>
+
         <div class="row justify-content-center">
           <div class="col-lg-5">
             <div class="main_title">
@@ -564,7 +591,8 @@
     <!--================ End Events Area =================-->
 
     <!--================ Start Testimonial Area =================-->
-    <div class="testimonial_area section_gap" style="padding: 0px;">
+
+    {{-- <div class="testimonial_area section_gap" style="padding: 0px;">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-5">
@@ -577,34 +605,8 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="testi_slider owl-carousel">
-            @foreach($events as $event)
-            <div class="testi_item">
-              <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card text-white bg-primary mb-2" style="max-width: 18rem;">
-                        <div class="card-body">
-                          <p class="card-text">{{$event->created_at->format('d F Y')}}</p>
-                        </div>
-                      </div>
-
-                </div>
-                <div class="col-lg-8">
-                  <div class="testi_text">
-                    <h4>{{$event->name}}</h4>
-                    <p>
-                      {{Str::limit($event->description, 90)}}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            @endforeach
-          </div>
-        </div>
       </div>
-    </div>
+    </div> --}}
     <!--================ End Testimonial Area =================-->
 
     <!--================ Start footer Area  =================-->
