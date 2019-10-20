@@ -30,16 +30,16 @@ Route::group(['prefix' => 'secureadmin'], function () {
 
 
 // ================ Client =================
-Route::get('/about', 'client\PageController@about');
+Route::get('/about', 'client\PageController@about')->name('about');
 
 //=================Lecture=====================
 
-Route::get('/1beit', 'client\PageController@onebeit');
-Route::get('/2beit', 'client\PageController@twobeit');
-Route::get('/3beit', 'client\PageController@threebeit');
-Route::get('/4beit', 'client\PageController@fourbeit');
-Route::get('/5beit', 'client\PageController@fivebeit');
-Route::get('/6beit', 'client\PageController@sixbeit');
+Route::get('/1beit', 'client\PageController@onebeit')->name('1-beit');
+Route::get('/2beit', 'client\PageController@twobeit')->name('2-beit');
+Route::get('/3beit', 'client\PageController@threebeit')->name('3-beit');
+Route::get('/4beit', 'client\PageController@fourbeit')->name('4-beit');
+Route::get('/5beit', 'client\PageController@fivebeit')->name('5-beit');
+Route::get('/6beit', 'client\PageController@sixbeit')->name('6-beit');
 
 //===============end lecture=======================
 
@@ -54,13 +54,13 @@ Route::get('/6beit', 'client\PageController@sixbeit');
 
 //===============end Assignment=======================
 
-Route::get('/contact', 'client\PageController@contact');
-Route::get('/thesis/{id}', 'client\PageController@thesis');
-Route::get('/client_speakers', 'client\PageController@client_speaker');
-Route::get('/', 'client\PageController@home');
-Route::get('/thesis_link', 'client\PageController@thesis_link');
+Route::get('/contact', 'client\PageController@contact')->name('contact');
+Route::get('/thesis/{id}', 'client\PageController@thesis')->name('thesis-get');
+Route::get('/client_speakers', 'client\PageController@client_speaker')->name('client-speakers');
+Route::get('/', 'client\PageController@home')->name('home');
+Route::get('/thesis_link', 'client\PageController@thesis_link')->name('thesis-link');
 Route::get('/event_detail/{id}', 'client\PageController@event_detail');
-Route::get('/event','client\PageController@events');
+Route::get('/event','client\PageController@events')->name('event');
 Route::post('/thesis/search', 'client\ThesisController@search');
 Route::get('/thesis', 'client\ThesisController@index');
 

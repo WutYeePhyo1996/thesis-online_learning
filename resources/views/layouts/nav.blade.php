@@ -71,11 +71,11 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
                 id="navbarSupportedContent"
               >
               <ul class="nav navbar-nav menu_nav ml-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href={{url('/')}}>Home</a>
-                  </li>
                   <li class="nav-item">
-                    <a class="nav-link" href={{url('/about')}}>About</a>
+                    <a class="nav-link" href={{route('home')}}>Home</a>
+                  </li>
+                  <li class="nav-item {{ Request::is('about') ? 'active' : '' }}">
+                    <a class="nav-link" href={{ route('about') }}>About</a>
                   </li>
                   <li class="nav-item submenu dropdown">
                       <a
@@ -88,13 +88,14 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
                         >Assignments</a
                       >
                       <ul class="dropdown-menu">
-                        <li class="nav-item">
+                        <li class="nav-item {{ Request::is('1beit') ? 'active' : '' }}">
                           <a
-                          class="nav-link" href={{url('/1beit')}}>1BE-IT</a>                    
+                          class="nav-link" href={{route('1-beit')}}>1BE-IT</a>                    
 
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item {{ Route::is('2-beit') ? 'active' : '' }}
+                        ">
                           <a class="nav-link" href={{url('/2beit')}}> 2BE-IT</a>
                         </li>
 
@@ -156,12 +157,12 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
                       </ul>
                   </li>
 
-                  <li class="nav-item">
+                  <li class="nav-item {{ Route::is('event')? 'active' : '' }}">
                       <a class="nav-link" href={{url('/event')}}>News & Events</a>
                     </li>
 
                   </li>
-                   <li class="nav-item">
+                <li class="nav-item {{ Route::is('thesis-link') ? 'active' : ''}}">
                     <a class="nav-link" href={{url('/thesis_link')}}>Thesis Title</a>
                   </li>
 
@@ -193,7 +194,7 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
                     </ul>
                   </li>
 
-                  <li class="nav-item">
+                  <li class="nav-item {{ Route::is('contact')? 'active' : '' }}">
                     <a class="nav-link" href={{url('/contact')}}>Contact</a>
                   </li>
 
