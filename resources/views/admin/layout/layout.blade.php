@@ -53,12 +53,13 @@
      
     </ul>
     <ul class="nav navbar-nav ml-auto">
-    
+       
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                       <img class="img-avatar" src="{{asset('images/wytu.png')}}" alt="{{ Auth::user()->name }} ">
                     </a>
+                   
                     <div class="dropdown-menu dropdown-menu-right">
 
 

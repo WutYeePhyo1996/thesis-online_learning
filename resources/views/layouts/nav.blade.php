@@ -96,25 +96,7 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
                         </li>
                         @endforeach()
 
-                        {{-- <li class="nav-item">
-                          <a class="nav-link" href={{url('/2beit')}}> 2BE-IT</a>
-                        </li>
-
-                        <li class="nav-item">
-                          <a class="nav-link" href={{url('/3beit')}}> 3BE-IT</a>
-                        </li>
-
-                        <li class="nav-item">
-                          <a class="nav-link" href={{url('/4beit')}}> 4BE-IT</a>
-                        </li>
-
-                        <li class="nav-item">
-                          <a class="nav-link" href={{url('/5beit')}}> 5BE-IT</a>
-                        </li>
-
-                        <li class="nav-item">
-                          <a class="nav-link" href={{url('/6beit')}}> VIT-IT</a>
-                        </li> --}}
+                      
 
                       </ul>
                   </li>

@@ -27,6 +27,7 @@ Route::group(['prefix' => 'secureadmin'], function () {
     Route::get('/event_images/create/{id}', 'EventImageController@create_file');
     Route::get('/speakers/create/{id}','SpeakerController@create_file');
     Route::get('/audio_lessons/create/{id}','AudioLessonController@create_file');
+    Route::resource('/feedback', 'FeedbackController');
 });
 
 
