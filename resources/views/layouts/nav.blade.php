@@ -71,11 +71,11 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
                 id="navbarSupportedContent"
               >
               <ul class="nav navbar-nav menu_nav ml-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href={{url('/')}}>Home</a>
-                  </li>
                   <li class="nav-item">
-                    <a class="nav-link" href={{url('/about')}}>About</a>
+                    <a class="nav-link" href={{route('home')}}>Home</a>
+                  </li>
+                  <li class="nav-item {{ Request::is('about') ? 'active' : '' }}">
+                    <a class="nav-link" href={{ route('about') }}>About</a>
                   </li>
                   <li class="nav-item submenu dropdown">
                       <a
@@ -88,14 +88,33 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
                         >Assignments</a
                       >
                       <ul class="dropdown-menu">
-                          @foreach($classes as $class)
-                        <li class="nav-item">
+                        <li class="nav-item {{ Request::is('1beit') ? 'active' : '' }}">
                           <a
-                          class="nav-link" href={{url('/secureadmin/login')}}>{{$class->year}}</a>
+                          class="nav-link" href={{route('1-beit')}}>1BE-IT</a>                    
 
                         </li>
                         @endforeach()
 
+                        <li class="nav-item {{ Route::is('2-beit') ? 'active' : '' }}
+                        ">
+                          <a class="nav-link" href={{url('/2beit')}}> 2BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/3beit')}}> 3BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/4beit')}}> 4BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/5beit')}}> 5BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/6beit')}}> VIT-IT</a>
+                        </li>
                       
 
                       </ul>
@@ -140,17 +159,17 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
                       </ul>
                   </li>
 
-                  <li class="nav-item">
+                  <li class="nav-item {{ Route::is('event')? 'active' : '' }}">
                       <a class="nav-link" href={{url('/event')}}>News & Events</a>
                     </li>
 
                   </li>
-                   <li class="nav-item">
+                <li class="nav-item {{ Route::is('thesis-link') ? 'active' : ''}}">
                     <a class="nav-link" href={{url('/thesis_link')}}>Thesis Title</a>
                   </li>
 
 
-                  <li class="nav-item">
+                  <li class="nav-item {{ Route::is('contact')? 'active' : '' }}">
                     <a class="nav-link" href={{url('/contact')}}>Contact</a>
                   </li>
 
