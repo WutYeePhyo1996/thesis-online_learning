@@ -4,7 +4,7 @@
 @section('content')
 <div class="container-fluid">
         @if(auth()->user()->isTeacher())
-        <a class="btn btn-success mb-2" href="{{url('secureadmin/assignment/create')}}">Create New</a>
+        <a class="btn btn-success mb-2" href="{{url('secureadmin/assignment/create/'.class->$id)}}">Create New</a>
         @endif
         <div class="animated fadeIn">
           <div class="card">
@@ -22,7 +22,7 @@
                   <tr>
                     <th>Assignment</th>
                     <th>Created_at</th>
-                    
+
                   </tr>
                 </thead>
                 <tbody>
@@ -30,10 +30,10 @@
                   <tr>
                     <td>
                     <a href="{{asset('/storage/assignment/'.$assignment->file)}}">{{$assignment->file}}</a>
-                  
+
                     </td>
-                    
-                    
+
+
                     <td>
                      {{$assignment->created_at}}
                     </td>
@@ -41,14 +41,14 @@
                             {!! Form::open(array('url' => route('assignment.destroy', $assignment->id),'method' => 'DELETE', 'class'=> '')) !!}
                             @csrf
                             <a href="{{route('assignment.edit', $assignment->id)}}" class="btn btn-info"><i class="fa fa-edit"></i></a>
-                                
-                                <button class="btn btn-danger" type="submit"><i class="fa fa-trash"></i></button>         
+
+                                <button class="btn btn-danger" type="submit"><i class="fa fa-trash"></i></button>
                             {!! Form::close() !!}
                     </td>
                   </tr>
                 @endforeach
-                  
-                
+
+
                 </tbody>
               </table>
             </div>

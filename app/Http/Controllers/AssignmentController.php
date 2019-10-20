@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\{Assignment, StudentClass};
+use App\{Assignment, Classes};
 use App\Service\UploadService;
 use Storage;
 
@@ -12,9 +12,15 @@ class AssignmentController extends Controller
 
     public function index()
     {
-        $assignments =Assignment::all();
-        // $classes = StudentClass::all();
-        return view('admin.assignment.index', compact('assignments'));
+        // $assignments =Assignment::all();
+        //  $classes = StudentClass::all();
+        // return view('admin.assignment.index', compact('assignments'));
+    }
+
+    public function list($class_id){
+        dd('hii');
+        $assignments = Assignment::findOrFail($class_id);
+        return view ('admin.assignment.list', compact('assignments'));
     }
 
     public function create(){
@@ -24,7 +30,7 @@ class AssignmentController extends Controller
     public function create_assignment($class_id)
     {
         $assignment = new Assignment;
-        $classes = StudentClass::all();
+        $classes = Classes::all();
         return view('admin.assignment.create', compact('assignment', 'classes'));
     }
 
@@ -48,7 +54,7 @@ class AssignmentController extends Controller
     public function showByClass($class_id)
     {
         $assignments  = Assignment::where('class_id', $class_id)->get();
-        return view('admin.assignment.index',compact('assignments'));
+        return view('admin.assignment.list',compact('assignments'));
     }
 
 

@@ -8,7 +8,6 @@ class AudioLesson extends Model
 {
     protected $fillable = [
         'speaker_id',
-        'class_id',
         'file'
     ];
 
@@ -16,7 +15,4 @@ class AudioLesson extends Model
     return $this->belongsTo('App\Speaker', 'speaker_id')->withDefault();
     }
 
-    public function class(){
-        return $this->belongsTo('App\Classes','class_id')->withDefault();
-    }
 }

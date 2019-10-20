@@ -23,9 +23,11 @@ Route::group(['prefix' => 'secureadmin'], function () {
     Route::get('assignment/showByClass/{class_id}', 'AssignmentController@showByClass')->name('show-by-class');
     Route::resource('/class', 'ClassController');
     Route::post('login','AdminController@postLogin')->name('adminLogin');
-    
+
     Route::get('/event_images/create/{id}', 'EventImageController@create_file');
+    Route::get('/speakers/create/{id}','SpeakerController@create_file');
     Route::get('/audio_lessons/create/{id}','AudioLessonController@create_file');
+    Route::resource('/feedback', 'FeedbackController');
 });
 
 
@@ -44,13 +46,6 @@ Route::get('/6beit', 'client\PageController@sixbeit')->name('6-beit');
 //===============end lecture=======================
 
 //=================Assignment=====================
-
-
-// Route::get('assignment/2beit', 'AssignmentController@twobeit');
-// Route::get('assignment/3beit', 'AssignmentController@threebeit');
-// Route::get('assignment/4beit', 'AssignmentController@fourbeit');
-// Route::get('assignment/5beit', 'AssignmentController@fivebeit');
-// Route::get('assignment/6beit', 'AssignmentController@sixbeit');
 
 //===============end Assignment=======================
 

@@ -24,5 +24,10 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        view()->composer('*',function($view){
+                    $classes =\App\Classes::all();
+
+                    $view->with('classes',$classes);
+        });
     }
 }

@@ -16,7 +16,7 @@ class CreateAudioLessonsTable extends Migration
         Schema::create('audio_lessons', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('speaker_id');
-            $table->string('class_id');
+           
             $table->string('file');
             $table->timestamps();
         });

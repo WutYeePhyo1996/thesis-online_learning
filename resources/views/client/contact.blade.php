@@ -59,81 +59,59 @@
               <h6><a href="/">01 710 705</a></h6>
               <p>Mon to Fri 9am to 4 pm</p>
             </div>
+
             <div class="info_item">
               <i class="ti-email"></i>
               <h6><a href="http://wytu.edu.mm/">wytu.edu.mm</a></h6>
               <p>Send us your query anytime!</p>
             </div>
           </div>
-        </div>
 
+          <div class="row">
+            </div>
+            @if(session()->has('success-msg'))
+            <div style="text-align:center; font-size: 20px; color:white; background-color:khaki">
+                <p>Successfully sent message !</p>
+            </div>
+        @endif
+          </div>
+     
         <div class="col-lg-9 pt-3">
-          <form
-            class="row contact_form"
-        action='{{url('/secureadmin/feedback')}}'
-            method="post"
-            id="contactForm"
-            novalidate="novalidate"
-          >
+           <form action="{{route('feedback.store')}}" method="post"  method="post" class="row contact_form" aria-autocomplete="off">
+           @csrf
             <div class="col-md-6">
               <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  name="name"
-                  placeholder="Enter your name"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Enter your name'"
-                  required=""
-                />
+                <label for="name">Name</label>
+                <input name="name" class="form-control" id="name" type="text" placeholder="Enter Your Name" required>
               </div>
+
               <div class="form-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  placeholder="Enter email address"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Enter email address'"
-                  required=""
-                />
+                <label for="email">Email</label>
+                <input name="email" class="form-control" id="email" type="email" placeholder="Enter Your email" required>
               </div>
+
               <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="subject"
-                  name="subject"
-                  placeholder="Enter Subject"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Enter Subject'"
-                  required=""
-                />
+                <label for="subject">Subject</label>
+                <input name="subject" class="form-control" id="subject" type="text" placeholder="Enter Your subject" required>
               </div>
             </div>
+
             <div class="col-md-6">
               <div class="form-group">
-                <textarea
-                  class="form-control"
-                  name="message"
-                  id="message"
-                  rows="1"
-                  placeholder="Enter Message"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Enter Message'"
-                  required=""
-                ></textarea>
+                <textarea name="message" placeholder="Enter message" class="form-control" id="message"></textarea>
               </div>
             </div>
+
             <div class="col-md-12 text-right">
               <button type="submit" value="submit" class="btn primary-btn">
-                Send Message
+              Send Message
               </button>
             </div>
+
           </form>
+
         </div>
+
       </div>
     </div>
   </section>

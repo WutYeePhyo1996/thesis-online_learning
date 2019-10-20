@@ -19,33 +19,14 @@
             <strong>Normal</strong> Form</div>
             <div class="card-body">
               
-              <div class="form-group">
-                <label for="">Speaker Name</label>
-                <select name="speaker_id" id="" class="form-control">
-                  @foreach ($speakers as $speaker)
-                <option value="{{ $speaker->id }}" @if($speaker->id == old('speaker_id', $lesson->speaker_id)) selected @endif>{{ $speaker->name }}</option>
-                  @endforeach 
-              
-                  {{-- @foreach($speakers as $speaker)
-                  <option value="{{$speaker->id}}" @if($speaker->id == old('speaker_id', $lesson->speaker_id)) selected @endif>
-                    {{$speaker->name}}
-                  </option>
-
-                  
-                  @endforeach --}}
-                </select>
-              </div>
-              
-          
-
-              <fieldset class="form-group col-12">
-                <div class="form-group">
-                        <label for="class_id">Class </label>
-                        <input type="hidden" name="class_id" value="{{$classes->id}}">
-                        <input type="text" class="form-control" value="{{$classes->name}}" readonly>
-                        <span class="invalid-feedback">{{$errors->first('class_id')}}</span>
-                    </div>
-            </fieldset>
+                <fieldset class="form-group col-12">
+                    <div class="form-group">
+                            <label for="speaker_id">Speaker </label>
+                            <input type="hidden" name="speaker_id" value="{{$speaker->id}}">
+                            <input type="text" class="form-control" value="{{$speaker->name}}" readonly>
+                            <span class="invalid-feedback">{{$errors->first('speaker_id')}}</span>
+                        </div>
+                </fieldset>
               
             <fieldset class="form-group col-md-6 col-12">
               <label>Lessons</label>

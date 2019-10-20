@@ -7,6 +7,11 @@
 
         <div class="animated fadeIn">
                 <a class="btn btn-success mb-2" href="{{('/contact')}}">Create New</a>
+                @if(session()->has('fail-msg'))
+                <div class="alert alert-danger">
+                  <p>{!! session('fail-msg') !!}</p>
+                </div>
+              @endif
 
           <div class="card">
             <div class="card-header">
@@ -21,40 +26,25 @@
               <table class="table table-striped table-bordered datatable">
                 <thead>
                   <tr>
-                    <th>Event Type</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Subject</th>
+                    <th>Message</th>
                     <th>Created at</th>
-                    <th>Operation</th>
                   </tr>
                 </thead>
                 <tbody>
-                @foreach($eventTypes as $eventType)
+                    @if(isset($feedbacks))
+                @foreach($feedbacks as $feedback)
                   <tr>
-                    <td>{{$eventType->name}}</td>
-                    <td>
-                      {{$eventType->created_at}}
-                    </td>
-                    <td>
-                      {{-- <a class="btn btn-success" href="#">
-                        <i class="fa fa-search-plus"></i>
-                      </a> --}}
-                    {{-- <a class="btn btn-info" href="{{route('speakers.edit', $speaker->id)}}">
-                        <i class="fa fa-edit"></i>
-                      </a>
-                    <form action="{{route('speakers.destroy', $speaker->id)}}" method="post">
-                        @method('destroy')
-                        @csrf
-                        <input type="submit" value="delete" class="btn btn-danger">
-                    </form> --}}
-
-                    {!! Form::open(array('url' => route('eventType.destroy', $eventType->id),'method' => 'DELETE', 'class'=> '')) !!}
-                    @csrf
-                    <a href="{{route('eventType.edit', $eventType->id)}}" class="btn btn-info"><i class="fa fa-edit"></i></a>
-
-                        <button class="btn btn-danger" type="submit"><i class="fa fa-trash"></i></button>
-                    {!! Form::close() !!}
-                    </td>
+                  <td>{{$feedback->name}}</td>
+                  <td>{{$feedback->email}}</td>
+                  <td>{{$feedback->subject}}</td>
+                  <td>{{$feedback->message}}</td>
+                  <td>{{$feedback->created_at}}</td>
                   </tr>
                 @endforeach
+                @endif
 
                 </tbody>
               </table>

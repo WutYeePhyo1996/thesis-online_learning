@@ -70,32 +70,13 @@
                         >Assignments</a
                       >
                       <ul class="dropdown-menu">
+                        @foreach ($classes as $class)                            
+                      
                         <li class="nav-item">
                           <a
-                          class="nav-link" href={{url('/1beit')}}>1BE-IT</a>                    
-
+                          class="nav-link" href={{url('/secureadmin/login')}}>{{$class->year}}</a> 
                         </li>
-
-                        <li class="nav-item">
-                          <a class="nav-link" href={{url('/2beit')}}> 2BE-IT</a>
-                        </li>
-
-                        <li class="nav-item">
-                          <a class="nav-link" href={{url('/3beit')}}> 3BE-IT</a>
-                        </li>
-
-                        <li class="nav-item">
-                          <a class="nav-link" href={{url('/4beit')}}> 4BE-IT</a>
-                        </li>
-
-                        <li class="nav-item">
-                          <a class="nav-link" href={{url('/5beit')}}> 5BE-IT</a>
-                        </li>
-
-                        <li class="nav-item">
-                          <a class="nav-link" href={{url('/6beit')}}> VIT-IT</a>
-                        </li>
-                      
+                        @endforeach
                       </ul>
                   </li>
                   <li class="nav-item submenu dropdown">
@@ -147,7 +128,7 @@
                     <a class="nav-link" href={{url('/thesis_link')}}>Thesis Title</a>
                   </li>
 
-                  <li class="nav-item submenu dropdown">
+                  {{-- <li class="nav-item submenu dropdown">
                     <a
                       href="#"
                       class="nav-link dropdown-toggle"
@@ -173,7 +154,7 @@
                         class="nav-link" href={{url('/')}}>Hard</a>                  
                       </li>
                     </ul>
-                  </li>
+                  </li> --}}
 
                   <li class="nav-item">
                     <a class="nav-link" href={{url('/contact')}}>Contact</a>

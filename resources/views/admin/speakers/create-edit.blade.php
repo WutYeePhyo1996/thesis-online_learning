@@ -18,6 +18,15 @@
                         <div class="card-header">
                           <strong>Speaker</strong> Form</div>
                         <div class="card-body">
+                            <fieldset class="form-group col-12">
+                                <div class="form-group">
+                                        <label for="class_id">Class </label>
+                                        <input type="hidden" name="class_id" value="{{$class->id}}">
+                                        <input type="text" class="form-control" value="{{$class->year}}" readonly>
+                                        <span class="invalid-feedback">{{$errors->first('class_id')}}</span>
+                                    </div>
+                            </fieldset>
+
                             <div class="form-group">
                               <label for="nf-email">Name</label>
                             <input class="form-control" id="" type="text" name="name" placeholder="Enter Spaker Name" autocomplete="email" value="{{old('name', $speaker->name)}}">

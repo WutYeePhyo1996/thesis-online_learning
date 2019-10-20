@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css')  }}">
-    <title>Online Thesis</title>
+    <title>Online Learning for IT Students</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <style>
         .login-form{
@@ -27,7 +27,7 @@
             <div class="login-form">
                 <h1> Login</h1>
                 <hr>
-                
+
                 <div class="form-group row">
                     <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
                     <div class="col-sm-10">
@@ -41,14 +41,14 @@
                     </div>
                 </div>
                 <div class="form-group clearfix">
-                    
+
                     <div class="float-right">
                         <input type="submit" class="btn btn-success btn-lg btn-block" value="Send">
                     </div>
-                    <div class="float-right pb-2 pt-2 mr-2"><a href="#">Sing Up</a></div>
+                    <div class="float-right pb-2 pt-2 mr-2"><a href="/register">Sign Up</a></div>
                 </div>
             </div>
-            
+
         </form>
     </div>
 </body>

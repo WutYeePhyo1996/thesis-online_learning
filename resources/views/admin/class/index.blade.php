@@ -21,31 +21,26 @@
               <table class="table table-striped table-bordered datatable">
                 <thead>
                   <tr>
+                      <th>id</th>
                     <th>Class</th>
-                    <th>Created at</th>
+                    {{-- <th>Created at</th> --}}
                   </tr>
                 </thead>
                 <tbody>
                 @foreach($classes as $class)
                   <tr>
+                  <td>{{$class->id}}</td>
                     <td>{{$class->year}}</td>
-                    <td>
+                    {{-- <td>
                       {{$class->created_at}}
+                    </td> --}}
                     </td>
 
-                    <td> <a href="{{url('/secureadmin/audio_lessons/create/'.$class->id)}}" class="btn btn-dark">Lecture</a></td>
-                    {{-- <td>
-
-                    {!! Form::open(array('url' => route('classs.destroy', $class->id),'method' => 'DELETE', 'class'=> '')) !!}
-                    @csrf
-                    <a href="{{route('classs.edit', $class->id)}}" class="btn btn-info"><i class="fa fa-edit"></i></a>
-                        
-                        <button class="btn btn-danger" type="submit"><i class="fa fa-trash"></i></button>         
-                    {!! Form::close() !!}
-                    </td> --}}
+                    <td> <a href="{{url('/secureadmin/speakers/create/'.$class->id)}}" class="btn btn-dark">Speaker</a></td>
+                  
                   </tr>
                 @endforeach
-                
+
                 </tbody>
               </table>
             </div>

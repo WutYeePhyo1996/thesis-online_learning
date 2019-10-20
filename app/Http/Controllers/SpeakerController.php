@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Speaker;
+use App\{Speaker, Classes};
 
 class SpeakerController extends Controller
 {
@@ -16,25 +16,34 @@ class SpeakerController extends Controller
     public function index()
     {
         $speakers = Speaker::all();
-        return view('admin.speakers.index', compact('speakers'));
+        $class = Classes::all();
+        return view('admin.speakers.index', compact('speakers', 'class'));
     }
 
+    public function create_file($id){
+       
+        $class = Classes::where('id', $id)->first();
+        $speaker = new Speaker();
+        return view('admin.speakers.create-edit', compact('class','speaker'));
+        
+    }
 
     public function create()
     {
-        $speaker = new Speaker;
-        return view('admin.speakers.create-edit', compact('speaker'));
+      
     }
 
     public function store(Request $request)
     {
-        Speaker::create($request->all());
-        return redirect('secureadmin/speakers');
+      Speaker::create($request->all());
+
+        return redirect('secureadmin/speakers/'.$request->class_id);
     }
 
     public function show($id)
     {
-        //
+        $speakers = Speaker::where('class_id', $id)->get();
+        return view('admin.speakers.index', compact('speakers', 'id'));
     }
 
     public function edit($id)
