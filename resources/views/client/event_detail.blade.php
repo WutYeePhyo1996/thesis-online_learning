@@ -14,7 +14,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-6">
             <div class="banner_content text-center">
-              <h2>Thesis</h2>
+              <h2>Event</h2>
               <div class="page_link">
                 <a href="{{url('/')}}">Home</a>
                 <a href="{{url('/event_detail')}}">News & Events Detail</a>

@@ -95,7 +95,7 @@
               </div>
               <div class="col-lg-8">
                 <div class="testi_text">
-                  <h4>{{$event->name}}</h4>
+                  <h4><a href="{{url('/event_detail/'.$event->id)}}">{{$event->name}}</a></h4>
                   <p>
                     {{Str::limit($event->description, 90)}}
                   </p>
