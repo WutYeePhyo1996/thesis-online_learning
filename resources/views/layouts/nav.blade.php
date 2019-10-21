@@ -72,10 +72,10 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
               >
               <ul class="nav navbar-nav menu_nav ml-auto">
                   <li class="nav-item">
-                    <a class="nav-link" href={{route('home')}}>Home</a>
+                    <a class="nav-link" href={{route('home')}} >Home</a>
                   </li>
                   <li class="nav-item {{ Request::is('about') ? 'active' : '' }}">
-                    <a class="nav-link" href={{ route('about') }}>About</a>
+                    <a class="nav-link" href={{ route('about') }} >About</a>
                   </li>
                   <li class="nav-item submenu dropdown">
                       <a
@@ -93,8 +93,7 @@ $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
                           class="nav-link" href={{route('1-beit')}}>1BE-IT</a>                    
 
                         </li>
-                        @endforeach()
-
+                       
                         <li class="nav-item {{ Route::is('2-beit') ? 'active' : '' }}
                         ">
                           <a class="nav-link" href={{url('/2beit')}}> 2BE-IT</a>

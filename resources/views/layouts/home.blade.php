@@ -47,8 +47,8 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <div class="banner_content text-center">
-                <p class="text-uppercase">
+              <div class="banner_content text-center" style="color:white;">
+                <p class="text-uppercase" style="color:white;">
                   First online education Website In IT Department
                 </p>
                 <h2 class="text-uppercase mt-4 mb-5">

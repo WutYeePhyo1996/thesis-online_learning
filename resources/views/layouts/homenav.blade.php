@@ -54,10 +54,10 @@
               >
                 <ul class="nav navbar-nav menu_nav ml-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href={{url('/')}}>Home</a>
+                    <a class="nav-link" href={{url('/')}} style="color:yellow;">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href={{url('/about')}}>About</a>
+                    <a class="nav-link" href={{url('/about')}} style="color:yellow;">About</a>
                   </li>
                   <li class="nav-item submenu dropdown">
                       <a
@@ -66,15 +66,15 @@
                         data-toggle="dropdown"
                         role="button"
                         aria-haspopup="true"
-                        aria-expanded="false"
+                        aria-expanded="false" style="color:yellow;"
                         >Assignments</a
                       >
-                      <ul class="dropdown-menu">
+                      <ul class="dropdown-menu"  style="background-color:#002347;">
                         @foreach ($classes as $class)                            
                       
                         <li class="nav-item">
                           <a
-                          class="nav-link" href={{url('/secureadmin/login')}}>{{$class->year}}</a> 
+                          class="nav-link" href={{url('/secureadmin/login')}} style="color:yellow;">{{$class->year}}</a> 
                         </li>
                         @endforeach
                       </ul>
@@ -86,78 +86,50 @@
                         data-toggle="dropdown"
                         role="button"
                         aria-haspopup="true"
-                        aria-expanded="false"
+                        aria-expanded="false" style="color:yellow;"
                         >Lecture</a
                       >
-                      <ul class="dropdown-menu">
+                      <ul class="dropdown-menu"  style="background-color:#002347;">
                         <li class="nav-item">
                           <a
-                          class="nav-link" href={{url('/1beit')}}>1BE-IT</a>                    
+                          class="nav-link" href={{url('/1beit')}}  style="color:yellow;">1BE-IT</a>                    
 
                         </li>
 
                         <li class="nav-item">
-                          <a class="nav-link" href={{url('/2beit')}}> 2BE-IT</a>
+                          <a class="nav-link" href={{url('/2beit')}}  style="color:yellow;"> 2BE-IT</a>
                         </li>
 
                         <li class="nav-item">
-                          <a class="nav-link" href={{url('/3beit')}}> 3BE-IT</a>
+                          <a class="nav-link" href={{url('/3beit')}}  style="color:yellow;"> 3BE-IT</a>
                         </li>
 
                         <li class="nav-item">
-                          <a class="nav-link" href={{url('/4beit')}}> 4BE-IT</a>
+                          <a class="nav-link" href={{url('/4beit')}}  style="color:yellow;"> 4BE-IT</a>
                         </li>
 
                         <li class="nav-item">
-                          <a class="nav-link" href={{url('/5beit')}}> 5BE-IT</a>
+                          <a class="nav-link" href={{url('/5beit')}}  style="color:yellow;"> 5BE-IT</a>
                         </li>
 
                         <li class="nav-item">
-                          <a class="nav-link" href={{url('/6beit')}}> VIT-IT</a>
+                          <a class="nav-link" href={{url('/6beit')}}  style="color:yellow;"> VIT-IT</a>
                         </li>
                       
                       </ul>
                   </li>
 
                   <li class="nav-item">
-                      <a class="nav-link" href={{url('/event')}}>News & Events</a>
+                      <a class="nav-link" href={{url('/event')}} style="color:yellow;">News & Events</a>
                     </li>
 
                   </li>
                    <li class="nav-item">
-                    <a class="nav-link" href={{url('/thesis_link')}}>Thesis Title</a>
+                    <a class="nav-link" href={{url('/thesis_link')}} style="color:yellow;">Thesis Title</a>
                   </li>
 
-                  {{-- <li class="nav-item submenu dropdown">
-                    <a
-                      href="#"
-                      class="nav-link dropdown-toggle"
-                      data-toggle="dropdown"
-                      role="button"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      >Quiz</a>
-
-                    <ul class="dropdown-menu">
-                      <li class="nav-item">
-                        <a
-                        class="nav-link" href={{url('/')}}>Easy</a>                  
-                      </li>
-
-                      <li class="nav-item">
-                        <a
-                        class="nav-link" href={{url('/')}}>Normal</a>                  
-                      </li>
-
-                      <li class="nav-item">
-                        <a
-                        class="nav-link" href={{url('/')}}>Hard</a>                  
-                      </li>
-                    </ul>
-                  </li> --}}
-
                   <li class="nav-item">
-                    <a class="nav-link" href={{url('/contact')}}>Contact</a>
+                    <a class="nav-link" href={{url('/contact')}} style="color:yellow;">Contact</a>
                   </li>
 
                   <li class="nav-item">
