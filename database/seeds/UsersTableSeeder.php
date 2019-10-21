@@ -27,7 +27,8 @@ class UsersTableSeeder extends Seeder
         Factory('App\User')->create([
             'name' => 'student',
             'email' => 'student@gmail.com',
-            'type'=>'student'
+            'type'=>'student',
+            'class_id' => '1'
         ]);
 
     }
