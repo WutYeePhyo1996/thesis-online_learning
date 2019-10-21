@@ -10,7 +10,6 @@ class UploadService
     static function fileUpload($file, $path)
     {
         $file->storeAs($path,$file->getClientOriginalName());
-
     }
 
     static function checkFileExist($file, $file_name, $path)
