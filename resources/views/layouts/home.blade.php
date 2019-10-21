@@ -47,8 +47,8 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <div class="banner_content text-center">
-                <p class="text-uppercase">
+              <div class="banner_content text-center" style="color:white;">
+                <p class="text-uppercase" style="color:white;">
                   First online education Website In IT Department
                 </p>
                 <h2 class="text-uppercase mt-4 mb-5">
@@ -150,8 +150,7 @@
                   <p class="designation">Associate Professor</p>
                   <div class="mb-4">
                     <p>
-                      If you are looking at blank cassettes on the web, you may be
-                      very confused at the.
+                    
                     </p>
                   </div>
                   <div class="align-items-center justify-content-center d-flex">
@@ -281,8 +280,7 @@
                   <p class="designation">Assistant Lecturer</p>
                   <div class="mb-4">
                     <p>
-                      If you are looking at blank cassettes on the web, you may be
-                      very confused at the.
+                    
                     </p>
                   </div>
                   <div class="align-items-center justify-content-center d-flex">
@@ -303,8 +301,7 @@
                   <p class="designation">Lecturer</p>
                   <div class="mb-4">
                     <p>
-                      If you are looking at blank cassettes on the web, you may be
-                      very confused at the.
+                    
                     </p>
                   </div>
                   <div class="align-items-center justify-content-center d-flex">
@@ -325,8 +322,7 @@
                   <p class="designation">Assistant Lecturer</p>
                   <div class="mb-4">
                     <p>
-                      If you are looking at blank cassettes on the web, you may be
-                      very confused at the.
+                    
                     </p>
                   </div>
                   <div class="align-items-center justify-content-center d-flex">
@@ -347,8 +343,7 @@
                   <p class="designation">Assistant Lecturer</p>
                   <div class="mb-4">
                     <p>
-                      If you are looking at blank cassettes on the web, you may be
-                      very confused at the.
+                    
                     </p>
                   </div>
                   <div class="align-items-center justify-content-center d-flex">
@@ -369,8 +364,7 @@
                   <p class="designation"> Lecturer</p>
                   <div class="mb-4">
                     <p>
-                      If you are looking at blank cassettes on the web, you may be
-                      very confused at the.
+                    
                     </p>
                   </div>
                   <div class="align-items-center justify-content-center d-flex">
@@ -391,8 +385,7 @@
                   <p class="designation"> Lecturer</p>
                   <div class="mb-4">
                     <p>
-                      If you are looking at blank cassettes on the web, you may be
-                      very confused at the.
+                    
                     </p>
                   </div>
                   <div class="align-items-center justify-content-center d-flex">
@@ -413,8 +406,7 @@
                   <p class="designation"> Lecturer</p>
                   <div class="mb-4">
                     <p>
-                      If you are looking at blank cassettes on the web, you may be
-                      very confused at the.
+                    
                     </p>
                   </div>
                   <div class="align-items-center justify-content-center d-flex">
@@ -435,8 +427,7 @@
                   <p class="designation"> Lecturer</p>
                   <div class="mb-4">
                     <p>
-                      If you are looking at blank cassettes on the web, you may be
-                      very confused at the.
+                    
                     </p>
                   </div>
                   <div class="align-items-center justify-content-center d-flex">
@@ -457,8 +448,7 @@
                   <p class="designation"> Lecturer</p>
                   <div class="mb-4">
                     <p>
-                      If you are looking at blank cassettes on the web, you may be
-                      very confused at the.
+                    
                     </p>
                   </div>
                   <div class="align-items-center justify-content-center d-flex">
@@ -479,8 +469,7 @@
                   <p class="designation"> Lecturer</p>
                   <div class="mb-4">
                     <p>
-                      If you are looking at blank cassettes on the web, you may be
-                      very confused at the.
+                    
                     </p>
                   </div>
                   <div class="align-items-center justify-content-center d-flex">
@@ -501,8 +490,7 @@
                   <p class="designation"> Lecturer</p>
                   <div class="mb-4">
                     <p>
-                      If you are looking at blank cassettes on the web, you may be
-                      very confused at the.
+                    
                     </p>
                   </div>
                   <div class="align-items-center justify-content-center d-flex">
@@ -523,8 +511,7 @@
                   <p class="designation"> Lecturer</p>
                   <div class="mb-4">
                     <p>
-                      If you are looking at blank cassettes on the web, you may be
-                      very confused at the.
+                    
                     </p>
                   </div>
                   <div class="align-items-center justify-content-center d-flex">
@@ -545,8 +532,7 @@
                   <p class="designation">Assistant Lecturer</p>
                   <div class="mb-4">
                     <p>
-                      If you are looking at blank cassettes on the web, you may be
-                      very confused at the.
+                    
                     </p>
                   </div>
                   <div class="align-items-center justify-content-center d-flex">
