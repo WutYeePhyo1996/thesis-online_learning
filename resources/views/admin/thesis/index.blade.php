@@ -10,7 +10,7 @@
         <i class="fa fa-edit"></i> Thesis
       </div>
       <div class="card-body">
-        
+
         <table class="table table-striped table-bordered datatable">
           <thead>
             <tr>
@@ -18,13 +18,14 @@
               <th>Author</th>
               <th>file</th>
               <th>Academic Year</th>
+              <th>Abstract</th>
               <th>Actions</th>
             </tr>
           </thead>
           <tbody>
-            @foreach ($all_thesis as $thesis)
-            
-            
+            @foreach ($theses as $thesis)
+
+
             <tr>
               <td>{{ $thesis->title }}</td>
               <td>{{ $thesis->author }}</td>
@@ -32,6 +33,7 @@
               <td>
                 <span class="badge badge-dark">{{ $thesis->academic_year }}</span>
               </td>
+            <td>{{$thesis->abstract}}</td>
               <td>
                 <a class="btn btn-success" href="#">
                   <i class="fa fa-info"></i>
@@ -41,12 +43,12 @@
                 </a>
                 {!! Form::open(array('url' => route('thesis.destroy', $thesis->id),'method' => 'DELETE', 'class'=> '')) !!}
                 @csrf
-                <button class="btn btn-danger" type="submit"><i class="fa fa-trash"></i></button>         
+                <button class="btn btn-danger" type="submit"><i class="fa fa-trash"></i></button>
                 {!! Form::close() !!}
               </td>
             </tr>
             @endforeach
-            
+
           </tbody>
         </table>
       </div>

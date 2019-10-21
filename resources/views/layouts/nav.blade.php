@@ -1,5 +1,30 @@
 <!--================ Start Header Menu Area =================-->
 <header class="header_area white-header">
+
+<style>
+.dropdown-submenu {
+    position:relative;
+}
+
+.header_area .navbar .nav .nav-item {
+    margin-right: 40px;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top:0;
+    left:100%;
+}
+</style>
+
+<script type="text/javascript">
+$('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    $(this).next('.dropdown-menu').toggle();
+});
+</script>
+
+
         <div class="main_menu">
           <div class="search_input" id="search_input_box">
             <div class="container">
@@ -21,13 +46,13 @@
               </form>
             </div>
           </div>
-  
+
           <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
               <!-- Brand and toggle get grouped for better mobile display -->
-              <a class="navbar-brand" href="index.html">
-                <img class="logo-2" src="/img/logo2.png" alt="" />
-              </a>
+              <a class="navbar-brand logo_h" href={{url('/')}}
+                ><img src={{ asset('images/wytu.png') }} alt="" width="60px" height="75px"
+              /></a>
               <button
                 class="navbar-toggler"
                 type="button"
@@ -45,13 +70,12 @@
                 class="collapse navbar-collapse offset"
                 id="navbarSupportedContent"
               >
-                <ul class="nav navbar-nav menu_nav ml-auto">
+              <ul class="nav navbar-nav menu_nav ml-auto">
                   <li class="nav-item">
-                    <a class="nav-link" href={{url('/')}}>Home</a>
+                    <a class="nav-link" href={{route('home')}} >Home</a>
                   </li>
-                  {{-- {{ $active == 'about'? 'active': '' }} --}}
-                  <li class="nav-item">
-                    <a class="nav-link" href={{url('/about')}}>About</a>
+                  <li class="nav-item {{ Request::is('about') ? 'active' : '' }}">
+                    <a class="nav-link" href={{ route('about') }} >About</a>
                   </li>
                   <li class="nav-item submenu dropdown">
                       <a
@@ -64,30 +88,94 @@
                         >Assignments</a
                       >
                       <ul class="dropdown-menu">
-                        <li class="nav-item">
-                          <a class="nav-link" href={{url('/')}}>Assignment 1</a>
+                        <li class="nav-item {{ Request::is('1beit') ? 'active' : '' }}">
+                          <a
+                          class="nav-link" href={{route('1-beit')}}>1BE-IT</a>                    
+
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href={{url('/')}}
-                            > Assignment 2</a
-                          >
+                       
+                        <li class="nav-item {{ Route::is('2-beit') ? 'active' : '' }}
+                        ">
+                          <a class="nav-link" href={{url('/2beit')}}> 2BE-IT</a>
                         </li>
+
                         <li class="nav-item">
-                          <a class="nav-link" href={{url('/')}}>Elements</a>
+                          <a class="nav-link" href={{url('/3beit')}}> 3BE-IT</a>
                         </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/4beit')}}> 4BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/5beit')}}> 5BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/6beit')}}> VIT-IT</a>
+                        </li>
+                      
+
                       </ul>
-                  <li class="nav-item">
-                      <a class="nav-link" href={{url('/client_speakers')}}>Lessons</a>
+                  </li>
+                  <li class="nav-item submenu dropdown">
+                      <a
+                        href="#"
+                        class="nav-link dropdown-toggle"
+                        data-toggle="dropdown"
+                        role="button"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >Lecture</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li class="nav-item">
+                          <a
+                          class="nav-link" href={{url('/1beit')}}>1BE-IT</a>
+
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/2beit')}}> 2BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/3beit')}}> 3BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/4beit')}}> 4BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/5beit')}}> 5BE-IT</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href={{url('/6beit')}}> VIT-IT</a>
+                        </li>
+
+                      </ul>
+                  </li>
+
+                  <li class="nav-item {{ Route::is('event')? 'active' : '' }}">
+                      <a class="nav-link" href={{url('/event')}}>News & Events</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href={{url('/about')}}>News & Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href={{url('/thesis')}}>Thesis Title</a>
-                    </li>
-                  <li class="nav-item ">
+
+                  </li>
+                <li class="nav-item {{ Route::is('thesis-link') ? 'active' : ''}}">
+                    <a class="nav-link" href={{url('/thesis_link')}}>Thesis Title</a>
+                  </li>
+
+
+                  <li class="nav-item {{ Route::is('contact')? 'active' : '' }}">
                     <a class="nav-link" href={{url('/contact')}}>Contact</a>
                   </li>
+
+                  <li class="nav-item">
+                  <a href="{{url('/secureadmin/')}}" class="nav-link"><i class="fa fa-fw fa-user ml-5" style="font-size:24px;" ></i> Login</a>
+                  </li>
+
                   <li class="nav-item">
                     <a href="#" class="nav-link search" id="search">
                       <i class="ti-search"></i>
@@ -99,4 +187,7 @@
           </nav>
         </div>
       </header>
+
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <!--================ End Header Menu Area =================-->

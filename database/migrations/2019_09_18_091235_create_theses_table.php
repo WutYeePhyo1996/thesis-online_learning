@@ -15,10 +15,11 @@ class CreateThesesTable extends Migration
     {
         Schema::create('theses', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('rollno');
             $table->string('title');
             $table->string('author');
             $table->string('academic_year');
-            $table->text('description');
+            // $table->text('description');
             $table->text('abstract');
             $table->string('file');
             $table->timestamps();

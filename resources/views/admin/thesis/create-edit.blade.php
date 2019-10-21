@@ -5,11 +5,11 @@
     <div class="animated fadeIn">
         <div class="row mt-3">
             <div class="col-md-10 offset-md-1">
-                
+
                 <div class="card">
                     <div class="card-header">
                         <strong>Thesis Form</strong>
-                        
+
                     </div>
                     <div class="card-body">
                         @if(isset($thesis->id))
@@ -18,7 +18,7 @@
                             @csrf
                             @else
                             <form action="{{route('thesis.store')}}" method="post" enctype="multipart/form-data" method="post">
-                                
+
                                 @csrf
                                 @endif
                                 <div class="row">
@@ -59,8 +59,8 @@
                                         </span>
                                         @enderror
                                     </div>
-                                    
-                                    
+
+
                                 </div>
                                 <!-- /.row -->
                                 <div class="row">
@@ -86,7 +86,7 @@
                                             </span>
                                             @enderror
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                                 <!-- /.row-->
@@ -106,20 +106,20 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <div class="row">
                                     <div class="col-12">
                                         <input type="submit" value="Save" class="btn btn-success float-right">
                                     </div>
                                 </div>
                             </form>
-                            
+
                         </div>
                     </div>
                 </div>
-                
+
             </div>
-            
+
         </div>
     </div>
     @endsection
