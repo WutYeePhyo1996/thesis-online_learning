@@ -128,8 +128,7 @@
               <p class="designation"> Professor and Head</p>
               <div class="mb-4">
                 <p>
-                  If you are looking at blank cassettes on the web, you may be
-                  very confused at the.
+                
                 </p>
               </div>
               <div class="align-items-center justify-content-center d-flex">
@@ -171,8 +170,7 @@
                       <p class="designation">PhD Course @Associate Professor</p>
                       <div class="mb-4">
                         <p>
-                          If you are looking at blank cassettes on the web, you may be
-                          very confused at the.
+                         
                         </p>
                       </div>
                       <div class="align-items-center justify-content-center d-flex">
@@ -193,8 +191,7 @@
                           <p class="designation">Associate Professor</p>
                           <div class="mb-4">
                             <p>
-                              If you are looking at blank cassettes on the web, you may be
-                              very confused at the.
+                             
                             </p>
                           </div>
                           <div class="align-items-center justify-content-center d-flex">
@@ -215,8 +212,7 @@
                               <p class="designation">Associate Professor</p>
                               <div class="mb-4">
                                 <p>
-                                  If you are looking at blank cassettes on the web, you may be
-                                  very confused at the.
+                                
                                 </p>
                               </div>
                               <div class="align-items-center justify-content-center d-flex">
@@ -237,8 +233,7 @@
                                   <p class="designation">Associate Professor</p>
                                   <div class="mb-4">
                                     <p>
-                                      If you are looking at blank cassettes on the web, you may be
-                                      very confused at the.
+                                   
                                     </p>
                                   </div>
                                   <div class="align-items-center justify-content-center d-flex">
@@ -259,8 +254,7 @@
               <p class="designation">Lecturer</p>
               <div class="mb-4">
                 <p>
-                  If you are looking at blank cassettes on the web, you may be
-                  very confused at the.
+                
                 </p>
               </div>
               <div class="align-items-center justify-content-center d-flex">
