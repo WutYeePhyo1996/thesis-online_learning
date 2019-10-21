@@ -8,7 +8,7 @@
 
 
 <header class="header_area">
-        <div class="main_menu">
+        <div class="main_menu" style="background-color:#002347;">
           <div class="search_input" id="search_input_box">
             <div class="container">
               <form class="d-flex justify-content-between" method="post" action="/thesis/search">
@@ -133,11 +133,11 @@
                   </li>
 
                   <li class="nav-item">
-                  <a href="{{url('/secureadmin/')}}" class="nav-link"><i class="fa fa-fw fa-user ml-5" style="font-size:24px;" ></i> Login</a>
+                  <a href="{{url('/secureadmin/')}}" class="nav-link" style="color:yellow;"><i class="fa fa-fw fa-user ml-5" style="font-size:24px; color:yellow;" ></i> Login</a>
                   </li>       
 
                   <li class="nav-item">
-                    <a href="#" class="nav-link search" id="search">
+                    <a href="#" class="nav-link search" id="search" style="color:yellow;">
                       <i class="ti-search"></i>
                     </a>
                   </li>
