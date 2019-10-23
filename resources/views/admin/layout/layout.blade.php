@@ -23,11 +23,11 @@
   <link href="{{asset('admin/vendors/@coreui/icons/css/coreui-icons.min.css')}}" rel="stylesheet">
   <link href="{{asset('admin/vendors/flag-icon-css/css/flag-icon.min.css')}}" rel="stylesheet">
   <link href="{{asset('css/app.css')}}" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  
+
   {{-- <link href="{{asset('admin/vendors/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet"> --}}
-  
+
   <link href="{{asset('admin/vendors/simple-line-icons/css/simple-line-icons.css')}}" rel="stylesheet">
   <!-- Main styles for this application-->
   <link href="{{asset('admin/css/style.css')}}" rel="stylesheet">
@@ -50,19 +50,19 @@
       <li class="nav-item px-3">
         <a class="nav-link" href="#">Dashboard</a>
       </li>
-      
+
     </ul>
     <ul class="nav navbar-nav ml-auto">
-      
+
     </li>
     <li class="nav-item dropdown">
       <a class="nav-link nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
         <img class="img-avatar" src="{{asset('images/wytu.png')}}" alt="{{ Auth::user()->name }} ">
       </a>
-      
+
       <div class="dropdown-menu dropdown-menu-right">
-        
-        
+
+
         <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
         document.getElementById('logout-form').submit();">
         <i class="fa fa-lock"></i> Logout</a>
@@ -81,7 +81,7 @@
 </header>
 
 <div class="app-body">
-  
+
   <div class="sidebar">
     <nav class="sidebar-nav">
       <ul class="nav">
@@ -91,21 +91,21 @@
             <span class="badge badge-info">NEW</span>
           </a>
         </li>
-        
+
         <li class="nav-title">Theme</li>
-        
-        
-        
+
+
+
         @if(auth()->user()->isAdmin())
         <li class="nav-item">
           <a class="nav-link" href="{{route('thesis.index')}}">
             <i class="fas fa-book mr-2"></i>Thesis</a>
           </li>
           @else
-          
-          
-          
-          
+
+
+
+
           <li class="nav-item nav-dropdown">
             <a class="nav-link nav-dropdown-toggle" href="#">
               <i class="nav-icon fa fa-code"></i> Assignment </a>
@@ -139,7 +139,7 @@
 
                 @if(auth()->user()->isStudent())
                 @foreach (\App\Classes::all() as $item)
-                @if(auth()->user()->class->id === $item->id)
+                @if(auth()->user()->$class->id === $item->id)
                 <li class="nav-item">
                   <a class="nav-link" href="/secureadmin/assignment/showByClass/{{ $item->id }}">
                     <i class="nav-icon icon-user"></i> {{ $item->year }} </a>
@@ -147,14 +147,14 @@
                   @endif
                   @endforeach
                   @endif
-                  
-                  
-                  
+
+
+
                 </ul>
               </li>
               @endif
-              
-              
+
+
               @if(auth()->user()->isAdmin())
               <li class="nav-item">
                 <a class="nav-link" href="{{route('user.index')}}">
@@ -162,7 +162,7 @@
                   User</a>
                 </li>
                 @endif
-                
+
                 @if(auth()->user()->isAdmin())
                 <li class="nav-item">
                   <a class="nav-link" href="{{route('eventType.index')}}">
@@ -170,7 +170,7 @@
                     Event Type</a>
                   </li>
                   @endif
-                  
+
                   @if(auth()->user()->isAdmin())
                   <li class="nav-item">
                     <a class="nav-link" href="{{route('event.index')}}">
@@ -178,24 +178,24 @@
                       Event </a>
                     </li>
                     @endif
-                    
+
                   </ul>
                 </nav>
                 <button class="sidebar-minimizer brand-minimizer" type="button"></button>
               </div>
-              
-              
-              
+
+
+
               <main class="main">
                 @yield('content')
-                
-                
+
+
               </main>
-              
+
             </div>
           </div>
-          
-          
+
+
           <footer class="app-footer">
             <div>
               <a href="https://coreui.io/pro/">CoreUI Pro</a>
@@ -218,11 +218,10 @@
           <script src="{{asset('admin/vendors/chart.js/js/Chart.min.js')}}"></script>
           <script src="{{asset('admin/vendors/@coreui/coreui-plugin-chartjs-custom-tooltips/js/custom-tooltips.min.js')}}"></script>
           <script src="{{asset('admin/js/main.js')}}"></script>
-          
+
           <script src="{{asset('admin/vendors/datatables.net/js/jquery.dataTables.js')}}"></script>
           <script src="{{asset('admin/vendors/datatables.net-bs4/js/dataTables.bootstrap4.js')}}"></script>
           <script src="{{asset('admin/js/datatables.js')}}"></script>
-          
+
         </body>
         </html>
-        
