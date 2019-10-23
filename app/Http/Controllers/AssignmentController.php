@@ -18,7 +18,7 @@ class AssignmentController extends Controller
     }
 
     public function list($class_id){
-        dd('hii');
+
         $assignments = Assignment::findOrFail($class_id);
         return view ('admin.assignment.list', compact('assignments'));
     }
@@ -41,9 +41,9 @@ class AssignmentController extends Controller
         $data = $request->all();
         $data['file'] = $file->getClientOriginalName();
 
-        Assignment::create($data);
+        $assignment = Assignment::create($data);
         UploadService::fileUpload($file, $path);
-        return redirect('secureadmin/assignment');
+        return redirect('secureadmin/assignment/showByClass/'.$assignment->class_id);
     }
 
     public function show($id)
@@ -53,8 +53,9 @@ class AssignmentController extends Controller
 
     public function showByClass($class_id)
     {
+
         $assignments  = Assignment::where('class_id', $class_id)->get();
-        return view('admin.assignment.list',compact('assignments'));
+        return view('admin.assignment.list',compact('assignments','class_id'));
     }
 
 

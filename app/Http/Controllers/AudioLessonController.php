@@ -30,35 +30,27 @@ class AudioLessonController extends Controller
 
 
     public function store(Request $request)
-    { 
-        // parent::upload_document($request->file,
-        // ['name'=>rand(),
-        // 'id'=>'speaker_id',
-        // 'data_id'=> $request->speaker_id,
-        // 'path'=>'/public/audios',
-        // 'obj'=>'App\AudioLesson',
-        // 'file'=>'file']);
-        // dd("file");
-        // return redirect('/secureadmin/audio_lessons/1');
+    {
+
 
         $path = "/public/audios";
         $files = $request->file;
         $data = $request->all();
          $data_id = $request->speaker_id;
-       
+
         $data['file'] = $files[0]->getClientOriginalName();
 
-        
+
         foreach($files as $file) {
             UploadService::fileUpload($file, $path);
         }
-      
+
         AudioLesson::create($data);
         return redirect('secureadmin/audio_lessons/'. $request->speaker_id);
     }
 
     public function create_file($id){
-        $speaker = Speaker::where('id', $id)->first();       
+        $speaker = Speaker::where('id', $id)->first();
         $lesson = AudioLesson::all();
         return view('admin.audio_lessons.create', compact( 'lesson', 'speaker'));
     }
@@ -88,7 +80,7 @@ class AudioLessonController extends Controller
         {
             $data['file'] = UploadService::checkFileExist($file, $lesson['file'], $path);
         }
-        
+
         $lesson->update($data);
         return redirect('secureadmin/audio_lessons');
 

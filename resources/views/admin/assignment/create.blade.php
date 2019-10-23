@@ -25,7 +25,7 @@
 
                             <div class="form-group">
                                 <label for="">Class</label>
-                                <select name="" id="" class="form-control">
+                                <select name="class_id" id="class_id" class="form-control">
                                   @foreach($classes as $class)
                                   <option value="{{$class->id}}" @if($class->id == old('class_id', $assignment->class_id)) selected @endif>
                                     {{$class->year}}
