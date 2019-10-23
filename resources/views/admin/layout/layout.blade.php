@@ -139,7 +139,7 @@
 
                 @if(auth()->user()->isStudent())
                 @foreach (\App\Classes::all() as $item)
-                @if(auth()->user()->$class->id === $item->id)
+                @if(auth()->user()->class->id === $item->id)
                 <li class="nav-item">
                   <a class="nav-link" href="/secureadmin/assignment/showByClass/{{ $item->id }}">
                     <i class="nav-icon icon-user"></i> {{ $item->year }} </a>
